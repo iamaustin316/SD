@@ -1442,7 +1442,7 @@ body {
     top: 50%;
     -webkit-transform: translate3d(-21%, -50%, 0);
             transform: translate3d(-21%, -50%, 0);
-    border: solid 2px #f8db97;
+    border: solid 2px #ff36b3;
     -webkit-box-shadow: 0px 1px 9.88px 3.12px rgba(0, 0, 0, 0.4);
             box-shadow: 0px 1px 9.88px 3.12px rgba(0, 0, 0, 0.4);
     z-index: 10; }
@@ -1616,7 +1616,7 @@ body {
     top: 50%;
     -webkit-transform: translate3d(-21%, -50%, 0);
             transform: translate3d(-21%, -50%, 0);
-    border: solid 2px #c14019;
+    border: solid 2px #e828ba;
     -webkit-box-shadow: 0px 1px 9.88px 3.12px rgba(0, 0, 0, 0.4);
             box-shadow: 0px 1px 9.88px 3.12px rgba(0, 0, 0, 0.4); }
   .vol1-2-skill-2__rock-1 {
@@ -1755,7 +1755,7 @@ body {
     top: 50%;
     -webkit-transform: translate3d(-78%, -50%, 0);
             transform: translate3d(-78%, -50%, 0);
-    border: solid 2px #fcf7f3;
+    border: solid 2px #f1f0f1;
     -webkit-box-shadow: 0px 1px 9.88px 3.12px rgba(0, 0, 0, 0.4);
             box-shadow: 0px 1px 9.88px 3.12px rgba(0, 0, 0, 0.4);
     z-index: 10; }
