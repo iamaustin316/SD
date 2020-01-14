@@ -860,8 +860,7 @@ body {
           transform: translate3d(30%, 0, 0);
   display: block;
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  pointer-events: none; }
+  transition: all 0.3s ease-in-out; }
   .vol1-btn-top.is-active {
     opacity: 1;
     pointer-events: auto; }
