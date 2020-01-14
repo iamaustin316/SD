@@ -438,6 +438,9 @@ body {
   z-index: 40;
   -webkit-transition: top 0.1s ease-in-out;
   transition: top 0.1s ease-in-out; }
+  @media (min-width: 0) and (max-width: 750px) {
+    .s-header {
+      top: 0; } }
   .s-header.is-scroll {
     top: 0; }
   .s-header__h1 {
