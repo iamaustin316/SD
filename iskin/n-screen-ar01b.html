@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="zh-Hant-TW"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>iSkin尚行美健康聯合診所</title><link rel="stylesheet" href="css/site.css"></head><body><div class="normal-screen"><!--即將報到--><div class="panel panel--upcoming"><header class="panel__header"><h2>即將報到</h2><div class="site-search"><input type="text"> <button>搜尋</button></div></header><main class="panel__main panel__main--upcoming"><!--card-諮詢師--><div class="card card--upcoming"><header class="card__header"><div class="card__avatar"><img src="https://picsum.photos/id/1005/120/120" alt=""></div><div class="card__detail"><div class="card__info"><span class="card__name">武田信玄</span> <span class="identity identity--consultant">諮詢師</span> <button class="card-btn-menu"></button><div class="card-option"><button class="card-option__btn">點滴設定</button> <button class="card-option__btn">麻醉設定</button> <button class="card-option__btn">掛號設定</button></div></div><div class="card__course"><span class="card__course-name">療程名稱療程名稱...</span> <span class="card__course-number">5678</span></div><div class="card__location">等候位置：<span>A區 12</span></div></div></header><footer class="card__footer"><button class="card__btn">報到</button> <button class="card__btn">取消</button> <button class="card__btn">改期</button></footer></div><!--card--></main></div><!--即將報到--><!--逾期未報到--><div class="panel panel--overdue"><header class="panel__header"><h2>逾期未報到</h2></header><main class="panel__main"><!--card-諮詢師--><div class="card card--overdue"><header class="card__header"><div class="card__avatar"><img src="https://picsum.photos/id/1005/120/120" alt=""></div><div class="card__detail"><div class="card__info"><span class="card__name">武田信玄</span> <span class="identity identity--consultant">諮詢師</span> <button class="card-btn-menu"></button><div class="card-option"><button class="card-option__btn">點滴設定</button> <button class="card-option__btn">麻醉設定</button> <button class="card-option__btn">掛號設定</button></div></div><div class="card__course"><span class="card__course-name">療程名稱療程名稱...</span> <span class="card__course-number">5678</span></div><div class="card__location">等候位置：<span>A區 12</span></div></div></header><footer class="card__footer"><button class="card__btn">報到</button> <button class="card__btn">取消</button> <button class="card__btn">改期</button> <button class="card__btn">簡訊提醒</button></footer></div><!--card--></main></div><!--逾期未報到--><!--預約--><div class="panel panel--reservation"><header class="panel__header"><h2>預約</h2><div class="panel__control"><div class="panel__account"><img class="panel__account-avatar" class="" src="https://picsum.photos/id/1005/120/120" alt=""> <span class="panel__account-name">司徒法寶</span></div><button class="panel__btn-toggle"><span></span></button></div></header><main class="panel__main"><button class="btn-reservation"></button><!--預約查詢--><div class="reservation-search"><header class="reservation-search__header"><h2>預約查詢</h2><button class="reservation-search__btn-close"></button></header><div class="reservation-search__content"><h3>請輸入下方任一資料</h3><div class="reservation-search__form"><div class="reservation-search__row"><label for="keyword">關鍵字</label> <input type="text" id="keyword" placeholder="如：姓名、生日、手機"></div><div class="reservation-search__row"><label for="date">預約日期</label> <input type="text" id="date"></div><div class="reservation-search__row"><label for="project">預約項目</label> <input type="text" id="project"></div><div class="reservation-search__row"><label for="doctor">預約醫生</label> <input type="text" id="doctor"></div><div class="reservation-search__row"><button class="reservation-search__btn-search">搜尋</button></div></div></div></div><!--預約查詢--><!--預約查詢結果--><div class="reservation-result is-active"><div class="reservation-result__search"><div class="site-search"><input type="text"> <button>搜尋</button></div></div><div class="reservation-result__content"><div class="reservation-result__empty"><img src="images/icon-empty.svg" alt="沒有資料，請試試其它搜尋條件"><p>沒有資料，請試試其它搜尋條件</p></div></div></div><!--預約查詢結果--></main></div><!--預約--></div><script src="js/all.js"></script><script>$(function(){
+      var isPad = $('html').hasClass('ipad') || ''
+      
+      if(isPad) {
+        $('.normal-screen').addClass('is-pad')
+        $('.panel--upcoming,.panel--overdue').hide()
+      }
+
+      $('.site-search > button').on('click', function(e){
+        e.preventDefault()
+        if($(this).text() === '搜尋') {
+          if($(this).prev().val()) {
+            $(this).text('清除')
+          } else {
+            alert('請輸入搜尋文字!')
+          }
+        } else {
+          $(this).text('搜尋')
+          $(this).prev().val('')
+        }
+      })
+
+    });</script></body></html>
