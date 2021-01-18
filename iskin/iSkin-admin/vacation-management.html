@@ -1,6 +1,224 @@
-<!DOCTYPE html><html lang="zh-Hant-TW"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>iSkin尚行美健康聯合診所 管理後台登入</title><link rel="stylesheet" href="../css/site.css"></head><body><div class="admin-wrap"><div class="side-bar"><div class="side-bar__logo"><img src="../images/admin-logo.jpg" alt=""></div><div class="side-bar__nav"><ul><li><a class="side-bar__btn" href="client-list.html">客戶管理</a></li><li><a class="side-bar__btn" href="employee-list.html">員工管理</a></li><li><a class="side-bar__btn" href="office-list.html">診間管理</a></li><li><a class="side-bar__btn side-bar__btn--sub" href="#">服務管理</a><div class="side-bar__sub-nav"><a href="service-type-list.html">類別管理</a> <a href="service-course-list.html">療程管理</a></div></li><li><a class="side-bar__btn is-active" href="vacation-management.html">休假管理</a></li><li><a class="side-bar__btn" href="account-list.html">帳號管理</a></li><li><a class="side-bar__btn" href="overall-report.html">總體報表</a></li><li><a class="side-bar__btn" href="work-detail.html">明細查詢</a></li></ul></div><button class="side-bar__btn-logout">登出</button></div><div class="admin-main"><div class="admin-header"><h2>休假管理</h2><div class="admin-header__control"><div class="admin-header__account"><img class="admin-header__account-avatar" class="" src="https://picsum.photos/id/1005/120/120" alt=""> <span class="admin-header__account-name">司徒法寶</span> <button class="admin-header__btn-logout">登出</button></div></div></div><div class="vacation-management"><div class="vacation-control"><div class="vacation-control__days"><button class="vacation-control__btn-prev"></button> <span class="vacation-control__current">2020.11.25</span> <button class="vacation-control__btn-next"></button></div><input type="date" value="2021-01-15"><div class="site-search site-search--admin"><input type="text"> <button>搜尋</button></div></div><div class="vacation-management__employee-wrap"><div class="vacation-management__group"><h4>醫生</h4><div class="vacation-management__wrap"><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div></div></div><div class="vacation-management__group"><h4>護理師</h4><div class="vacation-management__wrap"><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div></div></div><div class="vacation-management__group"><h4>美容師</h4><div class="vacation-management__wrap"><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div><div class="vacation-management__employee-item"><input type="checkbox"> <label for="">人員名</label></div></div></div></div><button class="admin-btn-lg">儲存</button></div></div></div><script src="../js/all.js"></script><script>$(function(){
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>iSkin尚行美健康聯合診所 管理後台登入</title>
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <div class="admin-wrap">
+    <div class="side-bar">
+      <div class="side-bar__logo">
+        <img src="../images/admin-logo.jpg" alt="">
+      </div>
+      <div class="side-bar__nav">
+        <ul>
+          <li>
+            <a class="side-bar__btn" href="client-list.html">客戶管理</a>
+          </li>
+          <li>
+            <a class="side-bar__btn" href="employee-list.html">員工管理</a>
+          </li>
+          <li>
+            <a class="side-bar__btn" href="office-list.html">診間管理</a>
+          </li>
+          <li>
+            <a class="side-bar__btn side-bar__btn--sub" href="#">服務管理</a>
+            <div class="side-bar__sub-nav">
+              <a href="service-type-list.html">類別管理</a>
+              <a href="service-course-list.html">療程管理</a>
+            </div>
+          </li>
+          <li>
+            <a class="side-bar__btn is-active" href="vacation-management.html">休假管理</a>
+          </li>
+          <li>
+            <a class="side-bar__btn" href="account-list.html">帳號管理</a>
+          </li>
+          <li>
+            <a class="side-bar__btn" href="overall-report.html">總體報表</a>
+          </li>
+          <li>
+            <a class="side-bar__btn" href="work-detail.html">明細查詢</a>
+          </li>
+        </ul>
+      </div>
+      <button class="side-bar__btn-logout">登出</button>
+    </div>
+    <div class="admin-main">
+      <div class="admin-header">
+        <h2>休假管理</h2>
+        <div class="admin-header__control">
+          <div class="admin-header__account">
+            <img class="admin-header__account-avatar" class="" src="https://picsum.photos/id/1005/120/120" alt="">
+            <span class="admin-header__account-name">司徒法寶</span>
+            <button class="admin-header__btn-logout">登出</button>
+          </div>
+        </div>
+      </div>
+      <div class="vacation-management">
+        <div class="vacation-control">
+          <div class="vacation-control__days">
+            <button class="vacation-control__btn-prev"></button>
+            <span class="vacation-control__current">2020.11.25</span>
+            <button class="vacation-control__btn-next"></button>
+          </div>
+          <input type="date" value="2021-01-15">
+          <div class="site-search site-search--admin">
+            <input type="text">
+            <button>搜尋</button>
+          </div>
+        </div>
+        <div class="vacation-management__employee-wrap">
+          <div class="vacation-management__group">
+            <h4>醫生</h4>
+            <div class="vacation-management__wrap">
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+            </div>
+          </div>
+          <div class="vacation-management__group">
+            <h4>護理師</h4>
+            <div class="vacation-management__wrap">
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+            </div>
+          </div>
+          <div class="vacation-management__group">
+            <h4>美容師</h4>
+            <div class="vacation-management__wrap">
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+              <div class="vacation-management__employee-item">
+                <input type="checkbox">
+                <label for="">人員名</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="admin-btn-lg">儲存</button>
+      </div>
+    </div>
+  </div>
+  <script src="../js/all.js"></script>
+  <script>
+    $(function(){
       $('.side-bar__btn--sub').on('click', function(e){
         e.preventDefault()
         $(this).next().toggleClass('is-active')
       })
-    })</script></body></html>
+    })
+  </script>
+</body>
+</html>

@@ -24,9 +24,9 @@
             <a class="side-bar__btn" href="office-list.html">診間管理</a>
           </li>
           <li>
-            <a class="side-bar__btn side-bar__btn--sub" href="#">服務管理</a>
+            <a class="side-bar__btn side-bar__btn--sub is-active" href="#">服務管理</a>
             <div class="side-bar__sub-nav">
-              <a href="service-type-list.html">類別管理</a>
+              <a class="is-active" href="service-type-list.html">類別管理</a>
               <a href="service-course-list.html">療程管理</a>
             </div>
           </li>
@@ -34,7 +34,7 @@
             <a class="side-bar__btn" href="vacation-management.html">休假管理</a>
           </li>
           <li>
-            <a class="side-bar__btn is-active" href="account-list.html">帳號管理</a>
+            <a class="side-bar__btn" href="account-list.html">帳號管理</a>
           </li>
           <li>
             <a class="side-bar__btn" href="overall-report.html">總體報表</a>
@@ -48,8 +48,8 @@
     </div>
     <div class="admin-main">
       <div class="admin-header">
-        <a class="admin-header__btn-back" href="account-list.html">返回</a>
-        <h2>帳號管理（後台）</h2>
+        <a class="admin-header__btn-back" href="service-type-list.html">返回</a>
+        <h2>服務管理：類別</h2>
         <div class="admin-header__control">
           <div class="admin-header__account">
             <img class="admin-header__account-avatar" class="" src="https://picsum.photos/id/1005/120/120" alt="">
@@ -58,38 +58,14 @@
           </div>
         </div>
       </div>
-      <div class="account-detail">
-        <div class="account-detail__basic-info">
-          <div class="account-detail__basic-info-inner">
-            <div class="account-detail__col">
-              <h3>基本資料</h3>
-              <div class="account-detail__form">
-                <div class="account-detail__row">
-                  <label for="name">帳號</label>
-                  <input type="text" id="name" value="iamaustin" disabled="disabled">
-                </div>
-                <div class="account-detail__row">
-                  <label for="password">密碼重設</label>
-                  <input type="password" id="password" value="12345678">
-                </div>
-                <div class="account-detail__row">
-                  <label for="type">角色設定</label>
-                  <div class="account-detail__select-wrap">
-                    <select name="type" id="type">
-                      <option value="0">請選擇</option>
-                      <option value="1">角色1</option>
-                      <option value="2">角色2</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="account-detail__row">
-                  <label for="nickname">暱稱設定</label>
-                  <input type="text" id="Nickname" value="新店速哥">
-                </div>
-              </div>
-            </div>
+      <div class="service-type-add">
+        <div class="service-type-add__add">
+          <h3>類別管理</h3>
+          <div class="service-type-add__row">
+            <label for="type">編輯類別</label>
+            <input type="text" id="type" value="類別名稱">
+            <button class="service-type-add__btn-save">儲存</button>
           </div>
-          <button class="admin-btn-lg">儲存</button>
         </div>
       </div>
     </div>
