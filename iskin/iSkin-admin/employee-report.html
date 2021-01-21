@@ -1,4 +1,153 @@
-<!DOCTYPE html><html lang="zh-Hant-TW"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>iSkin尚行美健康聯合診所 管理後台登入</title><link rel="stylesheet" href="../css/site.css"></head><body><div class="admin-wrap"><div class="side-bar"><div class="side-bar__logo"><img src="../images/admin-logo.jpg" alt=""></div><div class="side-bar__nav"><ul><li><a class="side-bar__btn is-active" href="client-list.html">客戶管理</a></li><li><a class="side-bar__btn is-active" href="employee-list.html">員工管理</a></li><li><a class="side-bar__btn" href="office-list.html">診間管理</a></li><li><a class="side-bar__btn side-bar__btn--sub" href="#">服務管理</a><div class="side-bar__sub-nav"><a href="service-type-list.html">類別管理</a> <a href="service-course-list.html">療程管理</a></div></li><li><a class="side-bar__btn" href="vacation-management.html">休假管理</a></li><li><a class="side-bar__btn" href="account-list.html">帳號管理</a></li><li><a class="side-bar__btn" href="overall-report.html">總體報表</a></li><li><a class="side-bar__btn" href="work-detail.html">明細查詢</a></li></ul></div><button class="side-bar__btn-logout">登出</button></div><div class="admin-main"><div class="admin-header"><a class="admin-header__btn-back" href="employee-list.html">返回</a><h2>員工報表</h2><div class="admin-header__control"><div class="admin-header__account"><img class="admin-header__account-avatar" class="" src="https://picsum.photos/id/1005/120/120" alt=""> <span class="admin-header__account-name">司徒法寶</span> <button class="admin-header__btn-logout">登出</button></div></div></div><div class="employee-report"><div class="employee-report__basic-info"><div class="employee-report__basic-info-inner"><div class="employee-report__col"><h3>員工姓名</h3><h4>A12345678</h4><div class="employee-report__date-picker"><input type="date" value="2021-01-01">～<input type="date" value="2021-01-31"></div><div class="employee-report__report-info"><div class="employee-report__chart"><canvas id="report-chart" width="340" height="340"></canvas></div><div class="employee-report__work-list"><p>任務總數：<strong>152</strong></p><p>準時完成數量：<strong>78</strong></p><p>逾時完成數量：<strong>62</strong></p><p>未完成數量：<strong>12</strong></p></div><div class="employee-report__result-list"><p>花費時間：<strong>500</strong>分鐘</p><p>積分：<strong>555</strong>分</p></div></div></div></div></div><div class="employee-report__history"><h3>任務歷程</h3><div class="employee-report__history-list"><div class="employee-report__history-item"><div class="employee-report__date"><span>日期：2020.10.12</span> <span>開始時間：14:15 </span><span>準時完成：14:20</span></div><p class="employee-report__place">地點：R12診間</p><p class="employee-report__task">任務：由休息區K2接「金美莉小姐」去R12診間，文字文字文字文字文字文字文字文字文字文。</p></div><div class="employee-report__history-item"><div class="employee-report__date"><span>日期：2020.10.12</span> <span>開始時間：14:15 </span><span>準時完成：14:20</span></div><p class="employee-report__place">地點：R12診間</p><p class="employee-report__task">任務：由休息區K2接「金美莉小姐」去R12診間，文字文字文字文字文字文字文字文字文字文。</p></div><div class="employee-report__history-item"><div class="employee-report__date"><span>日期：2020.10.12</span> <span>開始時間：14:15 </span><span>準時完成：14:20</span></div><p class="employee-report__place">地點：R12診間</p><p class="employee-report__task">任務：由休息區K2接「金美莉小姐」去R12診間，文字文字文字文字文字文字文字文字文字文。</p></div><div class="employee-report__history-item"><div class="employee-report__date"><span>日期：2020.10.12</span> <span>開始時間：14:15 </span><span>準時完成：14:20</span></div><p class="employee-report__place">地點：R12診間</p><p class="employee-report__task">任務：由休息區K2接「金美莉小姐」去R12診間，文字文字文字文字文字文字文字文字文字文。</p></div><div class="employee-report__history-item"><div class="employee-report__date"><span>日期：2020.10.12</span> <span>開始時間：14:15 </span><span>準時完成：14:20</span></div><p class="employee-report__place">地點：R12診間</p><p class="employee-report__task">任務：由休息區K2接「金美莉小姐」去R12診間，文字文字文字文字文字文字文字文字文字文。</p></div></div><div class="admin-pagination"><button class="admin-pagination__btn-prev is-disable">上一頁</button> <span class="admin-pagination__current">1</span> <span class="admin-pagination__page">/ 22頁</span> <button class="admin-pagination__btn-next">下一頁</button></div></div></div></div></div><script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script><script src="../js/all.js"></script><script>$(function(){
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>iSkin尚行美健康聯合診所 管理後台登入</title>
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <div class="admin-wrap">
+    <div class="side-bar">
+      <div class="side-bar__logo">
+        <img src="../images/admin-logo.jpg" alt="">
+      </div>
+      <div class="side-bar__nav">
+        <ul>
+          <li>
+            <a class="side-bar__btn is-active" href="client-list.html">客戶管理</a>
+          </li>
+          <li>
+            <a class="side-bar__btn is-active" href="employee-list.html">員工管理</a>
+          </li>
+          <li>
+            <a class="side-bar__btn" href="office-list.html">診間管理</a>
+          </li>
+          <li>
+            <a class="side-bar__btn side-bar__btn--sub" href="#">服務管理</a>
+            <div class="side-bar__sub-nav">
+              <a href="service-type-list.html">類別管理</a>
+              <a href="service-course-list.html">療程管理</a>
+            </div>
+          </li>
+          <li>
+            <a class="side-bar__btn" href="vacation-management.html">休假管理</a>
+          </li>
+          <li>
+            <a class="side-bar__btn" href="account-list.html">帳號管理</a>
+          </li>
+          <li>
+            <a class="side-bar__btn" href="overall-report.html">總體報表</a>
+          </li>
+          <li>
+            <a class="side-bar__btn" href="work-detail.html">明細查詢</a>
+          </li>
+        </ul>
+      </div>
+      <button class="side-bar__btn-logout">登出</button>
+    </div>
+    <div class="admin-main">
+      <div class="admin-header">
+        <a class="admin-header__btn-back" href="employee-detail.html">返回</a>
+        <h2>員工報表</h2>
+        <div class="admin-header__control">
+          <div class="admin-header__account">
+            <img class="admin-header__account-avatar" class="" src="https://picsum.photos/id/1005/120/120" alt="">
+            <span class="admin-header__account-name">司徒法寶</span>
+            <button class="admin-header__btn-logout">登出</button>
+          </div>
+        </div>
+      </div>
+      <div class="employee-report">
+        <div class="employee-report__basic-info">
+          <div class="employee-report__basic-info-inner">
+            <div class="employee-report__col">
+              <h3>員工姓名</h3>
+              <h4>A12345678</h4>
+              <div class="employee-report__date-picker">
+                <input type="date" value="2021-01-01">～<input type="date" value="2021-01-31">
+              </div>
+              <div class="employee-report__report-info">
+                <div class="employee-report__chart">
+                  <canvas id="report-chart" width="340" height="340"></canvas>
+                </div>
+                <div class="employee-report__work-list">
+                  <p>任務總數：<strong>152</strong></p>
+                  <p>準時完成數量：<strong>78</strong></p>
+                  <p>逾時完成數量：<strong>62</strong></p>
+                  <p>未完成數量：<strong>12</strong></p>
+                </div>
+                <div class="employee-report__result-list">
+                  <p>花費時間：<strong>500</strong>分鐘</p>
+                  <p>積分：<strong>555</strong>分</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="employee-report__history">
+          <h3>任務歷程</h3>
+          <div class="employee-report__history-list">
+            <div class="employee-report__history-item">
+              <div class="employee-report__date">
+                <span>日期：2020.10.12</span>
+                <span>開始時間：14:15 </span>
+                <span>準時完成：14:20 </span>
+              </div>
+              <p class="employee-report__place">地點：R12診間</p>
+              <p class="employee-report__task">任務：由休息區K2接「金美莉小姐」去R12診間，文字文字文字文字文字文字文字文字文字文。</p>
+            </div>
+            <div class="employee-report__history-item">
+              <div class="employee-report__date">
+                <span>日期：2020.10.12</span>
+                <span>開始時間：14:15 </span>
+                <span>準時完成：14:20 </span>
+              </div>
+              <p class="employee-report__place">地點：R12診間</p>
+              <p class="employee-report__task">任務：由休息區K2接「金美莉小姐」去R12診間，文字文字文字文字文字文字文字文字文字文。</p>
+            </div>
+            <div class="employee-report__history-item">
+              <div class="employee-report__date">
+                <span>日期：2020.10.12</span>
+                <span>開始時間：14:15 </span>
+                <span>準時完成：14:20 </span>
+              </div>
+              <p class="employee-report__place">地點：R12診間</p>
+              <p class="employee-report__task">任務：由休息區K2接「金美莉小姐」去R12診間，文字文字文字文字文字文字文字文字文字文。</p>
+            </div>
+            <div class="employee-report__history-item">
+              <div class="employee-report__date">
+                <span>日期：2020.10.12</span>
+                <span>開始時間：14:15 </span>
+                <span>準時完成：14:20 </span>
+              </div>
+              <p class="employee-report__place">地點：R12診間</p>
+              <p class="employee-report__task">任務：由休息區K2接「金美莉小姐」去R12診間，文字文字文字文字文字文字文字文字文字文。</p>
+            </div>
+            <div class="employee-report__history-item">
+              <div class="employee-report__date">
+                <span>日期：2020.10.12</span>
+                <span>開始時間：14:15 </span>
+                <span>準時完成：14:20 </span>
+              </div>
+              <p class="employee-report__place">地點：R12診間</p>
+              <p class="employee-report__task">任務：由休息區K2接「金美莉小姐」去R12診間，文字文字文字文字文字文字文字文字文字文。</p>
+            </div>
+          </div>
+          <div class="admin-pagination">
+            <button class="admin-pagination__btn-prev is-disable">上一頁</button>
+            <span class="admin-pagination__current">1</span>
+            <span class="admin-pagination__page">/ 22頁</span>
+            <button class="admin-pagination__btn-next">下一頁</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="../js/all.js"></script>
+  <script>
+    $(function(){
       $('.side-bar__btn--sub').on('click', function(e){
         e.preventDefault()
         $(this).next().toggleClass('is-active')
@@ -65,4 +214,7 @@
         data: reportData,
         options: pieOptions
       });
-    })</script></body></html>
+    })
+  </script>
+</body>
+</html>
