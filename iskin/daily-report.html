@@ -37,7 +37,7 @@
       </div>
     </header>
     <main class="daily-report__main">
-      <div class="daily-report__outpatient-wrap">
+      <div class="daily-report__outpatient-wrap" id="outpatient-wrap">
         <span>電波埋線</span>
         <span>音波</span>
         <span>玻尿酸</span>
@@ -47,7 +47,7 @@
         <span>門診1</span>
         <span>門診2</span>
       </div>
-      <div class="daily-report__calendar">
+      <div class="daily-report__calendar" id="calendar-wrap">
         <div class="daily-report__time">
           <div><strong>12:00</strong></div>
           <div><strong>12:20</strong></div>
@@ -497,6 +497,10 @@
         $(this).toggleClass('is-active')
         $(this).next().toggleClass('is-active')
       })
+      var allColumn = $('.daily-report__outpatient')
+      var $width = 240*allColumn.length+'px'
+      $('#outpatient-wrap').css('width',$width)
+      $('#calendar-wrap').css('width',$width)
     })
   </script>
 </body>
