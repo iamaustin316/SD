@@ -1,0 +1,16 @@
+<svg id="icon-note.svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2653af;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="楕円形_954" data-name="楕円形 954" class="cls-1" cx="8" cy="8" r="8"/>
+  <path id="_" data-name="!" class="cls-2" d="M608.419,9700.1h1.007l0.564-5.3v-0.24h-2.135v0.24Zm-0.468,2.86h1.943v-1.92h-1.943v1.92Z" transform="translate(-601 -9691)"/>
+</svg>
