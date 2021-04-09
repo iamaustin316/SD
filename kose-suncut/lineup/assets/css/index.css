@@ -2793,7 +2793,7 @@ section {
   position: relative;
 }
 .lineup .lineup-product--blue .block--uv {
-  width: 808px;
+  width: 418px;
   padding-right: 13px;
 }
 @media screen and (max-width: 768px) {
@@ -2857,7 +2857,7 @@ section {
   position: relative;
 }
 .lineup .lineup-product--red .block--uv {
-  width: 808px;
+  width: 558px;
   padding-right: 13px;
 }
 @media screen and (max-width: 768px) {
@@ -3106,7 +3106,7 @@ section {
 }
 .lineup .lineup-product__body .wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 768px) {
   .lineup .lineup-product__body .wrap {

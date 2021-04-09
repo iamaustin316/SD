@@ -1775,11 +1775,11 @@ section {
 }
 @media screen and (min-width: 769px) {
   .header .nav-list .nav-list__item .link:hover::before {
-    width: 110%;
+    width: 100%;
   }
 }
 .header .nav-list .nav-list__item .link.current::before {
-  width: 110%;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .header .nav-list .nav-list__item .link.current::before {
@@ -2823,11 +2823,11 @@ section {
 .topics .topics-swiper .swiper-slide {
   display: flex;
   justify-content: center;
-  width: 298px;
+  width: 400px;
 }
 .topics .topics-swiper .link {
   display: block;
-  width: 298px;
+  width: 400px;
 }
 @media screen and (min-width: 769px) {
   .topics .topics-swiper .link:hover .wrap-img::before {

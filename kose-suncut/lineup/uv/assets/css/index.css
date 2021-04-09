@@ -3513,6 +3513,7 @@ section {
   letter-spacing: 0.03em;
   position: relative;
   left: -2px;
+  line-height: 1.4;
 }
 @media screen and (max-width: 768px) {
   .perfect .product .product-head .ttl {

@@ -2896,6 +2896,7 @@ section {
   font-feature-settings: "palt";
   letter-spacing: 0.05em;
   margin-bottom: 20px;
+  line-height: 1.4;
 }
 @media screen and (max-width: 768px) {
   .toneup .product .product-head .ttl {

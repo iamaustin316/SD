@@ -3115,6 +3115,10 @@ section {
   color: #f04f4e;
   font-weight: bold;
 }
+.use .purple {
+  color: #ce96de;
+  font-weight: bold;
+}
 .use .check {
   background-color: #fff6e5;
   height: 76px;
