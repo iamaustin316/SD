@@ -2839,7 +2839,7 @@ section {
 }
 @media screen and (max-width: 768px) {
   .topics .topics-swiper .link {
-    width: 40.625vw;
+    width: 55vw;
   }
 }
 .topics .topics-swiper .wrap-img {
