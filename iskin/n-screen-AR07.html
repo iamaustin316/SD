@@ -438,11 +438,17 @@
             <h3>請選擇約診時段</h3>
           </div>
           <div class="reservation-time__wrap">
-            <div class="reservation-time__date">
+            <!-- <div class="reservation-time__date">
               <button class="reservation-time__btn-prev"></button>
               <button class="reservation-time__btn-next"></button>
               <span class="reservation-time__current-date">2020/10/26 - 31</span>
               <button class="reservation-time__btn-select-date">選擇日期</button>
+            </div> -->
+            <div class="reservation-time__date">
+              <button class="reservation-time__btn-prev" @click="onPrev"></button>
+              <input class="reservation-time__datepicker" type="text" value="2020.9.26">
+              <span class="reservation-time__current-date">2021.03.27</span>
+              <button class="reservation-time__btn-next" @click="onNext"></button>
             </div>
             <div class="reservation-time__day-wrap">
               <div class="reservation-time__days">
