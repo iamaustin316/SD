@@ -271,7 +271,7 @@
         <!--預約查詢結果-->
 
         <!--顧客資料&預約內容-->
-        <div class="reservation-client is-active">
+        <div class="reservation-client">
           <div class="reservation-client__content">
               <h3>顧客資料</h3>
               <div class="reservation-client__client-info">
@@ -326,12 +326,11 @@
                       <button class="reservation-client__btn-select">選擇</button>
                   </div>
               </div>
-              <button class="reservation-client__btn-submit">確定預約</button>
           </div>
         </div>
         <!--顧客資料&預約內容-->
         <!--初診客戶資料建立-->
-        <div class="create-client-data">
+        <div class="create-client-data is-active">
           <div class="create-client-data__overlay">
             <div class="create-client-data__inner">
               <header class="create-client-data__header">
@@ -344,8 +343,12 @@
                   <h3>搜尋是否為回診客人</h3>
                   <div class="create-client-data__form">
                     <div class="create-client-data__row">
-                      <label for="ex-id">身分證字號</label>
-                      <input type="text" id="ex-id" placeholder="">
+                      <label for="keyword">關鍵字</label>
+                      <input type="text" id="keyword" placeholder="如：姓名、手機、身分證號" value="佐川">
+                    </div>
+                    <div class="reservation-search__row">
+                      <label for="search-birthday">生日</label>
+                      <input type="text" id="search-birthday" placeholder="如：65/05/31" value="65/05/31">
                     </div>
                     <div class="create-client-data__row">
                       <button class="create-client-data__btn-search">搜尋</button>
@@ -353,6 +356,77 @@
                   </div>
                 </div>
                 <!--搜尋是否為回診客人-->
+                <!--搜尋結果-->
+                <div class="search-client-data is-active">
+                  <h3>搜尋結果</h3>
+                  <button class="search-client-data__btn-close"></button>
+                  <div class="search-client-data__wrap">
+                    <!--search-result-item-->
+                    <div class="search-client-data__item">
+                      <div class="search-client-data__avatar">
+                        <img src="https://picsum.photos/id/1005/120/120" alt="">
+                      </div>
+                      <h4 class="search-client-data__name">佐川藤井</h4>
+                      <p class="search-client-data__info">65/05/31</p>
+                    </div>
+                    <!--search-result-item-->
+                    <!--search-result-item-->
+                    <div class="search-client-data__item">
+                      <div class="search-client-data__avatar">
+                        <img src="https://picsum.photos/id/1005/120/120" alt="">
+                      </div>
+                      <h4 class="search-client-data__name">佐川藤井</h4>
+                      <p class="search-client-data__info">65/05/31</p>
+                    </div>
+                    <!--search-result-item-->
+                    <!--search-result-item-->
+                    <div class="search-client-data__item">
+                      <div class="search-client-data__avatar">
+                        <img src="https://picsum.photos/id/1005/120/120" alt="">
+                      </div>
+                      <h4 class="search-client-data__name">佐川藤井</h4>
+                      <p class="search-client-data__info">65/05/31</p>
+                    </div>
+                    <!--search-result-item-->
+                    <!--search-result-item-->
+                    <div class="search-client-data__item">
+                      <div class="search-client-data__avatar">
+                        <img src="https://picsum.photos/id/1005/120/120" alt="">
+                      </div>
+                      <h4 class="search-client-data__name">佐川藤井</h4>
+                      <p class="search-client-data__info">65/05/31</p>
+                    </div>
+                    <!--search-result-item-->
+                    <!--search-result-item-->
+                    <div class="search-client-data__item">
+                      <div class="search-client-data__avatar">
+                        <img src="https://picsum.photos/id/1005/120/120" alt="">
+                      </div>
+                      <h4 class="search-client-data__name">佐川藤井</h4>
+                      <p class="search-client-data__info">65/05/31</p>
+                    </div>
+                    <!--search-result-item-->
+                    <!--search-result-item-->
+                    <div class="search-client-data__item">
+                      <div class="search-client-data__avatar">
+                        <img src="https://picsum.photos/id/1005/120/120" alt="">
+                      </div>
+                      <h4 class="search-client-data__name">佐川藤井</h4>
+                      <p class="search-client-data__info">65/05/31</p>
+                    </div>
+                    <!--search-result-item-->
+                    <!--search-result-item-->
+                    <div class="search-client-data__item">
+                      <div class="search-client-data__avatar">
+                        <img src="https://picsum.photos/id/1005/120/120" alt="">
+                      </div>
+                      <h4 class="search-client-data__name">佐川藤井</h4>
+                      <p class="search-client-data__info">65/05/31</p>
+                    </div>
+                    <!--search-result-item-->
+                  </div>
+                </div>
+                <!--搜尋結果-->
                 <!--建立資料-->
                 <div class="create-client-data__create">
                   <h3>建立資料</h3>

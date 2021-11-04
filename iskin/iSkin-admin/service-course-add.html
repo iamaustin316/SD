@@ -59,10 +59,12 @@
         </div>
       </div>
       <div class="service-course-add">
+
+        <!--項目管理-->
         <div class="service-course-add__basic-info">
           <div class="service-course-add__basic-info-inner">
             <div class="service-course-add__col">
-              <h3>基本資料</h3>
+              <h3>項目管理</h3>
               <div class="service-course-add__form">
                 <div class="service-course-add__row">
                   <label for="name">項目名稱</label>
@@ -71,12 +73,16 @@
                 <div class="service-course-add__row">
                   <label for="status">選擇類別</label>
                   <div class="service-course-add__select-wrap">
-                    <select name="type" id="status">
+                    <select name="type">
                       <option value="0">類別</option>
                       <option value="1">類別1</option>
                       <option value="2">類別2</option>
                     </select>
                   </div>
+                </div>
+                <div class="service-course-add__row">
+                  <label for="service-type">醫/美療</label>
+                  <input type="text" id="service-type" value="">
                 </div>
                 <div class="service-course-add__row">
                   <label for="max-count">同時最多人數</label>
@@ -86,6 +92,8 @@
             </div>
           </div>
         </div>
+        <!--項目管理-->
+        <!--服務流程管理-->
         <div class="service-course-add__flow">
           <h3>服務流程管理</h3>
           <div class="service-course-add__flow-wrap">
@@ -149,7 +157,31 @@
               <input type="text" placeholder="積分">
             </div>
             <div class="service-course-add__flow-item">
-              <span class="service-course-add__step">7 預約送客</span>
+              <span class="service-course-add__step">7-1 術後鎮定</span>
+              <div class="service-course-add__time-wrap">
+                <input type="text" placeholder="時間">
+              </div>
+              <button class="admin-btn-add">選擇身份與專長</button>
+              <input type="text" placeholder="積分">
+            </div>
+            <div class="service-course-add__flow-item">
+              <span class="service-course-add__step">7-2 術後鎮定（卸面膜）</span>
+              <div class="service-course-add__time-wrap">
+                <input type="text" placeholder="時間">
+              </div>
+              <button class="admin-btn-add">選擇身份與專長</button>
+              <input type="text" placeholder="積分">
+            </div>
+            <div class="service-course-add__flow-item">
+              <span class="service-course-add__step">8 預約 / 衛教</span>
+              <div class="service-course-add__time-wrap">
+                <input type="text" placeholder="時間">
+              </div>
+              <button class="admin-btn-add">選擇身份與專長</button>
+              <input type="text" placeholder="積分">
+            </div>
+            <div class="service-course-add__flow-item">
+              <span class="service-course-add__step">9 送客</span>
               <div class="service-course-add__time-wrap">
                 <input type="text" placeholder="時間">
               </div>
@@ -157,8 +189,209 @@
               <input type="text" placeholder="積分">
             </div>
           </div>
+        </div>
+        <!--服務流程管理-->
+        <!--連續指派設定-->
+        <div class="service-course-add__continuous">
+          <h3>連續指派設定</h3>
+          <div class="service-course-add__continuous-wrap">
+            <!--設定步驟-->
+            <div class="service-course-add__setting">
+              <h4>設定步驟</h4>
+              <div class="service-course-add__setting-wrap">
+                <div class="service-course-add__block">
+                  <label for="">開始步驟</label>
+                  <div class="service-course-add__select-wrap">
+                    <select name="type">
+                      <option value="1">步驟1</option>
+                      <option value="2">步驟2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="service-course-add__block">
+                  <label for="">結束步驟</label>
+                  <div class="service-course-add__select-wrap">
+                    <select name="type">
+                      <option value="1">步驟1</option>
+                      <option value="2">步驟2</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="admin-btn">新增</button>
+              </div>
+            </div>
+            <!--設定步驟-->
+            <!--已儲存的連續指派-->
+            <div class="service-course-add__saved">
+              <h4>已儲存的連續指派</h4>
+              <div class="service-course-add__saved-wrap">
+                <div class="service-course-add__saved-item">
+                  <div>開始步驟：報到</div>
+                  <div>結束步驟：敷麻</div>
+                  <button class="admin-btn">刪除</button>
+                </div>
+                <div class="service-course-add__saved-item">
+                  <div>開始步驟：報到</div>
+                  <div>結束步驟：敷麻</div>
+                  <button class="admin-btn">刪除</button>
+                </div>
+              </div>
+            </div>
+            <!--已儲存的連續指派-->
+          </div>
           <button class="admin-btn-lg">儲存</button>
         </div>
+        <!--連續指派設定-->
+        <!--備貨通知設定-->
+        <div class="service-course-add__stocking">
+          <h3>備貨通知設定</h3>
+          <div class="service-course-add__stocking-wrap">
+            <div class="service-course-add__stocking-block">
+              <h4>通知備貨</h4>
+              <input type="checkbox">
+            </div>
+            <div class="service-course-add__stocking-block">
+              <h4>通知內容</h4>
+              <div class="service-course-add__stocking-item-wrap">
+                <div class="service-course-add__stocking-item">
+                  <input type="text" placeholder="品名">
+                  <input type="text" placeholder="數量">
+                </div>
+                <div class="service-course-add__stocking-item">
+                  <input type="text" placeholder="品名">
+                  <input type="text" placeholder="數量">
+                </div>
+                <div class="service-course-add__stocking-item">
+                  <input type="text" placeholder="品名">
+                  <input type="text" placeholder="數量">
+                </div>
+                <div class="service-course-add__stocking-item">
+                  <input type="text" placeholder="品名">
+                  <input type="text" placeholder="數量">
+                </div>
+                <div class="service-course-add__stocking-item">
+                  <input type="text" placeholder="品名">
+                  <input type="text" placeholder="數量">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="admin-btn-lg">儲存</button>
+        </div>
+        <!--備貨通知設定-->
+        <!--醫療時間-->
+        <div class="service-course-add__medical">
+          <h3>醫療時間</h3>
+          <div class="service-course-add__medical-wrap">
+            <div class="service-course-add__medical-row">
+              <div class="service-course-add__block">
+                <label for="">開始時間</label>
+                <div class="service-course-add__select-wrap">
+                  <select name="type">
+                    <option value="1">12:00</option>
+                    <option value="2">13:00</option>
+                  </select>
+                </div>
+              </div>
+              <div class="service-course-add__block">
+                <label for="">結束時間</label>
+                <div class="service-course-add__select-wrap">
+                  <select name="type">
+                    <option value="1">步驟1</option>
+                    <option value="2">步驟2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="service-course-add__medical-row">
+              <div class="service-course-add__block">
+                <label for="">時間間隔</label>
+                <div class="service-course-add__medical-interval">
+                  <input type="text" value="70">
+                  <span>分鐘</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-course-add__medical-row">
+              <div class="service-course-add__block">
+                <label for="">用餐開始</label>
+                <div class="service-course-add__select-wrap">
+                  <select name="type">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                  </select>
+                </div>
+              </div>
+              <div class="service-course-add__block">
+                <label for="">用餐結束</label>
+                <div class="service-course-add__select-wrap">
+                  <select name="type">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--醫療時間-->
+        <!--美療時間-->
+        <div class="service-course-add__beauty">
+          <h3>美療時間</h3>
+          <div class="service-course-add__beauty-wrap">
+            <div class="service-course-add__beauty-row">
+              <div class="service-course-add__block">
+                <label for="">開始時間</label>
+                <div class="service-course-add__select-wrap">
+                  <select name="type">
+                    <option value="1">12:00</option>
+                    <option value="2">13:00</option>
+                  </select>
+                </div>
+              </div>
+              <div class="service-course-add__block">
+                <label for="">結束時間</label>
+                <div class="service-course-add__select-wrap">
+                  <select name="type">
+                    <option value="1">步驟1</option>
+                    <option value="2">步驟2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="service-course-add__beauty-row">
+              <div class="service-course-add__block">
+                <label for="">時間間隔</label>
+                <div class="service-course-add__beauty-interval">
+                  <input type="text" value="70">
+                  <span>分鐘</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-course-add__beauty-row">
+              <div class="service-course-add__block">
+                <label for="">用餐開始</label>
+                <div class="service-course-add__select-wrap">
+                  <select name="type">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                  </select>
+                </div>
+              </div>
+              <div class="service-course-add__block">
+                <label for="">用餐結束</label>
+                <div class="service-course-add__select-wrap">
+                  <select name="type">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--美療時間-->
+        <button class="admin-btn-lg">儲存</button>
       </div>
     </div>
   </div>

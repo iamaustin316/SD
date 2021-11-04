@@ -6,7 +6,7 @@
   <title>iSkin尚行美健康聯合診所</title>
   <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body style="background-color: #000;">
   <!--a pop 2 遲到人士的人需要先設定的時間-->
   <div class="modal-ui is-active">
     <div class="modal-ui__overlay">
@@ -39,7 +39,7 @@
           <h3>帶位安排</h3>
           <div class="modal-ui__filter">
             <div class="modal-ui__filter-group">
-              <button class="modal-ui__btn-filter">身份</button>
+              <button class="modal-ui__btn-filter">身份身份</button>
               <div class="modal-ui__sub-nav">
                 <button class="modal-ui__btn-option">option 1</button>
                 <button class="modal-ui__btn-option">option 2</button>
@@ -47,7 +47,7 @@
               </div>
             </div>
             <div class="modal-ui__filter-group">
-              <button class="modal-ui__btn-filter">專長</button>
+              <button class="modal-ui__btn-filter">專長專長</button>
               <div class="modal-ui__sub-nav">
                 <button class="modal-ui__btn-option">option 1</button>
                 <button class="modal-ui__btn-option">option 2</button>
@@ -116,12 +116,14 @@
     <div class="modal-ui__overlay">
       <div class="modal-ui__inner">
         <header class="modal-ui__header">
-          <h3>點滴選單</h3>
+          <h3>點滴內容選單</h3>
           <button class="modal-ui__btn-close"></button>
         </header>
         <div class="modal-ui__content">
           <div class="modal-ui__iv">
-            <h4>配方設定</h4>
+            <div class="modal-ui__row">
+              <h4>點滴名稱</h4>
+            </div>
             <div class="modal-ui__iv-list">
               <button class="modal-ui__btn-iv">SRTG</button>
               <button class="modal-ui__btn-iv">SRTG22</button>
@@ -133,7 +135,9 @@
             </div>
           </div>
           <div class="modal-ui__iv">
-            <h4>內容設定</h4>
+            <div class="modal-ui__row">
+              <h4>內容設定</h4>
+            </div>
             <div class="modal-ui__iv-list">
               <button class="modal-ui__btn-iv">SRTG</button>
               <button class="modal-ui__btn-iv">SRTG22</button>
@@ -144,7 +148,17 @@
               <button class="modal-ui__btn-iv">SRTG6</button>
             </div>
           </div>
-          <div class="modal-ui__row">
+          <div class="modal-ui__iv">
+            <div class="modal-ui__row">
+              <h4>設定時間</h4>
+              <input class="modal-ui__input-time" type="time">
+            </div>
+            <div class="modal-ui__row">
+              <p class="modal-ui__text">將於<strong>13:20</strong>分開始進行。</p>
+            </div>
+          </div>
+          <div class="modal-ui__row center">
+            <button class="modal-ui__btn-delete">刪除</button>
             <button class="modal-ui__btn-confirm">確定</button>
           </div>
         </div>
@@ -152,8 +166,64 @@
     </div>
   </div>
   <!--a pop 6 點滴選單-->
+  <!--指派人員-->
+  <div class="modal-ui">
+    <div class="modal-ui__overlay">
+      <div class="modal-ui__inner">
+        <header class="modal-ui__header">
+          <h3>指派人員</h3>
+          <div class="modal-ui__filter">
+            <div class="modal-ui__filter-group">
+              <button class="modal-ui__btn-filter">身份</button>
+              <div class="modal-ui__sub-nav">
+                <button class="modal-ui__btn-option">option 1</button>
+                <button class="modal-ui__btn-option">option 2</button>
+                <button class="modal-ui__btn-option">option 3</button>
+              </div>
+            </div>
+            <div class="modal-ui__filter-group">
+              <button class="modal-ui__btn-filter">專長</button>
+              <div class="modal-ui__sub-nav">
+                <button class="modal-ui__btn-option">option 1</button>
+                <button class="modal-ui__btn-option">option 2</button>
+                <button class="modal-ui__btn-option">option 3</button>
+              </div>
+            </div>
+          </div>
+          <div class="site-search">
+            <input type="text">
+            <button>搜尋</button>
+          </div>
+          <button class="modal-ui__btn-close"></button>
+        </header>
+        <div class="modal-ui__content">
+          <div class="modal-ui__row">
+            <h4>選擇人員</h4>
+            <label class="modal-ui__checkbox-container">連續指派連續指派連續指派連續指派
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>            
+          </div>
+          <div class="modal-ui__employee-list">
+            <button class="modal-ui__btn-name">陳名名</button>
+            <button class="modal-ui__btn-name">陳名名</button>
+            <button class="modal-ui__btn-name">陳名名</button>
+            <button class="modal-ui__btn-name">陳名名</button>
+            <button class="modal-ui__btn-name">陳名名</button>
+            <button class="modal-ui__btn-name">陳名名</button>
+            <button class="modal-ui__btn-name">陳名名名</button>
+          </div>
+          <div class="modal-ui__row center">
+            <button class="modal-ui__btn-cancel">取消</button>
+            <button class="modal-ui__btn-confirm">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--指派人員-->
   <!--loader-->
-  <div class="loader is-active">
+  <div class="loader">
     <div class="loader__inner">
       <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
         <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">

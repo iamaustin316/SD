@@ -8,17 +8,23 @@
 </head>
 <body>
   <div class="wide-screen">
-    <!--等候中-->
+    <!--待指派-->
     <div class="panel panel--wait">
       <header class="panel__header">
-        <h2>等候中</h2>
+        <h2>待指派</h2>
       </header>
       <main class="panel__main panel__main--card">
         <!--card-諮詢師-->
         <div class="card card--wait">
           <header class="card__header">
-            <div class="card__avatar">
-              <img src="https://picsum.photos/id/1005/120/120" alt="">
+            <div class="card__avatar-wrap">
+              <div class="card__avatar">
+                <img src="https://picsum.photos/id/1005/120/120" alt="">
+              </div>
+              <div class="card__vip">
+                <p>VVIP</p>
+                <p>6789</p>
+              </div>
             </div>
             <div class="card__detail">
               <div class="card__info">
@@ -32,11 +38,14 @@
                 </div>
               </div>
               <div class="card__course">
-                <span class="card__course-name">療程名稱療程名稱...</span>
-                <span class="card__course-number">5678</span>
+                <span class="card__course-name">療程名稱療程名稱</span>
+                <span class="card__doctor-name">醫師名子</span>
               </div>
-              <div class="card__location">
-                等候位置：<span>A區 12</span>
+              <div class="card__location step1">
+                位置：<span>圓1</span><span></span><span>251</span>
+              </div>
+              <div class="card__flow step2">
+                步驟：<span>敷麻</span><span></span><span>卸麻</span>
               </div>
             </div>
           </header>
@@ -50,17 +59,22 @@
             </div>
           </div>
           <footer class="card__footer">
-            <button class="card__btn">去診間</button>
-            <button class="card__btn">去休息區</button>
             <button class="card__btn card__btn--assign">請指派</button>
+            <button class="card__btn card__btn--people">請指派</button>
           </footer>
         </div>
         <!--card-->
         <!--card-護理師-->
         <div class="card card--wait">
           <header class="card__header">
-            <div class="card__avatar">
-              <img src="https://picsum.photos/id/1005/120/120" alt="">
+            <div class="card__avatar-wrap">
+              <div class="card__avatar">
+                <img src="https://picsum.photos/id/1005/120/120" alt="">
+              </div>
+              <div class="card__vip">
+                <p>VVIP</p>
+                <p>6789</p>
+              </div>
             </div>
             <div class="card__detail">
               <div class="card__info">
@@ -74,11 +88,18 @@
                 </div>
               </div>
               <div class="card__course">
-                <span class="card__course-name">療程名稱療程名稱療程名稱療程名稱療程名稱療程名稱...</span>
-                <span class="card__course-number">5678</span>
+                <span class="card__course-name">療程名稱療程名稱療程名稱療程名稱療程名稱療程</span>
+                <span class="card__course-number">醫師名子</span>
               </div>
-              <div class="card__location">
-                等候位置：<span>A區 12</span>
+              <div class="card__switch">
+                <button class="card__btn-prev"></button>
+                <button class="card__btn-next"></button>
+              </div>
+              <div class="card__location step1">
+                位置：<span>圓1</span><span></span><span>251</span>
+              </div>
+              <div class="card__flow step2">
+                步驟：<span>敷麻</span><span></span><span>卸麻</span>
               </div>
             </div>
           </header>
@@ -92,17 +113,22 @@
             </div>
           </div>
           <footer class="card__footer">
-            <button class="card__btn">去診間</button>
-            <button class="card__btn">去休息區</button>
-            <button class="card__btn card__btn--people">請指派</button>
+            <button class="card__btn card__btn--nurse">張欣欣</button>
+            <button class="card__btn card__btn--beautician">陳美美</button>
           </footer>
         </div>
         <!--card-->
         <!--card-美容師-->
         <div class="card card--wait">
           <header class="card__header">
-            <div class="card__avatar">
-              <img src="https://picsum.photos/id/1005/120/120" alt="">
+            <div class="card__avatar-wrap">
+              <div class="card__avatar">
+                <img src="https://picsum.photos/id/1005/120/120" alt="">
+              </div>
+              <div class="card__vip">
+                <p>VVIP</p>
+                <p>6789</p>
+              </div>
             </div>
             <div class="card__detail">
               <div class="card__info">
@@ -116,11 +142,14 @@
                 </div>
               </div>
               <div class="card__course">
-                <span class="card__course-name">療程名稱療程名稱...</span>
-                <span class="card__course-number">5678</span>
+                <span class="card__course-name">療程名稱療程名稱</span>
+                <span class="card__doctor-name">醫師名子</span>
               </div>
-              <div class="card__location">
-                等候位置：<span>A區 12</span>
+              <div class="card__location step1">
+                位置：<span>圓1</span><span></span><span>251</span>
+              </div>
+              <div class="card__flow step2">
+                步驟：<span>敷麻</span><span></span><span>卸麻</span>
               </div>
             </div>
           </header>
@@ -142,8 +171,14 @@
         <!--card-控場-->
         <div class="card card--wait">
           <header class="card__header">
-            <div class="card__avatar">
-              <img src="https://picsum.photos/id/1005/120/120" alt="">
+            <div class="card__avatar-wrap">
+              <div class="card__avatar">
+                <img src="https://picsum.photos/id/1005/120/120" alt="">
+              </div>
+              <div class="card__vip">
+                <p>VVIP</p>
+                <p>6789</p>
+              </div>
             </div>
             <div class="card__detail">
               <div class="card__info">
@@ -157,11 +192,14 @@
                 </div>
               </div>
               <div class="card__course">
-                <span class="card__course-name">療程名稱療程名稱...</span>
-                <span class="card__course-number">5678</span>
+                <span class="card__course-name">療程名稱療程名稱</span>
+                <span class="card__doctor-name">醫師名子</span>
               </div>
-              <div class="card__location">
-                等候位置：<span>A區 12</span>
+              <div class="card__location step1">
+                位置：<span>圓1</span><span></span><span>251</span>
+              </div>
+              <div class="card__flow step2">
+                步驟：<span>敷麻</span><span></span><span>卸麻</span>
               </div>
             </div>
           </header>
@@ -183,8 +221,14 @@
         <!--card-醫師-->
         <div class="card card--wait">
           <header class="card__header">
-            <div class="card__avatar">
-              <img src="https://picsum.photos/id/1005/120/120" alt="">
+            <div class="card__avatar-wrap">
+              <div class="card__avatar">
+                <img src="https://picsum.photos/id/1005/120/120" alt="">
+              </div>
+              <div class="card__vip">
+                <p>VVIP</p>
+                <p>6789</p>
+              </div>
             </div>
             <div class="card__detail">
               <div class="card__info">
@@ -198,11 +242,14 @@
                 </div>
               </div>
               <div class="card__course">
-                <span class="card__course-name">療程名稱療程名稱...</span>
-                <span class="card__course-number">5678</span>
+                <span class="card__course-name">療程名稱療程名稱</span>
+                <span class="card__doctor-name">醫師名子</span>
               </div>
-              <div class="card__location">
-                等候位置：<span>A區 12</span>
+              <div class="card__location step1">
+                位置：<span>圓1</span><span></span><span>251</span>
+              </div>
+              <div class="card__flow step2">
+                步驟：<span>敷麻</span><span></span><span>卸麻</span>
               </div>
             </div>
           </header>
@@ -224,8 +271,14 @@
         <!--card-醫師-->
         <div class="card card--timeout">
           <header class="card__header">
-            <div class="card__avatar">
-              <img src="https://picsum.photos/id/1005/120/120" alt="">
+            <div class="card__avatar-wrap">
+              <div class="card__avatar">
+                <img src="https://picsum.photos/id/1005/120/120" alt="">
+              </div>
+              <div class="card__vip">
+                <p>VVIP</p>
+                <p>6789</p>
+              </div>
             </div>
             <div class="card__detail">
               <div class="card__info">
@@ -239,11 +292,14 @@
                 </div>
               </div>
               <div class="card__course">
-                <span class="card__course-name">療程名稱療程名稱...</span>
-                <span class="card__course-number">5678</span>
+                <span class="card__course-name">療程名稱療程名稱</span>
+                <span class="card__doctor-name">醫師名子</span>
               </div>
-              <div class="card__location">
-                等候位置：<span>A區 12</span>
+              <div class="card__location step1">
+                位置：<span>圓1</span><span></span><span>251</span>
+              </div>
+              <div class="card__flow step2">
+                步驟：<span>敷麻</span><span></span><span>卸麻</span>
               </div>
             </div>
           </header>
@@ -265,8 +321,14 @@
         <!--card-醫師-->
         <div class="card card--timeout">
           <header class="card__header">
-            <div class="card__avatar">
-              <img src="https://picsum.photos/id/1005/120/120" alt="">
+            <div class="card__avatar-wrap">
+              <div class="card__avatar">
+                <img src="https://picsum.photos/id/1005/120/120" alt="">
+              </div>
+              <div class="card__vip">
+                <p>VVIP</p>
+                <p>6789</p>
+              </div>
             </div>
             <div class="card__detail">
               <div class="card__info">
@@ -280,11 +342,14 @@
                 </div>
               </div>
               <div class="card__course">
-                <span class="card__course-name">療程名稱療程名稱...</span>
-                <span class="card__course-number">5678</span>
+                <span class="card__course-name">療程名稱療程名稱</span>
+                <span class="card__doctor-name">醫師名子</span>
               </div>
-              <div class="card__location">
-                等候位置：<span>A區 12</span>
+              <div class="card__location step1">
+                位置：<span>圓1</span><span></span><span>251</span>
+              </div>
+              <div class="card__flow step2">
+                步驟：<span>敷麻</span><span></span><span>卸麻</span>
               </div>
             </div>
           </header>
@@ -306,8 +371,14 @@
         <!--card-醫師-->
         <div class="card card--timeout">
           <header class="card__header">
-            <div class="card__avatar">
-              <img src="https://picsum.photos/id/1005/120/120" alt="">
+            <div class="card__avatar-wrap">
+              <div class="card__avatar">
+                <img src="https://picsum.photos/id/1005/120/120" alt="">
+              </div>
+              <div class="card__vip">
+                <p>VVIP</p>
+                <p>6789</p>
+              </div>
             </div>
             <div class="card__detail">
               <div class="card__info">
@@ -321,11 +392,14 @@
                 </div>
               </div>
               <div class="card__course">
-                <span class="card__course-name">療程名稱療程名稱...</span>
-                <span class="card__course-number">5678</span>
+                <span class="card__course-name">療程名稱療程名稱</span>
+                <span class="card__doctor-name">醫師名子</span>
               </div>
-              <div class="card__location">
-                等候位置：<span>A區 12</span>
+              <div class="card__location step1">
+                位置：<span>圓1</span><span></span><span>251</span>
+              </div>
+              <div class="card__flow step2">
+                步驟：<span>敷麻</span><span></span><span>卸麻</span>
               </div>
             </div>
           </header>
@@ -347,8 +421,14 @@
         <!--card-醫師-->
         <div class="card card--timeout">
           <header class="card__header">
-            <div class="card__avatar">
-              <img src="https://picsum.photos/id/1005/120/120" alt="">
+            <div class="card__avatar-wrap">
+              <div class="card__avatar">
+                <img src="https://picsum.photos/id/1005/120/120" alt="">
+              </div>
+              <div class="card__vip">
+                <p>VVIP</p>
+                <p>6789</p>
+              </div>
             </div>
             <div class="card__detail">
               <div class="card__info">
@@ -362,11 +442,14 @@
                 </div>
               </div>
               <div class="card__course">
-                <span class="card__course-name">療程名稱療程名稱...</span>
-                <span class="card__course-number">5678</span>
+                <span class="card__course-name">療程名稱療程名稱</span>
+                <span class="card__doctor-name">醫師名子</span>
               </div>
-              <div class="card__location">
-                等候位置：<span>A區 12</span>
+              <div class="card__location step1">
+                位置：<span>圓1</span><span></span><span>251</span>
+              </div>
+              <div class="card__flow step2">
+                步驟：<span>敷麻</span><span></span><span>卸麻</span>
               </div>
             </div>
           </header>
@@ -388,8 +471,14 @@
         <!--card-醫師-->
         <div class="card card--timeout">
           <header class="card__header">
-            <div class="card__avatar">
-              <img src="https://picsum.photos/id/1005/120/120" alt="">
+            <div class="card__avatar-wrap">
+              <div class="card__avatar">
+                <img src="https://picsum.photos/id/1005/120/120" alt="">
+              </div>
+              <div class="card__vip">
+                <p>VVIP</p>
+                <p>6789</p>
+              </div>
             </div>
             <div class="card__detail">
               <div class="card__info">
@@ -403,11 +492,14 @@
                 </div>
               </div>
               <div class="card__course">
-                <span class="card__course-name">療程名稱療程名稱...</span>
-                <span class="card__course-number">5678</span>
+                <span class="card__course-name">療程名稱療程名稱</span>
+                <span class="card__doctor-name">醫師名子</span>
               </div>
-              <div class="card__location">
-                等候位置：<span>A區 12</span>
+              <div class="card__location step1">
+                位置：<span>圓1</span><span></span><span>251</span>
+              </div>
+              <div class="card__flow step2">
+                步驟：<span>敷麻</span><span></span><span>卸麻</span>
               </div>
             </div>
           </header>
@@ -449,99 +541,452 @@
           </nav>
         </div>
       </header>
-      <main class="panel__main panel__main--card">
-        <!--card-諮詢師-->
-        <div class="card card--process">
-          <header class="card__header">
-            <div class="card__avatar">
-              <img src="https://picsum.photos/id/1005/120/120" alt="">
-            </div>
-            <div class="card__detail">
-              <div class="card__info">
-                <span class="card__name">武田信玄</span>
-                <span class="identity identity--consultant">諮詢師</span>
-                <button class="card-btn-menu"></button>
-                <div class="card-option">
-                  <button class="card-option__btn">點滴設定</button>
-                  <button class="card-option__btn">麻醉設定</button>
-                  <button class="card-option__btn">掛號設定</button>
+      <div class="panel__process">
+        <main class="panel__main panel__main--card">
+          <!--card-諮詢師-->
+          <div class="card card--process">
+            <header class="card__header">
+              <div class="card__avatar-wrap">
+                <div class="card__avatar">
+                  <img src="https://picsum.photos/id/1005/120/120" alt="">
+                </div>
+                <div class="card__vip">
+                  <p>VVIP</p>
+                  <p>6789</p>
                 </div>
               </div>
-              <div class="card__course">
-                <span class="card__course-name">療程名稱療程名稱...</span>
-                <span class="card__course-number">5678</span>
-              </div>
-            </div>
-          </header>
-          <div class="card__process card__process--now">
-            <div class="card__process-row">
-              <span class="card__process-title">now</span>
-              <span class="card__process-course">進度名稱</span>
-              <span class="card__process-time">10:30 - 10:50</span>
-            </div>
-            <div class="card__process-identity-wrap">
-              <span class="identity identity--nobody">沒有人</span>
-            </div>
-          </div>
-          <div class="card__process card__process--next">
-            <div class="card__process-row">
-              <span class="card__process-title">next</span>
-              <span class="card__process-course">進度名稱</span>
-              <span class="card__process-time">10:30 - 10:50</span>
-            </div>
-            <div class="card__process-identity-wrap">
-              <span class="identity identity--nobody">沒有人</span>
-            </div>
-          </div>
-        </div>
-        <div class="card card--process">
-          <header class="card__header">
-            <div class="card__avatar">
-              <img src="https://picsum.photos/id/1005/120/120" alt="">
-            </div>
-            <div class="card__detail">
-              <div class="card__info">
-                <span class="card__name">武田信玄</span>
-                <span class="identity identity--consultant">諮詢師</span>
-                <button class="card-btn-menu"></button>
-                <div class="card-option">
-                  <button class="card-option__btn">點滴設定</button>
-                  <button class="card-option__btn">麻醉設定</button>
-                  <button class="card-option__btn">掛號設定</button>
+              <div class="card__detail">
+                <div class="card__info">
+                  <span class="card__name">武田信玄</span>
+                  <span class="identity identity--consultant">諮詢師</span>
+                  <div class="card__timer">到診計：62min</div>
+                  <button class="card-btn-menu"></button>
+                  <div class="card-option">
+                    <button class="card-option__btn">點滴設定</button>
+                    <button class="card-option__btn">麻醉設定</button>
+                    <button class="card-option__btn">掛號設定</button>
+                  </div>
+                </div>
+                <div class="card__course">
+                  <span class="card__course-name">療程名稱療程名稱</span>
+                  <span class="card__doctor-name">醫師名子</span>
                 </div>
               </div>
-              <div class="card__course">
-                <span class="card__course-name">療程名稱療程名稱...</span>
-                <span class="card__course-number">5678</span>
+            </header>
+            <div class="card__process card__process--now">
+              <div class="card__process-row">
+                <span class="card__process-title">now</span>
+                <span class="card__process-course">進度名進度名 / 地點 / 進行中</span>
+                <span class="card__process-time">10:30 - 10:50</span>
+              </div>
+              <div class="card__process-identity-wrap">
+                <span class="identity identity--doctors">醫生</span>
+                <span class="identity identity--nurse">護理師</span>
+                <button class="card__btn card__btn--add">+</button>
               </div>
             </div>
-          </header>
-          <div class="card__process card__process--now">
-            <div class="card__process-row">
-              <span class="card__process-title">now</span>
-              <span class="card__process-course">進度名稱</span>
-              <span class="card__process-time">10:30 - 10:50</span>
-            </div>
-            <div class="card__process-identity-wrap">
-              <span class="identity identity--consultant">諮詢師</span>
-              <span class="identity identity--doctors">醫生</span>
-              <span class="identity identity--beautician">美容師</span>
+            <div class="card__process card__process--next">
+              <div class="card__process-row">
+                <span class="card__process-title">next</span>
+                <span class="card__process-course">進度名進度名</span>
+                <span class="card__process-time">10:30 - 10:50</span>
+              </div>
+              <div class="card__process-identity-wrap">
+                <button class="card__btn card__btn--people">請指派</button>
+                <button class="card__btn card__btn--add">+</button>
+                <button class="card__btn card__btn--assign">請指派</button>
+              </div>
             </div>
           </div>
-          <div class="card__process card__process--next">
-            <div class="card__process-row">
-              <span class="card__process-title">next</span>
-              <span class="card__process-course">進度名稱</span>
-              <span class="card__process-time">10:30 - 10:50</span>
+          <!--card-->
+          <!--card-諮詢師-->
+          <div class="card card--process">
+            <header class="card__header">
+              <div class="card__avatar-wrap">
+                <div class="card__avatar">
+                  <img src="https://picsum.photos/id/1005/120/120" alt="">
+                </div>
+                <div class="card__vip">
+                  <p>VVIP</p>
+                  <p>6789</p>
+                </div>
+              </div>
+              <div class="card__detail">
+                <div class="card__info">
+                  <span class="card__name">武田信玄</span>
+                  <span class="identity identity--consultant">諮詢師</span>
+                  <div class="card__timer">到診計：62min</div>
+                  <button class="card-btn-menu"></button>
+                  <div class="card-option">
+                    <button class="card-option__btn">點滴設定</button>
+                    <button class="card-option__btn">麻醉設定</button>
+                    <button class="card-option__btn">掛號設定</button>
+                  </div>
+                </div>
+                <div class="card__course">
+                  <span class="card__course-name">療程名稱療程名稱</span>
+                  <span class="card__doctor-name">醫師名子</span>
+                </div>
+                <div class="card__switch">
+                  <button class="card__btn-prev"></button>
+                  <button class="card__btn-next"></button>
+                </div>
+              </div>
+            </header>
+            <div class="card__process card__process--now">
+              <div class="card__process-row">
+                <span class="card__process-title">now</span>
+                <span class="card__process-course">進度名進度名 / 地點 / 進行中</span>
+                <span class="card__process-time">10:30 - 10:50</span>
+              </div>
+              <div class="card__process-identity-wrap">
+                <span class="identity identity--doctors">醫生</span>
+                <span class="identity identity--nurse">護理師</span>
+                <button class="card__btn card__btn--add">+</button>
+              </div>
             </div>
-            <div class="card__process-identity-wrap">
-              <span class="identity identity--doctors">醫生</span>
-              <span class="identity identity--beautician">美容師</span>
+            <div class="card__process card__process--next">
+              <div class="card__process-row">
+                <span class="card__process-title">next</span>
+                <span class="card__process-course">進度名進度名</span>
+                <span class="card__process-time">10:30 - 10:50</span>
+              </div>
+              <div class="card__process-identity-wrap">
+                <button class="card__btn card__btn--people">請指派</button>
+                <button class="card__btn card__btn--add">+</button>
+                <button class="card__btn card__btn--assign">請指派</button>
+              </div>
             </div>
+          </div>
+          <!--card-->
+          <!--card-諮詢師-->
+          <div class="card card--process">
+            <header class="card__header">
+              <div class="card__avatar-wrap">
+                <div class="card__avatar">
+                  <img src="https://picsum.photos/id/1005/120/120" alt="">
+                </div>
+                <div class="card__vip">
+                  <p>VVIP</p>
+                  <p>6789</p>
+                </div>
+              </div>
+              <div class="card__detail">
+                <div class="card__info">
+                  <span class="card__name">武田信玄</span>
+                  <span class="identity identity--consultant">諮詢師</span>
+                  <div class="card__timer">到診計：62min</div>
+                  <button class="card-btn-menu"></button>
+                  <div class="card-option">
+                    <button class="card-option__btn">點滴設定</button>
+                    <button class="card-option__btn">麻醉設定</button>
+                    <button class="card-option__btn">掛號設定</button>
+                  </div>
+                </div>
+                <div class="card__course">
+                  <span class="card__course-name">療程名稱療程名稱</span>
+                  <span class="card__doctor-name">醫師名子</span>
+                </div>
+              </div>
+            </header>
+            <div class="card__process card__process--now">
+              <div class="card__process-row">
+                <span class="card__process-title">now</span>
+                <span class="card__process-course">進度名進度名 / 地點 / 進行中</span>
+                <span class="card__process-time">10:30 - 10:50</span>
+              </div>
+              <div class="card__process-identity-wrap">
+                <span class="identity identity--doctors">醫生</span>
+                <span class="identity identity--nurse">護理師</span>
+                <button class="card__btn card__btn--add">+</button>
+              </div>
+            </div>
+            <div class="card__process card__process--next">
+              <div class="card__process-row">
+                <span class="card__process-title">next</span>
+                <span class="card__process-course">進度名進度名</span>
+                <span class="card__process-time">10:30 - 10:50</span>
+              </div>
+              <div class="card__process-identity-wrap">
+                <button class="card__btn card__btn--people">請指派</button>
+                <button class="card__btn card__btn--add">+</button>
+                <button class="card__btn card__btn--assign">請指派</button>
+              </div>
+            </div>
+          </div>
+          <!--card-->
+          <!--card-諮詢師-->
+          <div class="card card--process">
+            <header class="card__header">
+              <div class="card__avatar-wrap">
+                <div class="card__avatar">
+                  <img src="https://picsum.photos/id/1005/120/120" alt="">
+                </div>
+                <div class="card__vip">
+                  <p>VVIP</p>
+                  <p>6789</p>
+                </div>
+              </div>
+              <div class="card__detail">
+                <div class="card__info">
+                  <span class="card__name">武田信玄</span>
+                  <span class="identity identity--consultant">諮詢師</span>
+                  <div class="card__timer">到診計：62min</div>
+                  <button class="card-btn-menu"></button>
+                  <div class="card-option">
+                    <button class="card-option__btn">點滴設定</button>
+                    <button class="card-option__btn">麻醉設定</button>
+                    <button class="card-option__btn">掛號設定</button>
+                  </div>
+                </div>
+                <div class="card__course">
+                  <span class="card__course-name">療程名稱療程名稱</span>
+                  <span class="card__doctor-name">醫師名子</span>
+                </div>
+              </div>
+            </header>
+            <div class="card__process card__process--now">
+              <div class="card__process-row">
+                <span class="card__process-title">now</span>
+                <span class="card__process-course">進度名進度名 / 地點 / 進行中</span>
+                <span class="card__process-time">10:30 - 10:50</span>
+              </div>
+              <div class="card__process-identity-wrap">
+                <span class="identity identity--doctors">醫生</span>
+                <span class="identity identity--nurse">護理師</span>
+                <button class="card__btn card__btn--add">+</button>
+              </div>
+            </div>
+            <div class="card__process card__process--next">
+              <div class="card__process-row">
+                <span class="card__process-title">next</span>
+                <span class="card__process-course">進度名進度名</span>
+                <span class="card__process-time">10:30 - 10:50</span>
+              </div>
+              <div class="card__process-identity-wrap">
+                <button class="card__btn card__btn--people">請指派</button>
+                <button class="card__btn card__btn--add">+</button>
+                <button class="card__btn card__btn--assign">請指派</button>
+              </div>
+            </div>
+          </div>
+          <!--card-->
+          <!--card-諮詢師-->
+          <div class="card card--process">
+            <header class="card__header">
+              <div class="card__avatar-wrap">
+                <div class="card__avatar">
+                  <img src="https://picsum.photos/id/1005/120/120" alt="">
+                </div>
+                <div class="card__vip">
+                  <p>VVIP</p>
+                  <p>6789</p>
+                </div>
+              </div>
+              <div class="card__detail">
+                <div class="card__info">
+                  <span class="card__name">武田信玄</span>
+                  <span class="identity identity--consultant">諮詢師</span>
+                  <div class="card__timer">到診計：62min</div>
+                  <button class="card-btn-menu"></button>
+                  <div class="card-option">
+                    <button class="card-option__btn">點滴設定</button>
+                    <button class="card-option__btn">麻醉設定</button>
+                    <button class="card-option__btn">掛號設定</button>
+                  </div>
+                </div>
+                <div class="card__course">
+                  <span class="card__course-name">療程名稱療程名稱</span>
+                  <span class="card__doctor-name">醫師名子</span>
+                </div>
+              </div>
+            </header>
+            <div class="card__process card__process--now">
+              <div class="card__process-row">
+                <span class="card__process-title">now</span>
+                <span class="card__process-course">進度名進度名 / 地點 / 進行中</span>
+                <span class="card__process-time">10:30 - 10:50</span>
+              </div>
+              <div class="card__process-identity-wrap">
+                <span class="identity identity--doctors">醫生</span>
+                <span class="identity identity--nurse">護理師</span>
+                <button class="card__btn card__btn--add">+</button>
+              </div>
+            </div>
+            <div class="card__process card__process--next">
+              <div class="card__process-row">
+                <span class="card__process-title">next</span>
+                <span class="card__process-course">進度名進度名</span>
+                <span class="card__process-time">10:30 - 10:50</span>
+              </div>
+              <div class="card__process-identity-wrap">
+                <button class="card__btn card__btn--people">請指派</button>
+                <button class="card__btn card__btn--add">+</button>
+                <button class="card__btn card__btn--assign">請指派</button>
+              </div>
+            </div>
+          </div>
+          <!--card-->
+        </main>
+        <!--回報事項-->
+        <div class="panel__message-wrap">
+          <div class="panel__message">
+            <!--message-->
+            <div class="panel-message-ui">
+              <button class="panel-message-ui__btn-close"></button>
+              <h3 class="panel-message-ui__title">回報事項：</h3>
+              <p class="panel-message-ui__text">不為等父助達市方市。知體般解子實著飛使來家寶要展長軍勢的遊會一兒事在跟經著變活黨覺被座了好課檢病能具。</p>
+              <div class="panel-message-ui__detail">
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__name">回報人員名</span>
+                  <span class="panel-message-ui__location">所在地點</span>
+                </div>
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__course">療程名療</span>
+                  <span class="panel-message-ui__step">療程步驟</span>
+                  <span class="panel-message-ui__client">客人</span>
+                </div>
+              </div>
+              <div class="panel-message-ui__date">2021.11.05  12:30</div>
+            </div>
+            <!--message-->
+            <!--message-->
+            <div class="panel-message-ui">
+              <button class="panel-message-ui__btn-close"></button>
+              <h3 class="panel-message-ui__title">回報事項：</h3>
+              <p class="panel-message-ui__text">不為等父助達市方市。知體般解子實著飛使來家寶要展長軍勢的遊會一兒事在跟經著變活黨覺被座了好課檢病能具。</p>
+              <div class="panel-message-ui__detail">
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__name">回報人員名</span>
+                  <span class="panel-message-ui__location">所在地點</span>
+                </div>
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__course">療程名療</span>
+                  <span class="panel-message-ui__step">療程步驟</span>
+                  <span class="panel-message-ui__client">客人</span>
+                </div>
+              </div>
+              <div class="panel-message-ui__date">2021.11.05  12:30</div>
+            </div>
+            <!--message-->
+            <!--message-->
+            <div class="panel-message-ui">
+              <button class="panel-message-ui__btn-close"></button>
+              <h3 class="panel-message-ui__title">回報事項：</h3>
+              <p class="panel-message-ui__text">不為等父助達市方市。知體般解子實著飛使來家寶要展長軍勢的遊會一兒事在跟經著變活黨覺被座了好課檢病能具。</p>
+              <div class="panel-message-ui__detail">
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__name">回報人員名</span>
+                  <span class="panel-message-ui__location">所在地點</span>
+                </div>
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__course">療程名療</span>
+                  <span class="panel-message-ui__step">療程步驟</span>
+                  <span class="panel-message-ui__client">客人</span>
+                </div>
+              </div>
+              <div class="panel-message-ui__date">2021.11.05  12:30</div>
+            </div>
+            <!--message-->
+            <!--message-->
+            <div class="panel-message-ui">
+              <button class="panel-message-ui__btn-close"></button>
+              <h3 class="panel-message-ui__title">回報事項：</h3>
+              <p class="panel-message-ui__text">不為等父助達市方市。知體般解子實著飛使來家寶要展長軍勢的遊會一兒事在跟經著變活黨覺被座了好課檢病能具。</p>
+              <div class="panel-message-ui__detail">
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__name">回報人員名</span>
+                  <span class="panel-message-ui__location">所在地點</span>
+                </div>
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__course">療程名療</span>
+                  <span class="panel-message-ui__step">療程步驟</span>
+                  <span class="panel-message-ui__client">客人</span>
+                </div>
+              </div>
+              <div class="panel-message-ui__date">2021.11.05  12:30</div>
+            </div>
+            <!--message-->
+            <!--message-->
+            <div class="panel-message-ui">
+              <button class="panel-message-ui__btn-close"></button>
+              <h3 class="panel-message-ui__title">回報事項：</h3>
+              <p class="panel-message-ui__text">不為等父助達市方市。知體般解子實著飛使來家寶要展長軍勢的遊會一兒事在跟經著變活黨覺被座了好課檢病能具。</p>
+              <div class="panel-message-ui__detail">
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__name">回報人員名</span>
+                  <span class="panel-message-ui__location">所在地點</span>
+                </div>
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__course">療程名療</span>
+                  <span class="panel-message-ui__step">療程步驟</span>
+                  <span class="panel-message-ui__client">客人</span>
+                </div>
+              </div>
+              <div class="panel-message-ui__date">2021.11.05  12:30</div>
+            </div>
+            <!--message-->
+            <!--message-->
+            <div class="panel-message-ui">
+              <button class="panel-message-ui__btn-close"></button>
+              <h3 class="panel-message-ui__title">回報事項：</h3>
+              <p class="panel-message-ui__text">不為等父助達市方市。知體般解子實著飛使來家寶要展長軍勢的遊會一兒事在跟經著變活黨覺被座了好課檢病能具。</p>
+              <div class="panel-message-ui__detail">
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__name">回報人員名</span>
+                  <span class="panel-message-ui__location">所在地點</span>
+                </div>
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__course">療程名療</span>
+                  <span class="panel-message-ui__step">療程步驟</span>
+                  <span class="panel-message-ui__client">客人</span>
+                </div>
+              </div>
+              <div class="panel-message-ui__date">2021.11.05  12:30</div>
+            </div>
+            <!--message-->
+            <!--message-->
+            <div class="panel-message-ui">
+              <button class="panel-message-ui__btn-close"></button>
+              <h3 class="panel-message-ui__title">回報事項：</h3>
+              <p class="panel-message-ui__text">不為等父助達市方市。知體般解子實著飛使來家寶要展長軍勢的遊會一兒事在跟經著變活黨覺被座了好課檢病能具。</p>
+              <div class="panel-message-ui__detail">
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__name">回報人員名</span>
+                  <span class="panel-message-ui__location">所在地點</span>
+                </div>
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__course">療程名療</span>
+                  <span class="panel-message-ui__step">療程步驟</span>
+                  <span class="panel-message-ui__client">客人</span>
+                </div>
+              </div>
+              <div class="panel-message-ui__date">2021.11.05  12:30</div>
+            </div>
+            <!--message-->
+            <!--message-->
+            <div class="panel-message-ui">
+              <button class="panel-message-ui__btn-close"></button>
+              <h3 class="panel-message-ui__title">回報事項：</h3>
+              <p class="panel-message-ui__text">不為等父助達市方市。知體般解子實著飛使來家寶要展長軍勢的遊會一兒事在跟經著變活黨覺被座了好課檢病能具。</p>
+              <div class="panel-message-ui__detail">
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__name">回報人員名</span>
+                  <span class="panel-message-ui__location">所在地點</span>
+                </div>
+                <div class="panel-message-ui__row">
+                  <span class="panel-message-ui__course">療程名療</span>
+                  <span class="panel-message-ui__step">療程步驟</span>
+                  <span class="panel-message-ui__client">客人</span>
+                </div>
+              </div>
+              <div class="panel-message-ui__date">2021.11.05  12:30</div>
+            </div>
+            <!--message-->
           </div>
         </div>
-        <!--card-->
-      </main>
+        <!--回報事項-->
+      </div>
     </div>
     <!--進行中-->
   </div>

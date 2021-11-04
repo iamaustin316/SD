@@ -62,6 +62,43 @@
           <input type="date" value="2021-01-01">～<input type="date" value="2021-01-31">
         </div>
         <p class="work-detail__total">案件總數：758</p>
+        <!--filter-before-->
+        <div class="work-detail__filter">
+          <div class="work-detail__select-wrap">
+            <select name="type" id="type">
+              <option value="0">全部</option>
+              <option value="1">客戶</option>
+              <option value="2">醫師</option>
+              <option value="2">服務人員</option>
+            </select>
+          </div>
+          <input class="work-detail__input" type="text" placeholder="關鍵字">
+          <button class="work-detail__btn-search">搜尋</button>
+          <button class="work-detail__btn-clear disable">清除</button>
+        </div>
+        <!--filter-before-->
+        <!--filter-after-->
+        <div class="work-detail__filter">
+          <div class="work-detail__select-wrap">
+            <select name="type" id="type">
+              <option value="0">全部</option>
+              <option value="1">客戶</option>
+              <option value="2">醫師</option>
+              <option value="2">服務人員</option>
+            </select>
+          </div>
+          <div class="work-detail__select-wrap result">
+            <select name="type" id="type">
+              <option value="0">佐川藤井 55.09.05</option>
+              <option value="1">佐川藤井 65.10.01</option>
+              <option value="2">佐川藤井 75.06.02</option>
+              <option value="2">佐川藤井 85.02.15</option>
+            </select>
+          </div>
+          <button class="work-detail__btn-search">搜尋</button>
+          <button class="work-detail__btn-clear">清除</button>
+        </div>
+        <!--filter-after-->
         <div class="work-detail__wrap">
           <h3>工作明細</h3>
           <div class="work-detail__list">
