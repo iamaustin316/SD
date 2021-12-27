@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>員工自主服務平台</title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <div class="wrap">
+        <form>
+            <section class="section-login">
+                <div class="section-login__block">
+                    <h1 class="section-login__firstins-logo">第一保員工服務網站</h1>
+                    <div class="section-login__form">
+                        <div class="section-login__rows">
+                            <input class="section-login__input" type="text" placeholder="帳號" required>
+                        </div>
+                        <div class="section-login__rows">
+                            <input class="section-login__input password" type="password" placeholder="密碼" required>
+                            <!--button改成div-->
+                            <div class="section-login__btn-toggle-psw">
+                                <i class="icon-password"></i>
+                            </div>
+                            <!--button改成div-->
+                        </div>
+                        <div class="section-login__rows">
+                            <button class="section-login__btn-login" type="submit">登入</button>
+                        </div>
+                        <div class="section-login__rows">
+                            <p class="section-login__message">提示文字</p>
+                        </div>
+                    </div>
+                    <div class="section-login__clouds-left"></div>
+                    <div class="section-login__clouds-right"></div>
+                </div>
+            </section>
+        </form>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', ()=>{
+            const btnTogglePassword = document.querySelector('.section-login__btn-toggle-psw')
+            const inputPasswrod = btnTogglePassword.previousElementSibling
+            console.log(inputPasswrod)
+            btnTogglePassword.addEventListener('click', (e)=>{
+                e.preventDefault()
+                if (inputPasswrod.type === 'password') {
+                    inputPasswrod.type = 'text'
+                    e.target.classList.add('active')
+                } else {
+                    inputPasswrod.type = 'password'
+                    e.target.classList.remove('active')
+                }
+            })
+        })
+    </script>
+</body>
+</html>
