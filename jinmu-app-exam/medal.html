@@ -26,7 +26,7 @@
           <div class="section-medal__status">
             <div class="section-medal__block">
               <h4>已獲得獎章</h4>
-              <div class="section-medal__medal-number">25</div>
+              <div class="section-medal__medal-number" number="25">0</div>
             </div>
             <div class="section-medal__block">
               <h4>獎章總覽</h4>
@@ -36,7 +36,7 @@
                   <circle class="section-medal__circle-progress" cx="18" cy="18" r="16"></circle>
                 </svg>
                 <div class="section-medal__circle-title">
-                  <span class="section-medal__count" number="85"></span>
+                  <span class="section-medal__count" number="85">0</span>
                   <small>%</small>
                 </div>
               </div>
@@ -293,21 +293,33 @@
         $(this).parents('.active').removeClass('active')
       })
 
-      function update_users_count() {
-          $('.section-medal__count').animate({
-              counter: 85
+      function updateUsersPercentage() {
+        $('.section-medal__count').animate({
+            counter: 85
+        }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function(now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+      };
+
+      function updateUsersNumber() {
+          $('.section-medal__medal-number').animate({
+              counter: 25
           }, {
               duration: 2000,
               easing: 'swing',
               step: function(now) {
                   $(this).text(Math.ceil(now));
-              },
-              complete: update_users_count
+              }
           });
       };
 
       setTimeout(function(){
-        update_users_count()
+        updateUsersPercentage()
+        updateUsersNumber()
       }, 1000)
 
     })
