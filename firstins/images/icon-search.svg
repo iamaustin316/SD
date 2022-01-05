@@ -1,0 +1,26 @@
+<svg width="201" height="158" viewBox="0 0 201 158" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="matrix(-1 0 0 1 126 33)">
+            <ellipse fill="#FFA75B" cx="63" cy="62.5" rx="63" ry="62.5"/>
+            <g transform="translate(82.623 40.984)">
+                <ellipse cx="16.438" cy="16.307" rx="16.438" ry="16.307" fill="#FFF"/>
+                <circle fill="#494949" cx="22" cy="17" r="11"/>
+            </g>
+            <g transform="translate(32 40.984)">
+                <ellipse cx="16.438" cy="16.307" rx="16.438" ry="16.307" fill="#FFF"/>
+                <circle fill="#494949" cx="22" cy="17" r="11"/>
+            </g>
+        </g>
+        <g transform="matrix(-1 0 0 1 201 0)">
+            <ellipse fill="#7EC8D4" cx="52.5" cy="52" rx="52.5" ry="52"/>
+            <g transform="translate(68 34)">
+                <ellipse cx="13.947" cy="13.836" rx="13.947" ry="13.836" fill="#FFF"/>
+                <circle fill="#494949" cx="18.667" cy="14.424" r="9.333"/>
+            </g>
+            <g transform="translate(27 34)">
+                <ellipse cx="13.947" cy="13.836" rx="13.947" ry="13.836" fill="#FFF"/>
+                <circle fill="#494949" cx="18.667" cy="14.424" r="9.333"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>脈診學堂</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <h1>脈診學堂</h1>
+    </header>
+    <main class="site-main">
+      <section class="section-exam">
+        <!--題目-->
+        <div class="section-exam__exam">
+          <h3 class="section-exam__title">下列選項，哪種為量測時須避免的事情？</h3>
+          <div class="section-exam__answer-wrap">
+            <button class="section-exam__btn-answer">講話</button>
+            <button class="section-exam__btn-answer">翹腳</button>
+            <button class="section-exam__btn-answer">移動量測手</button>
+            <button class="section-exam__btn-answer">以上皆是</button>
+          </div>
+        </div>
+        <!--題目-->
+        <a class="section-exam__btn-back" href="exam-list.html">返回列表</a>
+      </section>
+    </main>
+  </div>
+  <!--答錯-->
+  <div class="popup-ui" id="incorrect">
+    <div class="popup-ui__inner">
+      <div class="popup-ui__content">
+        <i class="popup-ui__icon incorrect"></i>
+        <p>很遺憾，你答錯了...</p>
+        <button class="popup-ui__btn-chose">重新選擇</button>
+      </div>
+    </div>
+  </div>
+  <!--答錯-->
+  <!--答對-->
+  <div class="popup-ui" id="correct">
+    <div class="popup-ui__inner">
+      <div class="popup-ui__content">
+        <i class="popup-ui__icon correct"></i>
+        <p>太棒了，你答對了</p>
+        <div class="popup-ui__status">
+          <div class="popup-ui__avatar">
+            <img src="images/avatar-male-level-02.png" alt="">
+          </div>
+          <h4>恭喜升級<strong>獲得 脈診學前生 稱號</strong></h4>
+        </div>
+        <a class="popup-ui__btn-back" href="exam-list.html">繼續挑戰</a>
+      </div>
+    </div>
+  </div>
+  <!--答對-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      var answer = 3
+      var $incorrectPopupUI = $('#incorrect')
+      var $correctPopupUI = $('#correct')
+      $('.section-exam__btn-answer').on('click', function(){
+        var index = $(this).index()
+        console.log(index)
+        if(index === answer) {
+          $(this).addClass('correct')
+          setTimeout(function(){
+            $correctPopupUI.addClass('active')
+          }, 800)
+        } else {
+          $(this).addClass('incorrect')
+          setTimeout(function(){
+            $incorrectPopupUI.addClass('active')
+          }, 800)
+        }
+      })
+      $('.popup-ui__btn-chose').on('click', function(){
+        $incorrectPopupUI.removeClass('active')
+      })
+    })
+  </script>
+</body>
+</html>

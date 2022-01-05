@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>員工自主服務平台</title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <div class="wrap">
+        <section class="section-home">
+            <!--bg-clouds-->
+            <div class="bg-clouds-left"></div>
+            <div class="bg-clouds-top"></div>
+            <div class="bg-clouds-right"></div>
+            <!--bg-clouds-->
+            <!--user-profile--->
+            <div class="user-profile">
+                <div class="user-profile__avatar">
+                    <img src="https://i.pravatar.cc/150?img=26" alt="Claire">
+                </div>
+                <div class="user-profile__dropdown">
+                    <a class="user-profile__btn-greeting" href="#">Hi Claire</a>
+                    <a class="user-profile__btn-logout" href="#">登出</a>
+                </div>
+            </div>
+            <!--user-profile--->
+            <!--site-nav-->
+            <div class="site-nav">
+                <div class="site-nav__header">
+                    <h1 class="site-nav__logo"><a href="home.html">第一保員工服務網站</a></h1>
+                    <button class="site-nav__btn-toggle"></button>
+                </div>
+                <ul class="site-nav__nav-list">
+                    <li>
+                        <a class="site-nav__btn" href="#" title="電子表單"><i class="icon-form"></i>電子表單</a>
+                        <div class="site-nav__sub-nav">
+                            <div class="site-nav__sub-nav-inner">
+                                <a class="site-nav__btn-sub disable" href="#" title="物品請領">物品請領</a>
+                                <a class="site-nav__btn-sub disable" href="#" title="名片申請">名片申請</a>
+                                <a class="site-nav__btn-sub disable" href="#" title="電腦聯繫單">電腦聯繫單</a>
+                                <a class="site-nav__btn-sub disable" href="#" title="出差費用核銷">出差費用核銷</a>
+                                <a class="site-nav__btn-sub disable" href="#" title="Outlook網頁版">Outlook網頁版</a>
+                                <a class="site-nav__btn-sub" href="#" title="線上會議室租借">線上會議室租借</a>
+                                <a class="site-nav__btn-sub disable" href="#" title="雲端硬碟">雲端硬碟</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="site-nav__btn disable" href="#" title="人事系統"><i class="icon-personnel"></i>人事系統</a>
+                        <div class="site-nav__sub-nav">
+                            <div class="site-nav__sub-nav-inner">
+                                <a class="site-nav__btn-sub" href="#" title="人資考核">人資考核</a>
+                                <a class="site-nav__btn-sub" href="#" title="員工所屬單位/職稱/分機">員工所屬單位/職稱/分機</a>
+                                <a class="site-nav__btn-sub" href="#" title="出缺勤系統">出缺勤系統</a>
+                                <a class="site-nav__btn-sub" href="#" title="請假系統">請假系統</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="site-nav__btn disable" href="#" title="人事系統"><i class="icon-welfare"></i>福委會福利</a>
+                        <div class="site-nav__sub-nav">
+                            <div class="site-nav__sub-nav-inner">
+                                <a class="site-nav__btn-sub" href="#" title="員工福利">員工福利</a>
+                                <a class="site-nav__btn-sub" href="#" title="團購專區">團購專區</a>
+                                <a class="site-nav__btn-sub" href="#" title="點數換購">點數換購</a>
+                                <a class="site-nav__btn-sub" href="#" title="好康報報">好康報報</a>
+                                <a class="site-nav__btn-sub" href="#" title="按摩預約">按摩預約</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="site-nav__btn" href="#" title="學習平台"><i class="icon-learning"></i>學習平台</a>
+                        <div class="site-nav__sub-nav">
+                            <div class="site-nav__sub-nav-inner">
+                                <a class="site-nav__btn-sub" href="#" title="物品請領">教育訓練</a>
+                                <a class="site-nav__btn-sub" href="#" title="名片申請">新人訓練</a>
+                                <a class="site-nav__btn-sub" href="#" title="國外教育訓練">國外教育訓練</a>
+                                <a class="site-nav__btn-sub" href="#" title="法學小教室">法學小教室</a>
+                                <a class="site-nav__btn-sub" href="#" title="績優業務分享">績優業務分享</a>
+                                <a class="site-nav__btn-sub" href="#" title="副總時間">副總時間</a>
+                                <a class="site-nav__btn-sub" href="#" title="企劃室時間">企劃室時間</a>
+                                <a class="site-nav__btn-sub" href="#" title="快問快答">快問快答</a>
+                                <a class="site-nav__btn-sub" href="#" title="電子圖書館">電子圖書館</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="site-nav__btn disable" href="#" title="公文核簽"><i class="icon-verification"></i>公文核簽</a>
+                        <div class="site-nav__sub-nav">
+                            <div class="site-nav__sub-nav-inner">
+                                <a class="site-nav__btn-sub" href="#" title="公文簽核系統">公文簽核系統</a>
+                                <a class="site-nav__btn-sub" href="#" title="後台管理">後台管理</a>
+                                <a class="site-nav__btn-sub" href="#" title="公文倉儲">公文倉儲</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="site-nav__btn active" href="#" title="佈告欄"><i class="icon-board"></i>佈告欄</a>
+                        <div class="site-nav__sub-nav">
+                            <div class="site-nav__sub-nav-inner">
+                                <a class="site-nav__btn-sub active" href="#" title="電子佈告欄">電子佈告欄</a>
+                                <a class="site-nav__btn-sub" href="#" title="內部重要訊息">內部重要訊息</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="site-nav__btn disable" href="#" title="規章辦法"><i class="icon-regulations"></i>規章辦法</a>
+                        <div class="site-nav__sub-nav">
+                            <div class="site-nav__sub-nav-inner">
+                                <a class="site-nav__btn-sub" href="#" title="規章辦法">規章辦法</a>
+                                <a class="site-nav__btn-sub" href="#" title="清楚的內部文件">清楚的內部文件</a>
+                                <a class="site-nav__btn-sub" href="#" title="文件下載">文件下載</a>
+                                <a class="site-nav__btn-sub" href="#" title="表單下載">表單下載</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="site-nav__btn" href="#" title="部室網頁"><i class="icon-department"></i>部室網頁</a>
+                        <div class="site-nav__sub-nav">
+                            <div class="site-nav__sub-nav-inner">
+                                <a class="site-nav__btn-sub" href="#" title="部室網頁">部室網頁</a>
+                                <a class="site-nav__btn-sub" href="#" title="組成成員">組成成員</a>
+                                <a class="site-nav__btn-sub" href="#" title="各險部作業內容">各險部作業內容</a>
+                                <a class="site-nav__btn-sub" href="#" title="部門商品資訊">部門商品資訊</a>
+                                <a class="site-nav__btn-sub" href="#" title="個人專區">個人專區</a>
+                                <a class="site-nav__btn-sub" href="#" title="通訊錄">通訊錄</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="site-nav__btn disable" href="#" title="報表"><i class="icon-report"></i>報表</a>
+                        <div class="site-nav__sub-nav">
+                            <div class="site-nav__sub-nav-inner">
+                                <a class="site-nav__btn-sub" href="#" title="各單位報表">各單位報表</a>
+                                <a class="site-nav__btn-sub" href="#" title="統計資料">統計資料</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="site-nav__btn disable" href="#" title="業務系統"><i class="icon-business"></i>業務系統</a>
+                        <div class="site-nav__sub-nav">
+                            <div class="site-nav__sub-nav-inner">
+                                <a class="site-nav__btn-sub" href="#" title="業務專區(E保通)">業務專區(E保通)</a>
+                                <a class="site-nav__btn-sub" href="#" title="OD平台">OD平台</a>
+                                <a class="site-nav__btn-sub" href="#" title="SAP">SAP</a>
+                                <a class="site-nav__btn-sub" href="#" title="繳交系統">繳交系統</a>
+                                <a class="site-nav__btn-sub" href="#" title="KYC">KYC</a>
+                                <a class="site-nav__btn-sub" href="#" title="客服流程">客服流程</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="site-nav__btn disable" href="#" title="主題討論區"><i class="icon-discussion"></i>主題討論區</a>
+                        <div class="site-nav__sub-nav">
+                            <div class="site-nav__sub-nav-inner">
+                                <a class="site-nav__btn-sub" href="#" title="主題討論區">主題討論區</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="site-nav__btn disable" href="#" title="網站導覽"><i class="icon-sitemap"></i>網站導覽</a>
+                        <div class="site-nav__sub-nav">
+                            <div class="site-nav__sub-nav-inner">
+                                <a class="site-nav__btn-sub" href="#" title="網站導覽sitemap">網站導覽sitemap</a>
+                                <a class="site-nav__btn-sub" href="#" title="Landing Page">Landing Page</a>
+                                <a class="site-nav__btn-sub" href="#" title="登入流程">登入流程</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--site-nav-->
+            <!--site-page-container-->
+            <div class="site-page-container">
+                <h2 class="site-page-container__title">
+                    <span>會議室租借</span>
+                </h2>
+                <div class="site-page-container__container meeting-room">
+                    <div class="meeting-room-nav">
+                        <a class="meeting-room-nav__btn-link" href="#">租借慨覽</a>
+                        <a class="meeting-room-nav__btn-link active" href="#">租借查詢</a>
+                        <a class="meeting-room-nav__btn-link" href="#">我的租借</a>
+                        <a class="meeting-room-nav__btn-link" href="#">會議室介紹</a>
+                    </div>
+                    <div class="meeting-room-page">
+                        <div class="meeting-room-time">
+                            <!--查詢條件-->
+                            <div class="meeting-room-condition">
+                                <div class="meeting-room-condition__header">
+                                    <h3 class="meeting-room-condition__title">查詢條件</h3>
+                                </div>
+                                <div class="meeting-room-condition__body">
+                                    <div class="meeting-room-condition__list">
+                                        <p>時間：<strong>2021.12.1 (一)  09:00 ~ 12:00</strong></p>
+                                    </div>
+                                    <a class="meeting-room-condition__btn-reset" href="#">重新查詢</a>
+                                </div>
+                                <div class="meeting-room-condition__datepicker-wrap">
+                                    <button class="meeting-room-condition__btn-prev">
+                                        <i class="icon-prev"></i>
+                                    </button>
+                                    <div class="meeting-room-condition__datepicker">
+                                        <input class="meeting-room-condition__input datepickerCondition" data-toggle="datepicker" placeholder="請選擇日期">
+                                    </div>
+                                    <button class="meeting-room-condition__btn-next">
+                                        <i class="icon-next"></i>
+                                    </button>
+                                </div>
+                                <div class="meeting-room-condition__footer">
+                                    <div class="meeting-room-condition__footer-inner">
+                                        <h3>圖例</h3>
+                                        <div class="meeting-room-condition__location">
+                                            <span>總公司</span>
+                                            <span>延平</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--查詢條件-->
+                            <!--查詢條件提醒-->
+                            <div class="meeting-room-condition-remind">
+                                <img src="images/icon-time-remind.svg" alt="">
+                                <p>你可以只輸入時間或會議室，進行查詢或是兩種都輸入喔～</p>
+                            </div>
+                            <!--查詢條件提醒-->
+                            <!--搜尋結果-->
+                            <div class="meeting-room-result">
+                                <div class="meeting-room-result__header">
+                                    <h3 class="meeting-room-result__title">搜尋結果</h3>
+                                </div>
+                                <div class="meeting-room-result__wrap">
+                                    <!--meeting-room-->
+                                    <div class="meeting-room-result__meeting-room-item headquarters">
+                                        <h4>401會議室</h4>
+                                        <div class="meeting-room-result__time-period-wrap">
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">09:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">09:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">10:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">10:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">12:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--meeting-room-->
+                                    <!--meeting-room-->
+                                    <div class="meeting-room-result__meeting-room-item headquarters">
+                                        <h4>401會議室</h4>
+                                        <div class="meeting-room-result__time-period-wrap">
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">09:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">09:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">10:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">10:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">12:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--meeting-room-->
+                                    <!--meeting-room-->
+                                    <div class="meeting-room-result__meeting-room-item headquarters">
+                                        <h4>401會議室</h4>
+                                        <div class="meeting-room-result__time-period-wrap">
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">09:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">09:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">10:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">10:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">12:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--meeting-room-->
+                                    <!--meeting-room-->
+                                    <div class="meeting-room-result__meeting-room-item headquarters">
+                                        <h4>401會議室</h4>
+                                        <div class="meeting-room-result__time-period-wrap">
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">09:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">09:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">10:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">10:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">12:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--meeting-room-->
+                                    <!--meeting-room-->
+                                    <div class="meeting-room-result__meeting-room-item headquarters">
+                                        <h4>401會議室</h4>
+                                        <div class="meeting-room-result__time-period-wrap">
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">09:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">09:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">10:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">10:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">12:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--meeting-room-->
+                                    <!--meeting-room-->
+                                    <div class="meeting-room-result__meeting-room-item headquarters">
+                                        <h4>401會議室</h4>
+                                        <div class="meeting-room-result__time-period-wrap">
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">09:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">09:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">10:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">10:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">12:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--meeting-room-->
+                                    <!--meeting-room-->
+                                    <div class="meeting-room-result__meeting-room-item yanping">
+                                        <h4>401會議室</h4>
+                                        <div class="meeting-room-result__time-period-wrap">
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">09:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">09:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">10:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">10:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">12:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--meeting-room-->
+                                    <!--meeting-room-->
+                                    <div class="meeting-room-result__meeting-room-item yanping">
+                                        <h4>401會議室</h4>
+                                        <div class="meeting-room-result__time-period-wrap">
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">09:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">09:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">10:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">10:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">12:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--meeting-room-->
+                                    <!--meeting-room-->
+                                    <div class="meeting-room-result__meeting-room-item yanping">
+                                        <h4>401會議室</h4>
+                                        <div class="meeting-room-result__time-period-wrap">
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">09:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">09:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period available">
+                                                <span class="meeting-room-result__time">10:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                                <div class="meeting-room-result__details-wrap">
+                                                    <button class="meeting-room-result__btn-close">
+                                                        <i class="icon-close"></i>
+                                                    </button>
+                                                    <h5>401會議室</h5>
+                                                    <div class="meeting-room-result__details-list">
+                                                        <div class="meeting-room-result__details">
+                                                            <span>09:30 - 10:00</span>
+                                                            <span>王大仁</span>
+                                                            <span>總公司</span>
+                                                            <span>#2692</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">10:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">11:30</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                            <div class="meeting-room-result__time-period disable">
+                                                <span class="meeting-room-result__time">12:00</span>
+                                                <div class="meeting-room-result__btn-check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--meeting-room-->
+                                </div>
+                            </div>
+                            <!--搜尋結果-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--site-page-container-->
+        </section>
+    </div>
+    <script src="js/all.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
