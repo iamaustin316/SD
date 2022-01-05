@@ -181,159 +181,173 @@
                     <div class="meeting-room-nav">
                         <a class="meeting-room-nav__btn-link" href="#">租借慨覽</a>
                         <a class="meeting-room-nav__btn-link" href="#">租借查詢</a>
-                        <a class="meeting-room-nav__btn-link" href="#">我的租借</a>
-                        <a class="meeting-room-nav__btn-link active" href="#">會議室介紹</a>
+                        <a class="meeting-room-nav__btn-link active" href="#">我的租借</a>
+                        <a class="meeting-room-nav__btn-link" href="#">會議室介紹</a>
                     </div>
                     <div class="meeting-room-page">
-                        <div class="meeting-room-area-tab">
-                            <button class="meeting-room-area-tab__btn-tab" data-target="headquarters">總公司</button>
-                            <button class="meeting-room-area-tab__btn-tab" data-target="yanping">延平南</button>
-                        </div>
-                        <div class="meeting-room-area-wrap">
-                            <!--會議室所在地區-->
-                            <div class="meeting-room-area headquarters" id="headquarters">
-                                <div class="meeting-room-area__header">
-                                    <h3 class="meeting-room-area__title">總公司</h3>
-                                </div>
-                                <div class="meeting-room-area__wrap">
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                </div>
+                        <div class="meeting-room-history">
+                            <div class="meeting-room-history__header">
+                                <h3 class="meeting-room-history__title">我的租借</h3>
                             </div>
-                            <!--會議室所在地區-->
-                            <!--會議室所在地區-->
-                            <div class="meeting-room-area yanping" id="yanping">
-                                <div class="meeting-room-area__header">
-                                    <h3 class="meeting-room-area__title">延平南</h3>
+                            <div class="meeting-room-history__wrap">
+                                <table class="meeting-room-history__table">
+                                    <thead>
+                                        <tr>
+                                            <th>會議室</th>
+                                            <th>使用日期</th>
+                                            <th>開始時間</th>
+                                            <th>結束時間</th>
+                                            <th>會議名稱</th>
+                                            <th>功能</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <input name="1" type="hidden" value="">
+                                            <input name="202020202002" type="hidden" value="">
+                                            <td>總公司10F前面小型會議室</td>
+                                            <td>2021.05.26</td>
+                                            <td>09:30</td>
+                                            <td>10:30</td>
+                                            <td>會議名稱會稱會議名稱</td>
+                                            <td>
+                                                <button class="meeting-room-history__btn-cancel" disabled="disabled">取消</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <input name="1" type="hidden" value="">
+                                            <input name="202020202002" type="hidden" value="">
+                                            <td>總公司10F前面小型會議室</td>
+                                            <td>2021.05.26</td>
+                                            <td>09:30</td>
+                                            <td>10:30</td>
+                                            <td>會議名稱會稱會議名稱</td>
+                                            <td>
+                                                <button class="meeting-room-history__btn-cancel">取消</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <input name="1" type="hidden" value="">
+                                            <input name="202020202002" type="hidden" value="">
+                                            <td>總公司10F前面小型會議室</td>
+                                            <td>2021.05.26</td>
+                                            <td>09:30</td>
+                                            <td>10:30</td>
+                                            <td>會議名稱會稱會議名稱</td>
+                                            <td>
+                                                <button class="meeting-room-history__btn-cancel">取消</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <input name="1" type="hidden" value="">
+                                            <input name="202020202002" type="hidden" value="">
+                                            <td>總公司10F前面小型會議室</td>
+                                            <td>2021.05.26</td>
+                                            <td>09:30</td>
+                                            <td>10:30</td>
+                                            <td>會議名稱會稱會議名稱</td>
+                                            <td>
+                                                <button class="meeting-room-history__btn-cancel" disabled="disabled">取消</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <input name="1" type="hidden" value="">
+                                            <input name="202020202002" type="hidden" value="">
+                                            <td>總公司10F前面小型會議室</td>
+                                            <td>2021.05.26</td>
+                                            <td>09:30</td>
+                                            <td>10:30</td>
+                                            <td>會議名稱會稱會議名稱</td>
+                                            <td>
+                                                <button class="meeting-room-history__btn-cancel">取消</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <input name="1" type="hidden" value="">
+                                            <input name="202020202002" type="hidden" value="">
+                                            <td>總公司10F前面小型會議室</td>
+                                            <td>2021.05.26</td>
+                                            <td>09:30</td>
+                                            <td>10:30</td>
+                                            <td>會議名稱會稱會議名稱</td>
+                                            <td>
+                                                <button class="meeting-room-history__btn-cancel">取消</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <input name="1" type="hidden" value="">
+                                            <input name="202020202002" type="hidden" value="">
+                                            <td>總公司10F前面小型會議室</td>
+                                            <td>2021.05.26</td>
+                                            <td>09:30</td>
+                                            <td>10:30</td>
+                                            <td>會議名稱會稱會議名稱</td>
+                                            <td>
+                                                <button class="meeting-room-history__btn-cancel">取消</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <input name="1" type="hidden" value="">
+                                            <input name="202020202002" type="hidden" value="">
+                                            <td>總公司10F前面小型會議室</td>
+                                            <td>2021.05.26</td>
+                                            <td>09:30</td>
+                                            <td>10:30</td>
+                                            <td>會議名稱會稱會議名稱</td>
+                                            <td>
+                                                <button class="meeting-room-history__btn-cancel">取消</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <input name="1" type="hidden" value="">
+                                            <input name="202020202002" type="hidden" value="">
+                                            <td>總公司10F前面小型會議室</td>
+                                            <td>2021.05.26</td>
+                                            <td>09:30</td>
+                                            <td>10:30</td>
+                                            <td>會議名稱會稱會議名稱</td>
+                                            <td>
+                                                <button class="meeting-room-history__btn-cancel">取消</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <input name="1" type="hidden" value="">
+                                            <input name="202020202002" type="hidden" value="">
+                                            <td>總公司10F前面小型會議室</td>
+                                            <td>2021.05.26</td>
+                                            <td>09:30</td>
+                                            <td>10:30</td>
+                                            <td>會議名稱會稱會議名稱</td>
+                                            <td>
+                                                <button class="meeting-room-history__btn-cancel">取消</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!--site-pagination-->
+                                <div class="site-pagination">
+                                    <a class="site-pagination__btn-first disable" href="#">
+                                        <i class="icon-first"></i>
+                                    </a>
+                                    <a class="site-pagination__btn-prev disable" href="#">
+                                        <i class="icon-prev"></i>
+                                    </a>
+                                    <div class="site-pagination__page">
+                                        <a class="site-pagination__btn-page active" href="#">1</a>
+                                        <a class="site-pagination__btn-page" href="#">2</a>
+                                        <a class="site-pagination__btn-page" href="#">3</a>
+                                        <a class="site-pagination__btn-page" href="#">4</a>
+                                        <a class="site-pagination__btn-page" href="#">5</a>
+                                    </div>
+                                    <a class="site-pagination__btn-next" href="#">
+                                        <i class="icon-next"></i>
+                                    </a>
+                                    <a class="site-pagination__btn-last" href="#">
+                                        <i class="icon-last"></i>
+                                    </a>
                                 </div>
-                                <div class="meeting-room-area__wrap">
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                </div>
+                                <!--site-pagination-->
                             </div>
-                            <!--會議室所在地區-->
                         </div>
                     </div>
                 </div>
@@ -343,5 +357,27 @@
     </div>
     <script src="js/all.js"></script>
     <script src="js/site.js"></script>
+    <script>
+        $(function(){
+            //Alert
+            $('.meeting-room-history__btn-cancel').on('click', function(){
+                Swal.fire({
+                    title: '<i class="icon-info popup-icon"></i>會議室刪除失敗，請再試一次。',
+                    html: '<p class="popup-text">子想著了源持物力們時要神我腦明真：論難英愛吃……回是經有學中教信表腦百講三印香進制們年靈動得的你。</p>',
+                    showCloseButton: true,
+                    showDenyButton: true,
+                    showCancelButton: false,
+                    confirmButtonText: `刪除`,
+                    denyButtonText: `取消`,
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire('刪除成功', '', 'success')
+                    } else if (result.isDenied) {
+                        Swal.fire('取消刪除', '', 'error')
+                    }
+                })
+            })
+        })
+    </script>
 </body>
 </html>

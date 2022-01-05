@@ -1,0 +1,26 @@
+<svg width="247" height="194" viewBox="0 0 247 194" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="matrix(-1 0 0 1 154.836 40.519)">
+            <ellipse fill="#FFA75B" cx="77.418" cy="76.741" rx="77.418" ry="76.741"/>
+            <g transform="translate(101.532 50.322)">
+                <ellipse cx="20.199" cy="20.023" rx="20.199" ry="20.023" fill="#FFF"/>
+                <ellipse fill="#494949" cx="27.035" cy="20.873" rx="13.517" ry="13.506"/>
+            </g>
+            <g transform="translate(39.323 50.322)">
+                <ellipse cx="20.199" cy="20.023" rx="20.199" ry="20.023" fill="#FFF"/>
+                <ellipse fill="#494949" cx="27.035" cy="20.873" rx="13.517" ry="13.506"/>
+            </g>
+        </g>
+        <g transform="matrix(-1 0 0 1 247 0)">
+            <ellipse fill="#7EC8D4" cx="64.515" cy="63.848" rx="64.515" ry="63.848"/>
+            <g transform="translate(83.562 41.747)">
+                <ellipse cx="17.139" cy="16.989" rx="17.139" ry="16.989" fill="#FFF"/>
+                <ellipse fill="#494949" cx="22.939" cy="17.711" rx="11.469" ry="11.46"/>
+            </g>
+            <g transform="translate(33.18 41.747)">
+                <ellipse cx="17.139" cy="16.989" rx="17.139" ry="16.989" fill="#FFF"/>
+                <ellipse fill="#494949" cx="22.939" cy="17.711" rx="11.469" ry="11.46"/>
+            </g>
+        </g>
+    </g>
+</svg>

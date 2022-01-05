@@ -180,160 +180,92 @@
                 <div class="site-page-container__container meeting-room">
                     <div class="meeting-room-nav">
                         <a class="meeting-room-nav__btn-link" href="#">租借慨覽</a>
-                        <a class="meeting-room-nav__btn-link" href="#">租借查詢</a>
+                        <a class="meeting-room-nav__btn-link active" href="#">租借查詢</a>
                         <a class="meeting-room-nav__btn-link" href="#">我的租借</a>
-                        <a class="meeting-room-nav__btn-link active" href="#">會議室介紹</a>
+                        <a class="meeting-room-nav__btn-link" href="#">會議室介紹</a>
                     </div>
                     <div class="meeting-room-page">
-                        <div class="meeting-room-area-tab">
-                            <button class="meeting-room-area-tab__btn-tab" data-target="headquarters">總公司</button>
-                            <button class="meeting-room-area-tab__btn-tab" data-target="yanping">延平南</button>
-                        </div>
-                        <div class="meeting-room-area-wrap">
-                            <!--會議室所在地區-->
-                            <div class="meeting-room-area headquarters" id="headquarters">
-                                <div class="meeting-room-area__header">
-                                    <h3 class="meeting-room-area__title">總公司</h3>
-                                </div>
-                                <div class="meeting-room-area__wrap">
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
+                        <div class="meeting-room-search">
+                            <div class="meeting-room-search__header">
+                                <h3 class="meeting-room-search__title">租借查詢</h3>
+                            </div>
+                            <div class="meeting-room-search__wrap">
+                                <form class="meeting-room-search__search-form" method="post">
+                                    <div class="meeting-room-search__time">
+                                        <div class="meeting-room-search__search-header time">
+                                            <div class="meeting-room-search__icon">
+                                                <img src="images/icon-time.svg" alt="">
                                             </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
+                                            <div class="meeting-room-search__info">
+                                                <h3>Time</h3>
+                                                <h4>我要在這個時間開會</h4>
+                                            </div>
+                                        </div>
+                                        <div class="meeting-room-search__body">
+                                            <div class="meeting-room-search__row">
+                                                <label class="meeting-room-search__label" for="">會議日期</label>
+                                                <div class="meeting-room-search__datepicker">
+                                                    <input class="meeting-room-search__input datepickerSearch" data-toggle="datepicker" placeholder="請選擇日期">
+                                                    <div class="meeting-room-search__btn-pick btn-datepicker"></div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-search__row">
+                                                <label class="meeting-room-search__label" for="">開始時間</label>
+                                                <div class="meeting-room-search__timepicker">
+                                                    <input class="meeting-room-search__input timepicker-start" placeholder="起始時間">
+                                                    <div class="meeting-room-search__btn-pick btn-timepicker-start"></div>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-search__row">
+                                                <label class="meeting-room-search__label" for="">結束時間</label>
+                                                <div class="meeting-room-search__timepicker">
+                                                    <input class="meeting-room-search__input timepicker-end" placeholder="結束時間">
+                                                    <div class="meeting-room-search__btn-pick btn-timepicker-end"></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
+                                    <div class="meeting-room-search__place">
+                                        <div class="meeting-room-search__search-header place">
+                                            <div class="meeting-room-search__icon">
+                                                <img src="images/icon-time.svg" alt="">
                                             </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
+                                            <div class="meeting-room-search__info">
+                                                <h3>Time</h3>
+                                                <h4>我要在這個時間開會</h4>
+                                            </div>
+                                        </div>
+                                        <div class="meeting-room-search__body">
+                                            <div class="meeting-room-search__row">
+                                                <label class="meeting-room-search__label" for="">所在地</label>
+                                                <div class="meeting-room-search__select-wrap">
+                                                    <select name="place" title="place">
+                                                        <option value="0">總公司</option>
+                                                        <option value="1">延平</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="meeting-room-search__row">
+                                                <label class="meeting-room-search__label" for="">會議室</label>
+                                                <div class="meeting-room-search__select-wrap">
+                                                    <select name="meeting-room" title="meeting-room">
+                                                        <option value="0">11F前小型會議室</option>
+                                                        <option value="1">12F前小型會議室</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
+                                    <div class="meeting-room-search__submit">
+                                        <button class="meeting-room-search__btn-submit" disabled="disabled">開始查詢</button>
+                                        <p class="meeting-room-search__msg">提示文字提示文字提</p>
                                     </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
+                                </form>
+                                <div class="meeting-room-search__search-remind">
+                                    <img src="images/icon-search.svg" alt="">
+                                    <p>你可以只輸入時間或會議室，進行查詢或是兩種都輸入喔～</p>
                                 </div>
                             </div>
-                            <!--會議室所在地區-->
-                            <!--會議室所在地區-->
-                            <div class="meeting-room-area yanping" id="yanping">
-                                <div class="meeting-room-area__header">
-                                    <h3 class="meeting-room-area__title">延平南</h3>
-                                </div>
-                                <div class="meeting-room-area__wrap">
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                    <!--會議室介紹-->
-                                    <div class="meeting-room-area__item">
-                                        <div class="meeting-room-area__img">
-                                            <img src="https://picsum.photos/960/540" alt="">
-                                        </div>
-                                        <div class="meeting-room-area__info">
-                                            <div class="meeting-room-area__detail">
-                                                <h4>401會議室</h4>
-                                                <p>可容納人數：10人</p>
-                                            </div>
-                                            <a class="meeting-room-area__btn-booking" href="#">預定</a>
-                                        </div>
-                                    </div>
-                                    <!--會議室介紹-->
-                                </div>
-                            </div>
-                            <!--會議室所在地區-->
                         </div>
                     </div>
                 </div>
