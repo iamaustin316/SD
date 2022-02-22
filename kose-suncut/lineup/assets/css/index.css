@@ -4344,7 +4344,8 @@ section {
   height: 39px;
   position: absolute;
   bottom: 52px;
-  right: -48px
+  right: -48px;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -4492,7 +4493,8 @@ section {
   height: 39px;
   position: absolute;
   bottom: 81px;
-  right: -23px
+  right: -23px;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
