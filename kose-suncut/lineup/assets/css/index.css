@@ -1065,7 +1065,7 @@ section {
   top: calc(50% - 1px);
   right: 0;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%)
+  transform: translateY(-50%);
 }
 
 @media screen and (max-width: 768px) {
@@ -3908,7 +3908,7 @@ section {
   height: 113px;
   position: absolute;
   top: 8px;
-  left: 170px
+  left: 347px
 }
 
 @media screen and (max-width: 768px) {
@@ -4450,7 +4450,8 @@ section {
   height: 39px;
   position: absolute;
   bottom: 90px;
-  right: -15px
+  right: -15px;
+  z-index: 20;
 }
 
 @media screen and (max-width: 768px) {
