@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.1" height="7.13" viewBox="0 0 23.1 7.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="アロー" class="cls-1" d="M1037.29,5265.67h21l-8.18-5.69v2.88" transform="translate(-1036.78 -5259.03)"/>
+</svg>
