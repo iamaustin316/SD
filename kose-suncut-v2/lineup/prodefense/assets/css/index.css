@@ -4239,7 +4239,7 @@ section {
 .prodefense-list .product-thumb-list {
     display: flex;
     justify-content: space-between;
-    width: 760px;
+    width: 360px;
     margin: 0 auto
 }
 

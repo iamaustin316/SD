@@ -3226,7 +3226,7 @@ section {
 }
 
 .lineup .lineup-product--gold {
-  height: 485px;
+  height: 580px;
   margin-bottom: 18px
 }
 
@@ -3725,6 +3725,21 @@ section {
   padding: 22px 20px 20px 16px
 }
 
+.lineup .lineup-product__body .text.star {
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.lineup .lineup-product__body .text.star::before {
+  content: "*";
+  font-size: 13px;
+  font-weight: 600;
+  position: absolute;
+  left: 14px;
+  top: 24px;
+}
+
 @media screen and (max-width: 768px) {
   .lineup .lineup-product__body .text {
       font-size:4.0625vw;
@@ -3732,6 +3747,11 @@ section {
       text-align: center;
       margin-bottom: 7.1875vw;
       padding: 5.3125vw 0
+  }
+  .lineup .lineup-product__body .text.star::before {
+    font-size:4.0625vw;
+    left: 1vw;
+    top: 6vw;
   }
 }
 
