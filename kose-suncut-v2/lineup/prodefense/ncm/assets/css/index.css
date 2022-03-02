@@ -4526,15 +4526,17 @@ section {
 
 .prodefense-list .product-thumb-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 1100px;
+    gap: 40px;
     margin: 0 auto
 }
 
 @media screen and (max-width: 768px) {
     .prodefense-list .product-thumb-list {
         width:100%;
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        margin-bottom: 40px;
     }
 }
 
@@ -4557,7 +4559,7 @@ section {
         background-size:100% 58.75vw;
         width: 40.625vw;
         height: 77.96875vw;
-        margin-bottom: 6.25vw
+        margin-bottom: 0;
     }
 
     .prodefense-list .product-thumb-list .product-thumb-list__item:last-child {
