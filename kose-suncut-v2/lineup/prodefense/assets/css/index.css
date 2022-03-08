@@ -3349,7 +3349,9 @@ section {
 }
 
 .feature .feature-item--01 {
-    padding-top: 38px
+    padding-top: 0;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
