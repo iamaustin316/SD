@@ -195,24 +195,14 @@
                                         <div class="meeting-room-booking__row">
                                             <label class="meeting-room-booking__label" for="booking-date">使用時間</label>
                                             <div class="meeting-room-booking__date-wrap">
-                                                <div class="meeting-room-booking__select-wrap">
-                                                    <select name="meeting-room" title="meeting-room">
-                                                        <option value="0" selected="selected" disabled="disabled">選擇會議室</option>
-                                                        <option value="1">2021/12/25</option>
-                                                        <option value="2">2021/12/26</option>
-                                                    </select>
+                                                <div class="meeting-room-booking__input-wrap full">
+                                                    <input class="meeting-room-booking__input" type="text" value="2022-3-25" readonly="readonly" id="booking-date" name="booking-date">
                                                 </div>
-                                                <div class="meeting-room-booking__date-item">
-                                                    <div class="meeting-room-booking__timepicker">
-                                                        <input class="meeting-room-booking__input timepicker-start" placeholder="起始時間">
-                                                        <div class="meeting-room-booking__btn-pick btn-timepicker-start"></div>
-                                                    </div>
+                                                <div class="meeting-room-booking__input-wrap">
+                                                    <input class="meeting-room-booking__input" type="text" value="09:30" readonly="readonly" id="booking-start" name="booking-start">
                                                 </div>
-                                                <div class="meeting-room-booking__date-item">
-                                                    <div class="meeting-room-booking__timepicker">
-                                                        <input class="meeting-room-booking__input timepicker-end" placeholder="結束時間">
-                                                        <div class="meeting-room-booking__btn-pick btn-timepicker-end"></div>
-                                                    </div>
+                                                <div class="meeting-room-booking__input-wrap">
+                                                    <input class="meeting-room-booking__input" type="text" value="14:00" readonly="readonly" id="booking-end" name="booking-end">
                                                 </div>
                                             </div>
                                         </div>
@@ -224,12 +214,8 @@
                                         </div>
                                         <div class="meeting-room-booking__row">
                                             <label class="meeting-room-booking__label" for="meeting-room">會議室</label>
-                                            <div class="meeting-room-booking__select-wrap">
-                                                <select name="meeting-room" title="meeting-room">
-                                                    <option value="0" selected="selected" disabled="disabled">選擇會議室</option>
-                                                    <option value="1">11F前小型會議室</option>
-                                                    <option value="2">12F前小型會議室</option>
-                                                </select>
+                                            <div class="meeting-room-booking__input-wrap">
+                                                <input class="meeting-room-booking__input" type="text" value="12F前小型會議室" readonly="readonly" id="meeting-room" name="meeting-room">
                                             </div>
                                         </div>
                                         <div class="meeting-room-booking__row">
@@ -243,9 +229,9 @@
                                             <label class="meeting-room-booking__label" for="department">開會單位</label>
                                             <div class="meeting-room-booking__select-wrap">
                                                 <select name="department" title="department">
-                                                    <option value="0" selected="selected" disabled="disabled">選擇會議室</option>
-                                                    <option value="1">11F前小型會議室</option>
-                                                    <option value="2">12F前小型會議室</option>
+                                                    <option value="0" selected="selected" disabled="disabled">請選擇開會單位</option>
+                                                    <option value="1">單位01</option>
+                                                    <option value="2">單位02</option>
                                                 </select>
                                             </div>
                                         </div>
