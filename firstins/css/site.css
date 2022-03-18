@@ -5256,7 +5256,7 @@ body.overflow {
 .meeting-room-search__wrap {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-  gap: 6.6rem;
+  gap: 5.6rem;
   padding: 4rem;
 }
 @media (min-width: 0) and (max-width: 767px) {
