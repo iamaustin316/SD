@@ -1707,7 +1707,8 @@ button.swiper-pagination-bullet {
 @media (min-width: 0) and (max-width: 767px) {
   .section-kv {
     background-image: url("../images/kv-m.jpg");
-    height: 49.8rem;
+    height: 120vw;
+    background-size: 100% auto;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1782,8 +1783,8 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .section-discount {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -2660,7 +2661,7 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .section-qa__qa-list li.active .section-qa__question::before {
-    transform: translate3d(30%, 50%, 0);
+    transform: translate3d(30%, 40%, 0);
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -2678,7 +2679,7 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .section-qa__question {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding-left: 3rem;
   }
 }
@@ -2702,9 +2703,9 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .section-qa__question::before {
-    width: 1.6rem;
-    height: 1.6rem;
-    transform: translate3d(30%, 50%, 0) rotate(-90deg);
+    width: 1.4rem;
+    height: 1.4rem;
+    transform: translate3d(30%, 40%, 0) rotate(-90deg);
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -2729,6 +2730,7 @@ button.swiper-pagination-bullet {
   .section-qa__answer {
     font-size: 1.6rem;
     padding-left: 3rem;
+    padding-top: 1.2rem;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
