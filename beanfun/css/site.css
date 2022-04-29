@@ -2270,7 +2270,7 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .section-exchange__tab-content .swiper-pagination {
-    top: 3rem;
+    top: 2rem;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -2371,7 +2371,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     top: 0;
     left: 0;
-    transform: translate3d(0, 7rem, 0);
+    transform: translate3d(0, 6rem, 0);
     display: flex;
     align-items: flex-start;
     padding: 0 4rem;
@@ -2405,17 +2405,14 @@ button.swiper-pagination-bullet {
   .section-exchange__slider-content p {
     font-size: 1.4rem;
   }
-  .section-exchange__slider-content p br {
-    display: none;
-  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .section-exchange__slider-content p {
     font-size: 1.6rem;
   }
-  .section-exchange__slider-content p br {
-    display: none;
-  }
+}
+.section-exchange__br-pc {
+  display: none;
 }
 .section-exchange__num span {
   width: 5.6rem;
