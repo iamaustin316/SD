@@ -1954,6 +1954,28 @@ button.swiper-pagination-bullet {
     font-size: 2.4rem;
   }
 }
+.section-discount__content h5 {
+  font-size: 4.4rem;
+  color: var(--color-main-500);
+  text-align: center;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .section-discount__content h5 {
+    font-size: 2.6rem;
+    margin-bottom: 0.4rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .section-discount__content h5 {
+    font-size: 2.6rem;
+    margin-bottom: 0.4rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .section-discount__content h5 {
+    font-size: 4rem;
+  }
+}
 .section-discount__content p {
   font-size: 2rem;
   color: #707070;
