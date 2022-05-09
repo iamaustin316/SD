@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>購物車</title>
+</head>
+<body>
+    <div class="wrap">
+        <!--site-header-->
+        <header class="site-header">
+            <div class="site-header__jimshop-logo">jimSHOP</div>
+            <nav class="site-header__nav">
+                <a class="site-header__btn-cart" href="cart.html">
+                    <span>9+</span>
+                </a>
+                <ul class="site-header__nav-list">
+                    <li>
+                        <a href="login.html">登入會員</a>
+                    </li>
+                    <li>
+                        <a href="account.html">會員中心</a>
+                    </li>
+                    <li>
+                        <a href="history.html">訂購紀錄</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--site-header-->
+        <!--site-main-->
+        <main class="site-main">
+            <div class="cart">
+                <h2 class="cart__title">購物車</h2>
+                <div class="cart__content">
+                    <div class="cart__header">
+                        <div>產品</div>
+                        <div>商品名稱</div>
+                        <div>價格</div>
+                        <div>數量</div>
+                        <div>小計</div>
+                        <div>操作</div>
+                    </div>
+                    <!--cart__wrap-->
+                    <div class="cart__wrap">
+                        <!--cart__item-->
+                        <div class="cart__item">
+                            <div class="cart__product-image">
+                                <img src="images/1594776529.jpeg" alt="">
+                            </div>
+                            <div class="cart__product-name">
+                                <a href="product.html" title="節暢">節暢</a>
+                            </div>
+                            <div class="cart__price">單價$1,980</div>
+                            <div class="cart__amount">
+                                <div class="cart__select-wrap">
+                                    <select name="amount" title="amount">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cart__calculate">$1,980</div>
+                            <div class="cart__control">
+                                <button class="cart__btn-delete">刪除</button>
+                            </div>
+                        </div>
+                        <!--cart__item-->
+                        <!--cart__item-->
+                        <div class="cart__item">
+                            <div class="cart__product-image">
+                                <img src="images/1594776529.jpeg" alt="">
+                            </div>
+                            <div class="cart__product-name">
+                                <a href="product.html" title="節暢">節暢</a>
+                            </div>
+                            <div class="cart__price">單價$1,980</div>
+                            <div class="cart__amount">
+                                <div class="cart__select-wrap">
+                                    <select name="amount" title="amount">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cart__calculate">$1,980</div>
+                            <div class="cart__control">
+                                <button class="cart__btn-delete">刪除</button>
+                            </div>
+                        </div>
+                        <!--cart__item-->
+                        <!--cart__item-->
+                        <div class="cart__item">
+                            <div class="cart__product-image">
+                                <img src="images/1594776529.jpeg" alt="">
+                            </div>
+                            <div class="cart__product-name">
+                                <a href="product.html" title="節暢">節暢</a>
+                            </div>
+                            <div class="cart__price">單價$1,980</div>
+                            <div class="cart__amount">
+                                <div class="cart__select-wrap">
+                                    <select name="amount" title="amount">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cart__calculate">$1,980</div>
+                            <div class="cart__control">
+                                <button class="cart__btn-delete">刪除</button>
+                            </div>
+                        </div>
+                        <!--cart__item-->
+                    </div>
+                    <!--cart__wrap-->
+                    <!--cart__total-->
+                    <div class="cart__total">
+                        <p class="cart__subtotal-price">小計$7,920</p>
+                        <p class="cart__total-price">訂單總計<strong><small>$</small>7,920</strong></p>
+                    </div>
+                    <!--cart__total-->
+                </div>
+            </div>
+            <div class="cart-form">
+                <div class="cart-form__form">
+                    <h2 class="cart-form__title">訂購人</h2>
+                    <div class="cart-form__content">
+                        <div class="cart-form__row">
+                            <label for="orderer-name">姓名</label>
+                            <input type="text" id="orderer-name" placeholder="請輸入姓名" value="奧斯丁">
+                        </div>
+                        <div class="cart-form__row">
+                            <label for="orderer-mobile">行動電話</label>
+                            <input type="text" id="orderer-mobile" placeholder="請輸入行動電話 ex.0912000000" value="0978086965">
+                        </div>
+                        <div class="cart-form__row">
+                            <label for="orderer-email">電子郵件</label>
+                            <input type="email" id="orderer-email" placeholder="請輸入電子郵件" value="iamaustin316@gmail.com">
+                        </div>
+                        <div class="cart-form__row">
+                            <label for="orderer-addr">聯絡地址</label>
+                            <div class="cart-form__inner-row adddres">
+                                <div class="cart-form__select-wrap">
+                                    <select name="orderer-city" id="orderer-city" title="orderer-city">
+                                        <option value="" disabled="disabled">縣市</option>
+                                        <option value="新北市" selected="selected">新北市</option>
+                                        <option value="台北市">台北市</option>
+                                    </select>
+                                </div>
+                                <div class="cart-form__select-wrap">
+                                    <select name="orderer-district" id="orderer-district" title="orderer-city">
+                                        <option value="" disabled="disabled">行政區</option>
+                                        <option value="1" selected="selected">中正區</option>
+                                        <option value="2">中山區</option>
+                                    </select>
+                                </div>
+                                <input class="cart-form__input" type="text" placeholder="請輸入聯絡地址" id="orderer-addr" value="北新路110號12樓">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-form__form">
+                    <h2 class="cart-form__title">收件人</h2>
+                    <div class="cart-form__checkbox">
+                        <input type="checkbox" id="orderer" name="orderer">
+                        <label for="orderer">同訂購人</label>
+                    </div>
+                    <div class="cart-form__content">
+                        <div class="cart-form__row">
+                            <label for="recipient-name">姓名</label>
+                            <input type="text" id="recipient-name" placeholder="請輸入姓名">
+                        </div>
+                        <div class="cart-form__row">
+                            <label for="recipient-mobile">行動電話</label>
+                            <input type="text" id="recipient-mobile" placeholder="請輸入行動電話 ex.0912000000">
+                        </div>
+                        <div class="cart-form__row">
+                            <label for="recipient-email">電子郵件</label>
+                            <input type="email" id="recipient-email" placeholder="請輸入電子郵件">
+                        </div>
+                        <div class="cart-form__row">
+                            <label for="recipient-addr">聯絡地址</label>
+                            <div class="cart-form__inner-row adddres">
+                                <div class="cart-form__select-wrap">
+                                    <select name="recipient-city" id="recipient-city" title="recipient-city">
+                                        <option value="" disabled="disabled" selected="selected">縣市</option>
+                                        <option value="新北市">新北市</option>
+                                        <option value="台北市">台北市</option>
+                                    </select>
+                                </div>
+                                <div class="cart-form__select-wrap">
+                                    <select name="recipient-district" id="recipient-district" title="recipient-district">
+                                        <option value="" disabled="disabled" selected="selected">行政區</option>
+                                        <option value="1">中正區</option>
+                                        <option value="2">中山區</option>
+                                    </select>
+                                </div>
+                                <input class="cart-form__input" type="text" placeholder="請輸入聯絡地址" id="recipient-addr">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-remind">
+                <h2 class="cart-remind__title">條款與細則</h2>
+                <div class="cart-remind__content">
+                    <div class="cart-remind__block">
+                        <h3>配送說明：</h3>
+                        <ul>
+                            <li>確認訂單後，將於三個工作天內進行出貨。並於出貨後1~3日配送至指定地址(預購或特殊商品除外)。</li>
+                            <li>常態的出貨時間為：今天上午前10:00下單，最快隔日送達(例假日除外)。</li>
+                            <li>僅提供白天配送，無夜間配送，如需指定配送時間請於訂單註明。</li>
+                            <li>因委外物流，配送途中可能會產生有不可預知之因素或因節日物流延誤，無法保證於指定配送時段到達，敬請見諒。</li>
+                            <li>實際出貨時間仍將依訂單量調節，可能提前或延後出貨，如有延後出貨超過2天的緊急狀況，將另行通知。</li>
+                        </ul>
+                    </div>
+                    <div class="cart-remind__block">
+                        <h3>退換貨政策：</h3>
+                        <ol>
+                            <li>確認訂單後，將於三個工作天內進行出貨。並於出貨後1~3日配送至指定地址(預購或特殊商品除外)。</li>
+                            <li>常態的出貨時間為：今天上午前10:00下單，最快隔日送達(例假日除外)。</li>
+                            <li>僅提供白天配送，無夜間配送，如需指定配送時間請於訂單註明。</li>
+                            <li>因委外物流，配送途中可能會產生有不可預知之因素或因節日物流延誤，無法保證於指定配送時段到達，敬請見諒。</li>
+                            <li>實際出貨時間仍將依訂單量調節，可能提前或延後出貨，如有延後出貨超過2天的緊急狀況，將另行通知。</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="cart-remind__checkbox">
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree"> 我已同意並勾選購買須知</label>
+                </div>
+                <div class="cart-remind__row">
+                    <button class="cart-remind__btn-buy">確認購買</button>
+                </div>
+            </div>
+        </main>
+        <!--site-main-->
+        <!--site-footer-->
+        <footer class="site-footer">
+            <div class="site-footer__info">
+                <div class="site-footer__jimshop-logo"></div>
+                <ul class="site-footer__contact-list">
+                    <li>TEL 02-2346-3088</li>
+                    <li>Email service@jinmu.com.tw</li>
+                </ul>
+            </div>
+            <div class="site-footer__sns">
+                <ul class="site-footer__sns-list">
+                    <li>
+                        <a href="#" title="金姆健康" target="_blank">
+                            <img src="images/icon-facebook.svg" alt="金姆健康-王唯工科學脈診">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="金姆健康" target="_blank">
+                            <img src="images/icon-instagram.svg" alt="金姆健康-王唯工科學脈診">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="金姆健康" target="_blank">
+                            <img src="images/icon-line.svg" alt="金姆健康-王唯工科學脈診">
+                        </a>
+                    </li>
+                </ul>
+                <p class="site-footer__copyright">© 2022 金姆健康科技有限公司 All rights reserved.</p>
+            </div>
+        </footer>
+        <!--site-footer-->
+    </div>
+</body>
+</html>
