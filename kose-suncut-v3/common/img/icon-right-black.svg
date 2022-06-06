@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.19" height="7.13" viewBox="0 0 23.19 7.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon-right-black.svg" class="cls-1" d="M1206.29,4506.67h21.07l-8.21-5.69v2.88" transform="translate(-1205.78 -4500.03)"/>
+</svg>

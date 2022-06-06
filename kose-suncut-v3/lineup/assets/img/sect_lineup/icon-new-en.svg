@@ -1,0 +1,18 @@
+<svg id="icon-new-en.svg" xmlns="http://www.w3.org/2000/svg" width="43.124" height="43.124" viewBox="0 0 43.124 43.124">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #1147b4;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        fill: #1147b4;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="楕円形_1483" data-name="楕円形 1483" class="cls-1" cx="21.562" cy="21.562" r="21.062"/>
+  <path id="NEW" class="cls-2" d="M267,628.725v-5.416l5.471,5.732V621.71H271.69v5.438l-5.47-5.733v7.31H267Zm11.764-7.015h-3.64v7.015h3.64v-0.736H275.9v-2.724h2.777v-0.736H275.9v-2.083h2.861V621.71Zm1.454,0,2.693,7.383,2.209-5.616,2.062,5.616,2.945-7.383h-0.862l-2.052,5.259-2.082-5.617-2.2,5.617-1.852-5.259h-0.862Z" transform="translate(-255.688 -602.938)"/>
+</svg>
