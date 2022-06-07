@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/three.v3.css">
+    <link rel="stylesheet" href="css/three.ui.css">
+</head>
+<body>
+    <div id="container" style="background-color: #333;"></div>
+    <div class="wrap">
+        <div class="preload is-loaded">
+            <div class="preload__jinmu">
+                <img src="images/jinmu-logo.svg" alt="">
+            </div>
+            <div class="preload__slider-wrap">
+                <h2>
+                    <span><?php echo lang3d('金姆健康 知識站', $lang); ?></span>
+                </h2>
+                <div class="swiper-container preload__slider">
+                    <div class="swiper-wrapper">
+                        <?php $tip_list = db("select tip_text from tips_list order by random() limit 3");?>
+
+                        <div class="swiper-slide">
+                            <div class="preload__tips">
+                            <p><?php echo lang3d($tip_list[0]['tip_text'], $lang);?></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="preload__tips">
+                            <p><?php echo lang3d($tip_list[1]['tip_text'], $lang);?></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="preload__tips">
+                            <p><?php echo lang3d($tip_list[2]['tip_text'], $lang);?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>    
+            <p class="preload__text" id="loading_text"><?php echo lang3d('模型下載中...', $lang); ?></p>
+            <div class="preload__bar">
+                <div class="preload__bar-loaded" style="width: 2%"></div>
+            </div>
+        </div>
+
+        <div class="ranger" id="ranger-control"> <!-- 老丁改這邊-->
+            <div class="ranger-inner">
+                <div class="body-status">
+                    <div class="body-status__item">
+                        <span class="title tube">經絡</span>
+                        <label class="switch">
+                            <input type="checkbox" checked id="switch_tube" onclick="javascript:display_pipe();">
+                            <span class="slider round tube"></span>
+                        </label>
+                    </div>
+                    <div class="body-status__item">
+                        <span class="title point-s">穴位</span>
+                        <label class="switch">
+                            <input type="checkbox" checked id="switch_point-s" onclick="javascript:display_big();">
+                            <span class="slider round point-s"></span>
+                        </label>
+                    </div>
+                    <div class="body-status__item">
+                        <span class="title point-l">交叉點</span>
+                        <label class="switch">
+                            <input type="checkbox" checked id="switch_point-l" onclick="javascript:display_small();">
+                            <span class="slider round point-l"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="ranger-block">
+                    <div class="range-container">
+                        <div class="range-value" id="rangeValue"></div>
+                        <input type="range" name="range" id="range" min="1" max="2" step="1" value="<?php echo $sensitivity;?>">
+                    </div>
+                    <div class="range-detail">
+                        <span>少</span>
+                        <span>多</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="three-injured-btn-toggle" id="sensitive_btn"></button>
+        <div class="three-injured">
+            <div class="three-injured__inner">
+                <div class="three-injured__intro">
+                    <h2 class="three-injured__title">
+                        <span>使用說明書</span>
+                    </h2>
+                    <p class="three-injured__text">痠痛座標不是要處理急性的受傷發炎，而是慢性疼痛，或找出由於舊傷、姿勢不良導致身體循環堵塞、淤積的部位，進一步處理與改善。</p>
+                </div>
+                <div class="three-injured__block">
+                    <h3 class="three-injured__sub-title">功能簡介</h3>
+                    <p class="three-injured__text">長期姿勢錯誤、外力撞擊或受傷等「外邪」會導致身體局部循環降低，嚴重時甚至會影響內臟循環。分析身體「左右差異過大」及「共振不正常」(相生的經絡循環不一致)的經絡，找出身體有問題的部位並提早處理。</p>
+                </div>
+                <div class="three-injured__block">
+                    <h3 class="three-injured__sub-title">處理建議</h3>
+                    <p class="three-injured__text">可循著標示位置按摩，若找到有特別痠痛的點(阿是穴)，穴位及交叉點可利用溫灸或手指按揉，經絡則可以刮痧或推揉，建議在專業人士的幫助下進行處理。</p>
+                </div>
+                <div class="three-injured__step">
+                    <div class="three-injured__step-item">
+                        <h3 class="three-injured__sub-title">看「交叉點」</h3>
+                        <p class="three-injured__text">按照3D位置按揉標示部位，若有痠痛感，請熱敷(或使用溫灸儀)後按摩。</p>
+                    </div>
+                    <div class="three-injured__step-item">
+                        <h3 class="three-injured__sub-title">看「經絡」</h3>
+                        <p class="three-injured__text">沿著經絡推揉，找出特別痠痛的部位，請熱敷 (或使用溫灸儀)後按摩。 拉條建議可預設在「少」，都處理完後再換成「多」。</p>
+                    </div>
+                    <div class="three-injured__step-item">
+                        <h3 class="three-injured__sub-title">看「穴位」</h3>
+                        <p class="three-injured__text">有問題的經絡上特定的穴位，平日勤加按揉可以幫忙改善整條經絡的循環。</p>
+                    </div>
+                </div>
+                <div class="three-injured__meridian-wrap">
+                    <div class="three-injured__meridian">
+                        <h4>左邊</h4>
+                        <div class="three-injured__meridian-list">
+                            <div class="three-injured__meridian-row">
+                                <div class="three-injured__meridian-name">肺經</div>
+                                <div class="three-injured__meridian-acupoints">足三里、湧泉穴</div>
+                            </div>
+                            <div class="three-injured__meridian-row">
+                                <div class="three-injured__meridian-name">心包經</div>
+                                <div class="three-injured__meridian-acupoints">足三里、三陰交、湧泉穴、合谷穴、膻中穴、中脘穴</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three-injured__meridian">
+                        <h4>左邊</h4>
+                        <div class="three-injured__meridian-list">
+                            <div class="three-injured__meridian-row">
+                                <div class="three-injured__meridian-name">肺經</div>
+                                <div class="three-injured__meridian-acupoints">足三里、湧泉穴、內關穴</div>
+                            </div>
+                            <div class="three-injured__meridian-row">
+                                <div class="three-injured__meridian-name">心包經</div>
+                                <div class="three-injured__meridian-acupoints">足三里、三陰交、湧泉穴、合谷穴</div>
+                            </div>
+                            <div class="three-injured__meridian-row">
+                                <div class="three-injured__meridian-name">肝經</div>
+                                <div class="three-injured__meridian-acupoints">神闕穴</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="three-injured__nav">
+                    <a href="#" title="相關產品" target="_blank">
+                        <img src="images/icon-product.svg" alt="">
+                        <span>相關產品</span>
+                    </a>
+                    <a href="#" title="機器按摩" target="_blank">
+                        <img src="images/icon-massage.svg" alt="">
+                        <span>機器按摩</span>
+                    </a>
+                    <a href="#" title="專業按摩" target="_blank">
+                        <img src="images/icon-massage2.svg" alt="">
+                        <span>專業按摩</span>
+                    </a>
+                    <a href="#" title="相關影片" target="_blank">
+                        <img src="images/icon-product.svg" alt="">
+                        <span>相關影片</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('.three-injured-btn-toggle').on('click', function(){
+                $(this).toggleClass('is-active')
+                $('.three-injured').toggleClass('is-loaded')
+            })
+        })
+    </script>
+</body>
+</html>
