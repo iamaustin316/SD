@@ -1817,7 +1817,8 @@ section {
         margin-left: auto;
         width: 12.5vw;
         height: 100%;
-        position: static
+        position: static;
+        display: none;
     }
 }
 
