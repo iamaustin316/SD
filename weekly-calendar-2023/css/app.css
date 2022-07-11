@@ -1378,7 +1378,7 @@ body {
 
 .site-nav {
   justify-content: center;
-  gap: 3.2rem;
+  gap: 4rem;
   display: flex;
   background: linear-gradient(180deg, #F5BD89 0%, #EA8F8F 100%);
   position: fixed;
@@ -1396,6 +1396,7 @@ body {
   white-space: nowrap;
   opacity: 0.7;
   transition: opacity 300ms ease;
+  font-weight: 900;
 }
 .site-nav__btn-section:hover {
   opacity: 1;
@@ -1424,7 +1425,7 @@ body {
     top: 0;
     left: 0;
     align-items: center;
-    gap: 2.4rem;
+    gap: 3.2rem;
     transition: transform 300ms ease-in-out;
     transform: translate3d(100%, 0, 0);
   }
@@ -1804,7 +1805,7 @@ body {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .section-kv__weekly-calendar {
-    transform: translate3d(-50%, -300%, 0);
+    transform: translate3d(-50%, -340%, 0);
   }
 }
 .section-kv__weekly-calendar span {
@@ -2011,7 +2012,8 @@ body {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .section-origin__img {
-    flex: 0 0 24rem;
+    flex: 0;
+    width: 20rem;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -2079,6 +2081,7 @@ body {
 }
 
 .section-cooperative__card-wrap {
+  perspective: 1000px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
@@ -2096,6 +2099,7 @@ body {
 }
 
 .section-cooperative-card {
+  transform-style: preserve-3d;
   display: flex;
   flex-direction: column;
   background-color: var(--color-yellow-100);
