@@ -1,0 +1,40 @@
+$susy: (
+	math: math,
+	gutter-position: inside,
+	gutters: 0,
+	debug: (
+		image: hide,
+		color: #7ba92c,
+		output: background,
+		toggle: top right,
+	)
+);
+
+
+$c6: (
+	columns: 6
+);
+
+$c8: (
+    columns: 8
+);
+
+$c12: (
+    columns: 12
+);
+
+$c18: (
+    columns: 18
+);
+
+$c24: (
+    columns: 24
+);
+
+
+$s-sm: 0 479px;
+$s-hm: 480px 767px;
+$s-sp: 768px 959px;
+$s-hp: 960px 1200px;
+$s-sd: 1201px 1600px;
+$s-hd: 1601px;

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Foresee|預見創意</title>
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <link rel="apple-touch-icon" href="image/custom-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/page.html">
+    <meta property="og:title" content="Content Title">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:description" content="Description Here">
+    <meta property="og:site_name" content="Site Name">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@site_account">
+    <meta name="twitter:creator" content="@individual_account">
+    <meta name="twitter:url" content="https://example.com/page.html">
+    <meta name="twitter:title" content="Content Title">
+    <meta name="twitter:description" content="Content description less than 200 characters">
+    <meta name="twitter:image" content="https://example.com/image.jpg">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+    <div class="popup" id="cart-form">
+        <div class="cart-content">
+            <button class="cart-content__btn-close"><i class="icon-close"></i></button>
+            <h4 class="cart-content__h4">請確實填寫訂購資料，以利後續寄送處理</h4>
+            <h3 class="cart-content__h3">訂購商品</h3>
+            <div class="cart-list">
+                <div class="cart-list__header">
+                    <div>品項</div>
+                    <div>數量</div>
+                </div>
+                <div class="cart-list__item">
+                    <div>啾啾一番</div>
+                    <div>
+                        <button class="cart-list__btn cart-list__btn--minus"><i class="icon-minus"></i></button>
+                        <input class="cart-list__input-num" type="text" maxlength="2" value="0">
+                        <button class="cart-list__btn cart-list__btn--plus"><i class="icon-plus"></i></button>
+                    </div>
+                </div>
+                <div class="cart-list__item">
+                    <div>熊熊一番</div>
+                    <div>
+                        <button class="cart-list__btn cart-list__btn--minus"><i class="icon-minus"></i></button>
+                        <input class="cart-list__input-num" type="text" maxlength="2" value="0">
+                        <button class="cart-list__btn cart-list__btn--plus"><i class="icon-plus"></i></button>
+                    </div>
+                </div>
+                <div class="cart-list__item">
+                    <div>球球一番</div>
+                    <div>
+                        <button class="cart-list__btn cart-list__btn--minus"><i class="icon-minus"></i></button>
+                        <input class="cart-list__input-num" type="text" maxlength="2" value="0">
+                        <button class="cart-list__btn cart-list__btn--plus"><i class="icon-plus"></i></button>
+                    </div>
+                </div>
+                <div class="cart-list__calculate">
+                    <div>共<strong id="item-count"></strong>件商品 商品金額</div>
+                    <div id="ori-price"></div>
+                </div>
+                <div class="cart-list__total">
+                    <div>總計</div>
+                    <div>NT$<strong id="total-price"></strong></div>
+                </div>
+            </div>
+            <div class="cart-content__include">
+                <h3><span>產品內含</span></h3>
+                <p>身高測量器X1、橡膠門擋X1、身高紀錄卡X1、產品說明書印刷於身高紀錄卡背面</p>
+            </div>
+            <div class="cart-form">
+                <div class="cart-form__row">
+                    <label class="cart-form__label" for="name">訂購人姓名</label>
+                    <input class="cart-form__input" type="text" id="name" placeholder="請輸入訂購人姓名">
+                </div>
+                <div class="cart-form__row">
+                    <label class="cart-form__label" for="mobile">訂購人手機號碼</label>
+                    <input class="cart-form__input" type="tel" id="mobile" placeholder="請輸入訂購人手機號碼">
+                </div>
+                <div class="cart-form__row">
+                    <label class="cart-form__label" for="">地址</label>
+                    <div id="twzipcode">
+                        <div class="cart-form__select-wrap-city" data-role="county" data-name="county" data-value="新北市"></div>
+                        <div class="cart-form__select-wrap-district" data-role="district" data-name="district" data-value="新店區"></div>
+                        <div class="cart-form__cus-zipcode" data-role="zipcode" data-name="zipcode" data-value=""></div>
+                    </div>
+                    <input class="cart-form__input" type="text" placeholder="請輸入詳細地址">
+                </div>
+                <div class="cart-form__row">
+                    <label class="cart-form__label" for="bank-list">預訂匯款銀行代碼</label>
+                    <input class="cart-form__input" type="text" id="bank-list" placeholder="請輸入銀行代碼">
+                </div>
+                <div class="cart-form__row">
+                    <label class="cart-form__label" for="bank-id">匯款帳號後五碼</label>
+                    <input class="cart-form__input" type="text" id="bank-id" placeholder="請輸入銀行匯款帳號後五碼">
+                </div>
+                <div class="cart-form__row">
+                    <button class="cart-form__btn-buy"><i class="icon-cart"></i><span>立即購買</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap" id="scroll-container">
+        <header class="s-header">
+            <div class="container">
+                <h1 class="s-header__logo">
+                    <img src="image/asset/lovepop-logo.svg" alt="">
+                </h1>
+                <button class="s-header__btn-toggle"></button>
+                <nav class="s-nav">
+                    <a class="s-nav__btn s-nav__btn--section" href="#home" title="首頁">首頁</a>
+                    <a class="s-nav__btn s-nav__btn--section" href="#feature" title="產品特色">產品特色</a>
+                    <a class="s-nav__btn s-nav__btn--section" href="#product" title="產品介紹">產品介紹</a>
+                    <a class="s-nav__btn s-nav__btn--section" href="#experience" title="使用心得">使用心得</a>
+                    <a class="s-nav__btn s-nav__btn--section" href="#buy" title="我要訂購">我要訂購</a>
+                    <a class="s-nav__btn s-nav__btn--video" href="//www.youtube.com/watch?v=Wd6j_OJqP3s" data-lity title="影片介紹">影片介紹</a>
+                </nav>
+            </div>
+        </header>
+        <main class="s-main">
+            <section class="s-section s-section--home" id="home">
+                <div class="home">
+                    <div class="home__content">
+                        <h4 class="home__h4 animated pulse infinite slow">育兒必備</h4>
+                        <h3 class="home__h3">風靡全球的量身高神器!</h3>
+                        <h2 class="home__h2">LovePop樂一番身高測量器</h2>
+                        <div class="home__price">
+                            <p class="home__price-ori">原價：$1160</p>
+                            <p class="home__price-discount">粉絲獨享價↘65折：</p>
+                            <p class="home__price-num"><small>$</small>748</p>
+                        </div>
+                        <button class="home__btn home__btn--buy">
+                            <i class="icon-cart"></i><span>立即購買</span>
+                        </button>
+                        <a class="home__btn home__btn--video" href="//www.youtube.com/watch?v=Wd6j_OJqP3s" data-lity title="影片介紹">
+                            <i class="icon-play"></i><span>影片介紹</span>
+                        </a>
+                    </div>
+                    <img class="home__pd home__pd--pink" src="image/product/pd-pink.png" alt="">
+                    <img class="home__pd home__pd--orange" src="image/product/pd-orange.png" alt="">
+                    <img class="home__pd home__pd--blue" src="image/product/pd-blue.png" alt="">
+                    <div class="particles" id="particles-js"></div>
+                    <button class="home__btn-down"></button>
+                </div>
+            </section>
+            <section class="s-section s-section--feature" id="feature">
+                <div class="feature">
+                    <div class="feature__block">
+                        <div class="feature__img-wrap js-sr-move">
+                            <img src="image/feature/feature-1.jpg" alt="不錯過寶貝成長的美好時光">
+                        </div>
+                        <div class="feature__content js-sr-move">
+                            <h2>不錯過寶貝成長的美好時光</h2>
+                            <p>45cm高的小小寶貝，剛出生，你就知道他會是你一輩子的寶。<br>70cm高的小寶貝，開始探索著世界，呀呀地的表達自己。<br>95cm高的大寶貝，勇敢的跨出舒適圈，整個世界都是他的大冒險。</p>
+                            <p>時間不曾靜止，成長的腳步也一樣寶貝的每個階段都彌足珍貴，<br>捨不得錯過 樂一番陪你，在童趣中記錄成長的點滴。</p>
+                        </div>
+                    </div>
+                    <div class="feature__block">
+                        <div class="feature__img-wrap js-sr-move">
+                            <img src="image/feature/feature-2.jpg" alt="量身高也能像遊戲，讓寶貝自動自發乖乖站好!">
+                        </div>
+                        <div class="feature__content js-sr-move">
+                            <h2>量身高也能像遊戲，讓寶貝自動自發乖乖站好!</h2>
+                            <p>過了乖乖聽話的成長期，進入好動期的寶貝，讓量身高成為爸媽眼力與耐心的考驗，樂一番身高測量器</p>
+                            <p>超Q外觀，吸住寶貝的注意力<br>原創設計，精準測量寶貝身高
+                                <br>不割手軟尺，讓寶貝自己操作也不擔心受傷
+                                <br>嚴格把關的材質，通過無毒檢測，環保又健康
+                            </p>
+                            <p>量身高也可以是寶貝的任務，苦差事頓時變成一場寶貝的大挑戰!</p>
+                        </div>
+                    </div>
+                    <div class="feature__block">
+                        <div class="feature__img-wrap js-sr-move">
+                            <img src="image/feature/feature-3.jpg" alt="誰說居家風格跟身高尺只能二選一?">
+                        </div>
+                        <div class="feature__content js-sr-move">
+                            <h2>誰說居家風格跟身高尺只能二選一?</h2>
+                            <p>童趣的身高尺跟家裡的無印風超不搭，<br>又不想錯過紀錄寶貝成長的機會，該怎麼辦!?</p>
+                            <p>樂一番身高測量器免釘牆、免黏貼的獨家設計，<br>不須擔心破壞牆面，只要有門，就能量身高!
+                                <br>輕巧好收納，不使用時也不占空間
+                                <br>最長身高到205cm，從小小孩量到長成巨人都沒問題
+                                <br>可重複利用，就算搬家也能輕鬆帶著走!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature__block">
+                        <div class="feature__img-wrap js-sr-move">
+                            <img src="image/feature/feature-4.jpg" alt="多種國際認證，安全絕對保證">
+                        </div>
+                        <div class="feature__content js-sr-move">
+                            <h2>多種國際認證，安全絕對保證</h2>
+                            <p>寶貝的安全，我們更在乎，絕對無毒材質，<br>通過SGS、FCC、CE國際安全品質檢驗，讓寶貝玩得放心。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s-section s-section--product" id="product">
+                <div class="product">
+                    <div class="product__block">
+                        <h3 class="js-sr-move">啾啾一番</h3>
+                        <img src="image/product/pd-pink.png" alt="啾啾一番">
+                        <h4 class="js-sr-move">卡哇伊風</h4>
+                    </div>
+                    <div class="product__block">
+                        <h3 class="js-sr-move">熊熊一番</h3>
+                        <img src="image/product/pd-orange.png" alt="熊熊一番">
+                        <h4 class="js-sr-move">動物風</h4>
+                    </div>
+                    <div class="product__block">
+                        <h3 class="js-sr-move">球球一番</h3>
+                        <img src="image/product/pd-blue.png" alt="球球一番">
+                        <h4 class="js-sr-move">運動風</h4>
+                    </div>
+                    <div class="product__tips">
+                        <p><i class="icon-alert"></i>請搭配一顆 AA 鹼性電池（電池需另外購買），此款商品適合 3.2~3.9cm 的門板，請下單前先確認一下家門板的厚度喔！</p>
+                    </div>
+                </div>
+            </section>
+            <section class="s-section s-section--experience" id="experience">
+                <div class="experience">
+                    <div class="container">
+                        <h2 class="experience__h2 js-sr-move">素人爸媽一致公認，<br>這輩子一定要買的身高尺!</h2>
+                        <div class="people js-sr-move">
+                            <div class="people__profile">
+                                <img class="people__headshot" src="image/experience/people-1.jpg" alt="">
+                                <h3 class="people__name">Angela Chen</h3>
+                                <h4 class="people__job">家庭主婦</h4>
+                            </div>
+                            <div class="people__article">
+                                <h3>小孩對量身高更有興趣了!</h3>
+                                <p>用這個量身高，我家那兩隻真的有比較感興趣!雖然弟弟很好動，不過有頂著頭的尺規做基準，量起來的數值也比較準確。</p>
+                            </div>
+                        </div>
+                        <div class="people js-sr-move">
+                            <div class="people__profile">
+                                <img class="people__headshot" src="image/experience/people-1.jpg" alt="">
+                                <h3 class="people__name">Angela Chen</h3>
+                                <h4 class="people__job">家庭主婦</h4>
+                            </div>
+                            <div class="people__article">
+                                <h3>小朋友自己也可以操作來量身高</h3>
+                                <p>這個身高尺的操作很簡單，小朋友要量也不需要傻站在那邊等大人幫忙看。</p>
+                                <p>自己一個人就可以完成這個任務，現在都會自己量完來報告他的身高。</p>
+                            </div>
+                        </div>
+                        <div class="people js-sr-move">
+                            <div class="people__profile">
+                                <img class="people__headshot" src="image/experience/people-1.jpg" alt="">
+                                <h3 class="people__name">Angela Chen</h3>
+                                <h4 class="people__job">家庭主婦</h4>
+                            </div>
+                            <div class="people__article">
+                                <h3>不用擔心破壞牆壁，真好!</h3>
+                                <p>想買身高尺很久，但又擔心貼了之後會後悔，也不想看到家裡的牆壁因為貼這個東西醜掉。</p>
+                                <p>像這種卡在門邊的就很方便!就算不用擺著門也不會關不上，反而變成兒童房的另類裝飾XD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s-section" id="buy">
+                <div class="buy">
+                    <div class="container">
+                        <h2 class="buy__h2 js-sr-move">限時三天！幫大家凹到了粉絲專屬團購價，<br>其他地方真的都找不到，原價再打65折，現省快一半！</h2>
+                        <h3 class="buy__h3 animated pulse infinite slow js-sr-move">現貨賣完就沒了，下手要快喔！</h3>
+                    </div>
+                </div>
+                <div class="countdown">
+                    <div class="container">
+                        <div class="countdown__block js-sr-move">
+                            <i class="icon-people"></i>
+                            <h3 class="countdown__h3">已下標人數</h3>
+                            <p class="countdown__num">1,309,445</p>
+                        </div>
+                        <div class="countdown__block js-sr-move">
+                            <i class="icon-timer"></i>
+                            <h3 class="countdown__h3">搶購倒數</h3>
+                            <p class="countdown__time">20 天 13 時 18 分 44 秒</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buy">
+                    <div class="container">
+                        <div class="buy__shop js-sr-move">
+                            <img src="image/product/pd-pink-icon.png" alt="">
+                            <h4 class="buy__h4">啾啾一番</h4>
+                            <div class="buy__select-wrap">
+                                <select name="" id="select-pink">
+                                    <option value="" disabled selected>選擇數量</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="buy__shop js-sr-move">
+                            <img src="image/product/pd-orange-icon.png" alt="">
+                            <h4 class="buy__h4">熊熊一番</h4>
+                            <div class="buy__select-wrap">
+                                <select name="" id="select-orange">
+                                    <option value="" disabled selected>選擇數量</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="buy__shop js-sr-move">
+                            <img src="image/product/pd-blue-icon.png" alt="">
+                            <h4 class="buy__h4">球球一番</h4>
+                            <div class="buy__select-wrap">
+                                <select name="" id="select-blue">
+                                    <option value="" disabled selected>選擇數量</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="buy__btn-buy js-sr-move">
+                            <i class="icon-cart"></i><span>立即購買</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="s-footer">
+            <div class="s-footer__detail">
+                <div class="container">
+                    <div class="s-footer__logo">
+                        <img src="image/asset/lovepop-logo-w.svg" alt="lovepop">
+                    </div>
+                    <div class="s-footer__info">
+                        <h4 class="s-footer__h4">連絡資訊</h4>
+                        <ul class="s-footer__info-list">
+                            <li><span>TEL</span>+886 2701-1050</li>
+                            <li><span>FAX</span>+886 2700-5719</li>
+                            <li><span>ADDR</span>10665台北市大安區復興南路二段65號8樓之2</li>
+                        </ul>
+                    </div>
+                    <div class="s-footer__info">
+                        <h4 class="s-footer__h4">匯款資訊</h4>
+                        <ul class="s-footer__info-list">
+                            <li><span>戶名</span>樂卜有限公司</li>
+                            <li><span>銀行</span>玉山銀行大安分行</li>
+                            <li><span>銀行代號</span>808</li>
+                            <li><span>銀行帳號</span>0967-940-002126</li>
+                        </ul>
+                    </div>
+                    <div class="s-footer__info">
+                        <h4 class="s-footer__h4">客戶服務</h4>
+                        <ul class="s-footer__info-list">
+                            <li><span>客服電話</span>(02)2701-0150(張s)</li>
+                            <li><span>客服信箱</span>service-line@the-guideline.com</li>
+                        </ul>
+                    </div>
+                    <div class="s-footer__info">
+                        <h4 class="s-footer__h4">貨運收費方式</h4>
+                        <ul class="s-footer__info-list">
+                            <li>台灣本島免運，澎湖、金馬外島地區酌收50元運費</li>
+                        </ul>
+                    </div>
+                    <a class="s-footer__btn-fb" href="https://www.facebook.com/lovepopping" target="_blank" title="LovePop樂一番粉絲團">
+                        <i class="icon-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="s-footer__copyright">
+                <div class="container">
+                    <p>CopyRight 2017. All Rights Reserved to LovePop Co.,Ltd.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

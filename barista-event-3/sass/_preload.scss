@@ -1,0 +1,105 @@
+.progress {
+    background: transparent;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 130;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    &.hide {
+        background: transparent;
+        pointer-events: none;
+        position: absolute;
+    }
+    @include cus-transition(all, 2s);
+    &__progress-left {
+        position: absolute;
+        width: 50%;
+        min-height: 100vh;
+        height: 100%;
+        left: 0;
+        background-color: $s-o-c;
+        bottom: 0;
+        @include cus-transition(all, 1.5s);
+        &.is-hide {
+            bottom: -100%;
+            opacity: 0;
+        }
+    }
+    &__progress-right {
+        position: absolute;
+        width: 50%;
+        min-height: 100vh;
+        height: 100%;
+        left: 50%;
+        background-color: $s-b-c;
+        bottom: 0;
+        @include cus-transition(all, 1.5s);
+        &.is-hide {
+            bottom: -100%;
+            opacity: 0;
+        }
+    }
+    &__logo {
+        background: transparent url(../image/asset/barista-logo.svg) 0 0 no-repeat;
+        background-size: 100px 100px;
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        z-index: 2;
+        display: none;
+        @include transformXY(-50%, -50%);
+    }
+    &__text {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        line-height: 1;
+        z-index: 2;
+        @include transformXY(-50%, 0);
+    }
+    &__svg {
+        position: absolute;
+        width: 60px;
+        height: 83px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        fill: none;
+        stroke: #FFFFFF;
+        stroke-miterlimit: 10;
+    }
+}
+
+.progress-bar {
+    display: none;
+    background-color: #ffffff;
+    width: 100%;
+    height: 0%;
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+    z-index: 0;
+    @include transformX(-50%);
+}
+
+.progress-loader {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    @include transformX(-50%);
+}
+
+.progress-complete .progress-bar {
+    border-top-color: #ffffff;
+}

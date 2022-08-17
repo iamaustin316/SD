@@ -1,0 +1,96 @@
+$imagedir:'../image/asset/'; // define the base path before the mixin
+@mixin hide-text {
+    text-indent: 300%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@mixin cus-transition($property, $time) {
+    -webkit-transition: $property $time cubic-bezier(.63, .01, .56, .99);
+    transition: $property $time cubic-bezier(.63, .01, .56, .99);
+}
+
+@mixin transformX($posX) {
+    -ms-transform: translateX($posX);
+    -webkit-transform: translateX($posX);
+    transform: translateX($posX);
+}
+
+@mixin transformY($posY) {
+    -ms-transform: translateY($posY);
+    -webkit-transform: translateY($posY);
+    transform: translateY($posY);
+}
+
+@mixin transformXY($posX, $posY) {
+    -ms-transform: translate($posX, $posY);
+    -webkit-transform: translate($posX, $posY);
+    transform: translate($posX, $posY);
+}
+
+@mixin transformXYS($posX, $posY, $scale) {
+    -ms-transform: translate($posX, $posY) scale($scale);
+    -webkit-transform: translate($posX, $posY) scale($scale);
+    transform: translate($posX, $posY) scale($scale);
+}
+
+@mixin transformScale($sX, $sY) {
+    -ms-transform: scale($sX, $sY);
+    -webkit-transform: scale($sX, $sY);
+    transform: scale($sX, $sY);
+}
+
+@mixin transformRotate($deg) {
+    -ms-transform: rotate($deg);
+    -webkit-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@mixin transformXYR($posX, $posY, $deg) {
+    -ms-transform: translate($posX, $posY) rotate($deg);
+    -webkit-transform: translate($posX, $posY) rotate($deg);
+    transform: translate($posX, $posY) rotate($deg);
+}
+
+@mixin rand-bg() {
+    background: rgba(random(255), random(255), random(255), 0.2);
+}
+
+@mixin btn-arrow {
+    display: inline-block;
+    height: 32px;
+    padding-left: 10px;
+    background-color: #767976;
+    line-height: 32px;
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    top: 0;
+    vertical-align: middle;
+    @include cus-transition(all, .4s);
+    i {
+        position: relative;
+        top: 2px;
+        margin-left: 2px;
+        font-size: 20px;
+    }
+    &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+        border-left: 16px solid #767976;
+        position: absolute;
+        right: -16px;
+        top: 0;
+        @include cus-transition(all, .4s);
+    }
+    &:hover {
+        background-color: darken(#767976, 20%);
+        &:after {
+            border-left-color: darken(#767976, 20%);
+        }
+    }
+}

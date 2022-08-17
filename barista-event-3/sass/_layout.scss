@@ -1,0 +1,322 @@
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    &.is-fixed {
+        overflow: hidden;
+    }
+}
+
+body {
+    background-color: #333333;
+    font-family: Arial, "Noto Sans TC", "WenQuanYi Zen Hei", "LiHei Pro", "Microsoft JhengHei";
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    height: auto;
+    &.is-fixed {
+        overflow: visible;
+        touch-action: none;
+    }
+}
+
+//裡面除了標準的 Normal 之外，另外還提供了 100、300、400、500、700、900 五種不同的粗細，你可以透過 font-weight 的方式來調整。
+.container {
+    @include container;
+    @include susy-breakpoint($s-sm, $c8) {
+        @include container;
+    }
+    @include susy-breakpoint($s-hm, $c8) {
+        @include container;
+    }
+    @include susy-breakpoint($s-sp, $c12) {
+        @include container;
+    }
+    @include susy-breakpoint($s-hp, $c12) {
+        @include container;
+    }
+    @include susy-breakpoint($s-sd, $c18) {
+        @include container;
+    }
+    @include susy-breakpoint($s-hd, $c24) {
+        @include container;
+    }
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.s-header {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    &__logo {
+        position: fixed;
+        width: 118px;
+        height: 118px;
+        left: 40px;
+        top: 40px;
+        z-index: 10;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 0;
+        }
+        @include susy-breakpoint($s-sm, $c8) {
+            width: 60px;
+            height: 60px;
+            top: 10px;
+            left: 10px;
+        }
+        @include susy-breakpoint($s-hm, $c8) {
+            width: 60px;
+            height: 60px;
+            top: 20px;
+            left: 20px;
+        }
+        @include susy-breakpoint($s-sp, $c12) {
+            width: 70px;
+            height: 70px;
+            top: 20px;
+        }
+        @include susy-breakpoint($s-hp, $c12) {
+            width: 70px;
+            height: 70px;
+            top: 20px;
+        }
+        @include susy-breakpoint($s-sd, $c18) {
+            width: 80px;
+            height: 80px;
+            top: 20px;
+        }
+    }
+    &__btn-video {
+        position: absolute;
+        width: 115px;
+        height: 76px;
+        right: 40px;
+        top: 20px;
+        z-index: 10;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 0;
+        }
+        @include susy-breakpoint($s-sm, $c8) {
+            width: 60px;
+            height: 40px;
+            right: 10px;
+        }
+        @include susy-breakpoint($s-hm, $c8) {
+            width: 60px;
+            height: 40px;
+        }
+        @include susy-breakpoint($s-sp, $c12) {
+            width: 70px;
+            height: 46px;
+        }
+        @include susy-breakpoint($s-hp, $c12) {
+            width: 70px;
+            height: 46px;
+        }
+        @include susy-breakpoint($s-sd, $c18) {
+            width: 80px;
+            height: 53px;
+        }
+    }
+}
+
+.s-main {
+    width: 100%;
+    height: 100%;
+}
+
+.s-section {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: #666666;
+    &--index {}
+    &--product-latte {
+        background: #2b261e url(../image/asset/latte-product-bg.jpg) no-repeat center center;
+        background-size: cover;
+        &:after {
+            content: "";
+            position: absolute;
+            height: 40px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            background-color: $s-o-c;
+            z-index: 0;
+        }
+        @include susy-breakpoint($s-sm, $c8) {
+            background: #2b261e url(../image/asset/latte-product-bg-m.jpg) no-repeat center center;
+            background-size: cover;
+            height: 680px;
+            min-height: auto;
+            &:after {
+                height: 30px;
+            }
+        }
+        @include susy-breakpoint($s-hm, $c8) {
+            background: #2b261e url(../image/asset/latte-product-bg-m.jpg) no-repeat center center;
+            background-size: cover;
+            height: 770px;
+            min-height: auto;
+            &:after {
+                height: 30px;
+            }
+        }
+        @include susy-breakpoint($s-sp, $c12) {
+            height: 600px;
+            min-height: auto;
+            &:after {
+                height: 30px;
+            }
+        }
+    }
+    &--product-siciliano {
+        background: #625134 url(../image/asset/siciliano-product-bg.jpg) no-repeat center center;
+        background-size: cover;
+        &:after {
+            content: "";
+            position: absolute;
+            height: 40px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            background-color: $s-b-c;
+            z-index: 0;
+        }
+        @include susy-breakpoint($s-sm, $c8) {
+            background: #625134 url(../image/asset/siciliano-product-bg-m.jpg) no-repeat center center;
+            background-size: cover;
+            height: 740px;
+            min-height: auto;
+            &:after {
+                height: 30px;
+            }
+        }
+        @include susy-breakpoint($s-hm, $c8) {
+            background: #625134 url(../image/asset/siciliano-product-bg-m.jpg) no-repeat center center;
+            background-size: cover;
+            height: 770px;
+            min-height: auto;
+            &:after {
+                height: 30px;
+            }
+        }
+        @include susy-breakpoint($s-sp, $c12) {
+            height: 600px;
+            min-height: auto;
+            &:after {
+                height: 30px;
+            }
+        }
+    }
+    &--tvcf {
+        background: rgb(208, 178, 152);
+        background: -moz-linear-gradient(left, rgba(208, 178, 152, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 85%, rgba(208, 179, 152, 1) 100%);
+        background: -webkit-linear-gradient(left, rgba(208, 178, 152, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 85%, rgba(208, 179, 152, 1) 100%);
+        background: linear-gradient(to right, rgba(208, 178, 152, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 85%, rgba(208, 179, 152, 1) 100%);
+        &:before {
+            content: "";
+            position: absolute;
+            height: 40px;
+            width: 50%;
+            left: 0;
+            bottom: 0;
+            background-color: $s-o-c;
+            z-index: 0;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            height: 40px;
+            width: 50%;
+            right: 0;
+            bottom: 0;
+            background-color: $s-b-c;
+            z-index: 0;
+        }
+    }
+}
+
+.btn-gotop {
+    background-color: rgba(0, 0, 0, .8);
+    width: 60px;
+    height: 60px;
+    border: none;
+    position: fixed;
+    bottom: -70px;
+    right: 10px;
+    z-index: 999;
+    box-sizing: border-box;
+    padding: 0;
+    opacity: 1;
+    border-radius: 30px;
+    @include cus-transition(all, .4s);
+    img {
+        display: block;
+        position: absolute;
+        width: 38px;
+        height: 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &.is-active {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+.orientation-tip {
+    transition: all .3s ease-in-out;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 50;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    &.is-active {
+        transform: translateY(0);
+    }
+}
+
+.orientation-tip__msg {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orientation-tip__img {
+    background: transparent url("../image/asset/orientation.svg") 0 0 no-repeat;
+    width: 120px;
+    height: 109px;
+    margin: 0 auto 10px auto;
+}
+
+.orientation-tip__text {
+    font-size: 13px;
+    color: #ffffff;
+    margin-top: 10px;
+    text-align: center;
+}
