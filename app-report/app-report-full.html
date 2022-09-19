@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>App Report</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="wrap">
+        <!--量測資料-->
+        <div class="measure-info">
+            <div class="measure-info__gender">
+                <span>性別</span>
+                <span>女性</span>
+            </div>
+            <div class="measure-info__date">
+                <span>量測時間</span>
+                <span>2022-08-09 11:50:16</span>
+            </div>
+            <button class="measure-info__btn-share">分享</button>
+        </div>
+        <!--量測資料-->
+        <!--血氧飽和度-->
+        <div class="block-ui blood-oxygen">
+            <div class="block-ui__header">
+                <h2>血氧飽和度</h2>
+            </div>
+            <div class="block-ui__body">
+                <div class="blood-oxygen__content">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 160 160" xml:space="preserve">
+                        <circle cx="80" cy="80" r="78" fill="none" stroke="#ebebeb" stroke-width="4"/>
+                        <!--490-((490/100)*98)-->
+                        <circle class="blood-oxygen__circle" cx="80" cy="80" r="78" fill="none" stroke-width="4" style="stroke-dashoffset: 9.8"/>
+                        <text x="50%" y="22%" dominant-baseline="middle" text-anchor="middle" font-size="16" font-weight="700">SpO2%</text>
+                        <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="80">98</text>
+                    </svg>
+                </div>
+                <div class="blood-oxygen__content">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 160 160" xml:space="preserve" class="bad">
+                        <circle cx="80" cy="80" r="78" fill="none" stroke="#ebebeb" stroke-width="4"/>
+                        <!--490-((490/100)*98)-->
+                        <circle class="blood-oxygen__circle" cx="80" cy="80" r="78" fill="none" stroke-width="4" style="stroke-dashoffset: 9.8"/>
+                        <text x="50%" y="22%" dominant-baseline="middle" text-anchor="middle" font-size="16" font-weight="700">SpO2%</text>
+                        <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="80">95</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!--血氧飽和度-->
+        <!--自我保護力-->
+        <div class="block-ui self-protection">
+            <div class="block-ui__header">
+                <h2>自我保護力</h2>
+                <button class="block-ui__btn-tips">Tips</button>
+            </div>
+            <div class="block-ui__body">
+                <div class="self-protection__content">
+                    <div class="self-protection__bar">
+                        <div class="self-protection__point" style="width: 50%"></div>
+                    </div>
+                    <div class="self-protection__description">
+                        <h3>狀態說明</h3>
+                        <p>萬到省一我了服和非頭止，動了出這美這的就草相喜我多節國頭喜直負等是不特物史之正生規政，們那排所今位著國就主關多收觀下上道有氣於兒!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--自我保護力-->
+        <!--心率與波型-->
+        <div class="block-ui rate-waveform">
+            <div class="block-ui__header">
+                <h2>心率與波型</h2>
+                <div class="block-ui__switch">
+                    <button class="block-ui__switch-btn">左</button>
+                    <button class="block-ui__switch-btn">右</button>
+                </div>
+            </div>
+            <div class="block-ui__body">
+                <div class="rate-waveform__content">
+                    <div class="rate-waveform__data">
+                        <div class="rate-waveform__rate">
+                            <h4 class="rate-waveform__title">心率</h4>
+                            <div class="rate-waveform__rate-value" id="rate-value"></div>
+                        </div>
+                        <div class="rate-waveform__wave">
+                            <h4 class="rate-waveform__title">波型</h4>
+                            <div class="rate-waveform__wave-wrap">
+                                <div class="waveforms-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--心率與波型-->
+        <!--自我保護力-->
+        <div class="block-ui wave-quality">
+            <div class="block-ui__header">
+                <h2>波型品質分析</h2>
+            </div>
+            <div class="block-ui__body">
+                <div class="wave-quality__content">
+                    <div class="wave-quality__image">
+                        <img src="images/status-red.png" alt="波型品質分析">
+                    </div>
+                    <p class="wave-quality__text">右手波型穩定度低</p>
+                </div>
+                <div class="wave-quality__content">
+                    <div class="wave-quality__image">
+                        <img src="images/status-yellow.png" alt="波型品質分析">
+                    </div>
+                    <p class="wave-quality__text">右手波型穩定度低</p>
+                </div>
+                <div class="wave-quality__content">
+                    <div class="wave-quality__image">
+                        <img src="images/status-green.png" alt="波型品質分析">
+                    </div>
+                    <p class="wave-quality__text">右手波型穩定度低</p>
+                </div>
+            </div>
+        </div>
+        <!--自我保護力-->
+        <!--體質-->
+        <div class="block-ui body-type">
+            <div class="block-ui__header">
+                <h2>體型</h2>
+                <button class="block-ui__btn-more">分析報告</button>
+            </div>
+            <div class="block-ui__body">
+                <div class="body-type__content">
+                    <div class="body-type__type-image">
+                        <img src="images/type_01.png" alt="循環不足型">
+                    </div>
+                    <div class="body-type__description">
+                        <h3>循環不足型</h3>
+                        <p>交消香時游戶杯正間草斗，古給友不消田葉把交昌瓜走抄很面已申頭？二半兩因青米。放牛乾，己丟片英功化麼停立歌。第急點禾常、洋奶門豆。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--體質-->
+        <!--分數-->
+        <div class="measure-status-full">
+            <div class="measure-status-full__item up">
+                <div class="measure-status-full__header">
+                    <div class="measure-status-full__info">
+                        <h3 class="measure-status-full__title">健康分數</h3>
+                        <p class="measure-status-full__text">疾病發生的風險越高。85分以下需特別注意!</p>
+                    </div>
+                    <div class="measure-status-full__point">89</div>
+                </div>
+                <div class="measure-status-full__detail">
+                    <button class="measure-status-full__btn-toggle">說明</button>
+                    <div class="measure-status-full__detail-content">
+                        <p>滿分100分，依照脈相結果分析身體健康的狀態，分數越低!</p>
+                        <div class="measure-status-full__ref">
+                            <span>85</span>
+                            <span>85</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="measure-status-full__item down">
+                <div class="measure-status-full__header">
+                    <div class="measure-status-full__info">
+                        <h3 class="measure-status-full__title">身體年齡</h3>
+                        <p class="measure-status-full__text">依據健康大數據計算出的身體年齡</p>
+                    </div>
+                    <div class="measure-status-full__point">40</div>
+                </div>
+                <div class="measure-status-full__detail">
+                    <button class="measure-status-full__btn-toggle">說明</button>
+                    <div class="measure-status-full__detail-content">
+                        <p>受限於數據庫資料，最年輕的年齡為20。</p>
+                        <div class="measure-status-full__ref">
+                            <span>5</span>
+                            <span>5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="measure-status-full__item down">
+                <div class="measure-status-full__header">
+                    <div class="measure-status-full__info">
+                        <h3 class="measure-status-full__title">左右平衡</h3>
+                        <p class="measure-status-full__text">姿勢不良、外傷等原因會導致身體左右不對稱的狀況</p>
+                    </div>
+                    <div class="measure-status-full__point">84</div>
+                </div>
+                <div class="measure-status-full__detail">
+                    <button class="measure-status-full__btn-toggle">說明</button>
+                    <div class="measure-status-full__detail-content">
+                        <p>分數低者需找出身體歪斜所在，透過物理治療與運動調整!</p>
+                        <div class="measure-status-full__ref">
+                            <span>85</span>
+                            <span>85</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="measure-status-full__item up">
+                <div class="measure-status-full__header">
+                    <div class="measure-status-full__info">
+                        <h3 class="measure-status-full__title">經絡循環</h3>
+                        <p class="measure-status-full__text">身體循環會因為外傷與姿勢不良導致堵塞</p>
+                    </div>
+                    <div class="measure-status-full__point">80</div>
+                </div>
+                <div class="measure-status-full__detail">
+                    <button class="measure-status-full__btn-toggle">說明</button>
+                    <div class="measure-status-full__detail-content">
+                        <p>分數低者建議使用痠痛救星找出問題所在進行改善!</p>
+                        <div class="measure-status-full__ref">
+                            <span>85</span>
+                            <span>85</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="measure-status-full__item down">
+                <div class="measure-status-full__header">
+                    <div class="measure-status-full__info">
+                        <h3 class="measure-status-full__title">血管健康</h3>
+                        <p class="measure-status-full__text">全身性血液回流(心臟)，血管供氧能力等綜合指數</p>
+                    </div>
+                    <div class="measure-status-full__point">80</div>
+                </div>
+                <div class="measure-status-full__detail">
+                    <button class="measure-status-full__btn-toggle">說明</button>
+                    <div class="measure-status-full__detail-content">
+                        <p>分數低者建議增加有氧運動與血管保健食品以及鈣質的補充!</p>
+                        <div class="measure-status-full__ref">
+                            <span>85</span>
+                            <span>85</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="measure-status-full__item up">
+                <div class="measure-status-full__header">
+                    <div class="measure-status-full__info">
+                        <h3 class="measure-status-full__title">免疫力</h3>
+                        <p class="measure-status-full__text">身體抵抗感染發炎的能力</p>
+                    </div>
+                    <div class="measure-status-full__point">80</div>
+                </div>
+                <div class="measure-status-full__detail">
+                    <button class="measure-status-full__btn-toggle">說明</button>
+                    <div class="measure-status-full__detail-content">
+                        <p>太低（&lt;70)身體容易被感染，出現發炎的症狀，太高(&gt;90)則容易發生過敏反應。</p>
+                        <div class="measure-status-full__ref">
+                            <span>90</span>
+                            <span>70</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="measure-status-full__item down">
+                <div class="measure-status-full__header">
+                    <div class="measure-status-full__info">
+                        <h3 class="measure-status-full__title">精神健康</h3>
+                        <p class="measure-status-full__text">身體健康與精神健康息息相關</p>
+                    </div>
+                    <div class="measure-status-full__point">70</div>
+                </div>
+                <div class="measure-status-full__detail">
+                    <button class="measure-status-full__btn-toggle">說明</button>
+                    <div class="measure-status-full__detail-content">
+                        <p>在脈相上看出可能影響精神健康的問題(肝氣鬱結、思慮過多、自律神經失調等)，可嘗試透過調整經能量來絡改善。</p>
+                        <div class="measure-status-full__ref">
+                            <span>80</span>
+                            <span>80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="measure-status-full__item down">
+                <div class="measure-status-full__header">
+                    <div class="measure-status-full__info">
+                        <h3 class="measure-status-full__title">血氧</h3>
+                        <p class="measure-status-full__text">血氧相關</p>
+                    </div>
+                    <div class="measure-status-full__point">94</div>
+                </div>
+                <div class="measure-status-full__detail">
+                    <button class="measure-status-full__btn-toggle">說明</button>
+                    <div class="measure-status-full__detail-content">
+                        <p>血氧相關。</p>
+                        <div class="measure-status-full__ref">
+                            <span>95</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--分數-->
+        <!--四大功能-->
+        <div class="measure-nav">
+            <a class="measure-nav__btn" href="pulse-phase.html">
+                <img src="images/icon-chart.svg" alt="脈相圖">
+                <span>脈相圖</span>
+            </a>
+            <a class="measure-nav__btn" href="#">
+                <img src="images/icon-cycle.svg" alt="循環圖">
+                <span>循環圖</span>
+            </a>
+            <a class="measure-nav__btn" href="#">
+                <img src="images/icon-cube.svg" alt="3D定位">
+                <span>3D定位</span>
+            </a>
+            <a class="measure-nav__btn" href="#">
+                <img src="images/icon-target.svg" alt="傷科定位">
+                <span>傷科定位</span>
+            </a>
+        </div>
+        <!--四大功能-->
+        <!--附加功能-->
+        <div class="block-ui additional-features">
+            <div class="block-ui__header">
+                <h2>暫定標題</h2>
+            </div>
+            <div class="block-ui__body">
+                <div class="additional-features__content">
+                    <a class="additional-features__btn" href="#">
+                        <i>
+                            <img src="images/icon-food.svg" alt="飲食">
+                        </i>
+                        <span>飲食</span>
+                    </a>
+                    <a class="additional-features__btn" href="#">
+                        <i>
+                            <img src="images/icon-gym.svg" alt="生活">
+                        </i>
+                        <span>生活</span>
+                    </a>
+                    <a class="additional-features__btn" href="#">
+                        <i>
+                            <img src="images/icon-spa.svg" alt="芳香">
+                        </i>
+                        <span>芳香</span>
+                    </a>
+                    <a class="additional-features__btn" href="#">
+                        <i>
+                            <img src="images/icon-video.svg" alt="影音">
+                        </i>
+                        <span>影音</span>
+                    </a>
+                    <a class="additional-features__btn" href="#">
+                        <i>
+                            <img src="images/icon-rocket.svg" alt="調理">
+                        </i>
+                        <span>調理</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--附加功能-->
+        <!--備註-->
+        <div class="block-ui remark">
+            <div class="block-ui__header">
+                <h2>備註</h2>
+            </div>
+            <div class="block-ui__body">
+                <div class="remark__content">
+                    <div class="remark__measure-tags">
+                        <span>基本量測</span>
+                        <span>前測</span>
+                    </div>
+                    <div class="remark__remark-wrap">
+                        <div class="remark__content-edit" contenteditable="true">請輸入備註</div>
+                        <div class="remark__counter">
+                            <span>0</span>
+                            <span>/</span>
+                            <span>200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--備註-->
+        <div class="report-control">
+            <button class="report-control__btn-save">儲存備註內容</button>
+            <button class="report-control__btn-delete">刪除本記錄</button>
+        </div>
+    </div>
+    <!--popup-->
+    <div class="popup body-type-detail" id="body-type-detail">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <button class="popup__btn-close">close</button>
+                <div class="body-type-detail__content">
+                    <h2>循環不足型</h2>
+                    <ul>
+                        <li>王貝帶男抄？要紅壯每話昌且書；着少巴他圓前春記問禾姐才米車壯兒相抄高？已雄即海巴，是象視什士皮你乾入帶記什他結們抄愛，免寺見生羊者們樹黑旦別幸坐快背原尺香裝：村食五弟爬反公走，干抄第姊月勿自這直童送。</li>
+                        <li>乍員兄丟午雲綠活訴第，黃豆毛，故少吧休亮北反自信母只巾？少音飯雨首呀交清忍東又。尺歡洋游抱，洋千黑羊司足經巾身欠皮字象古位。且品語黑。詞馬美假友，每個王結化巾，豆雪幫。</li>
+                        <li>訴京課占貫玉告？到首歡會：光馬科房哥魚或筆還帽即什香裝香習拉；足己可借，奶泉林跟打木，汗貫林隻黃也流歌走多重；田燈魚喜良停，彩西東哭亮抱丟夕車，追朵斗問來哭自方足「許飯訴雪收媽哥左」旦課點它民雄戶。</li>
+                        <li>王貝帶男抄？要紅壯每話昌且書；着少巴他圓前春記問禾姐才米車壯兒相抄高？已雄即海巴，是象視什士皮你乾入帶記什他結們抄愛，免寺見生羊者們樹黑旦別幸坐快背原尺香裝：村食五弟爬反公走，干抄第姊月勿自這直童送。</li>
+                        <li>乍員兄丟午雲綠活訴第，黃豆毛，故少吧休亮北反自信母只巾？少音飯雨首呀交清忍東又。尺歡洋游抱，洋千黑羊司足經巾身欠皮字象古位。且品語黑。詞馬美假友，每個王結化巾，豆雪幫。</li>
+                        <li>訴京課占貫玉告？到首歡會：光馬科房哥魚或筆還帽即什香裝香習拉；足己可借，奶泉林跟打木，汗貫林隻黃也流歌走多重；田燈魚喜良停，彩西東哭亮抱丟夕車，追朵斗問來哭自方足「許飯訴雪收媽哥左」旦課點它民雄戶。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--popup-->
+    <!--popup-->
+    <div class="popup tips-detail" id="tips-detail">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <button class="popup__btn-close">close</button>
+                <div class="tips-detail__content">
+                    <h2>說明</h2>
+                    <ul>
+                        <li>寺喝但皮雄買二南。都男乾：豆從胡肉四後經經害已眼林故年入馬姊進爪，綠西已辛王升和看吉快圓尾年牙平的士點。而笑重朵條對已反做但民語兄字。古門干帶汁浪現房個苦勿肖土「菜」拍校嗎玉！紅生神斤相力它苦歌雨。</li>
+                        <li>外巾做雨肖？斤從重鴨昌良兆忍來九事帽草飽亮冬半。要未立校用口鳥九美路首抓聲媽他畫跳。上習見好斗穴童音書門，兌問早教交吉開也何朋？請村你陽掃文立高唱姊而松少新着成種抓石間「干波司」土几。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--popup-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js"></script>
+    <script src="js/all.js"></script>
+    <script>
+        $(function(){
+            $('.block-ui__btn-more').on('click', function(){
+                $('#body-type-detail').addClass('active')
+            })
+
+            $('.block-ui__btn-tips').on('click', function(){
+                $('#tips-detail').addClass('active')
+            })
+
+            $('.popup__btn-close').on('click', function(){
+                let parent = $(this).parents()[2]
+                $(parent).removeClass('active')
+            })
+
+            const rateWaveData = [
+                {
+                    rate: 67,
+                    waveData: [5, 9, 7, 8, 5, 3, 5, 4, 5, 9, 7, 8, 5, 3, 5, 4, 5, 9, 7, 8, 5, 3, 5, 4]
+                },
+                {
+                    rate: 80,
+                    waveData: [2, 2, 2, 2, 2, 3, 5, 4, 5, 9, 7, 8, 5, 3, 5, 4, 2, 2, 2, 2, 2, 2, 2, 2]
+                }
+            ]
+
+            const waveformsChart = new Chartist.Line('.waveforms-chart', {
+                    labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 10, 11, 12, 13, 14, 15, 16],
+                    series: []
+                }, {
+                    chartPadding: {
+                        right: 0,
+                        top: 16,
+                        left: -20,
+                        bottom: -60
+                    },
+                    low: 0,
+                    showArea: false,
+                    showPoint: false,
+                    axisX: {
+                        showGrid: false,
+                        showLabel: false
+                    },
+                    axisY: {
+                        showGrid: false,
+                        showLabel: false
+                    }
+                });
+
+            $('.block-ui__switch-btn').on('click', function(){
+                let index = $(this).index()
+                $(this).addClass('active').siblings().removeClass('active')
+                $('#rate-value').html(rateWaveData[index].rate)
+                waveformsChart.data.series = []
+                waveformsChart.data.series.push(rateWaveData[index].waveData)
+                waveformsChart.update()
+            })
+            
+            $('.block-ui__switch-btn').eq(0).trigger('click')
+
+            $('.measure-status-full__btn-toggle').on('click', function(){
+                if($(this).hasClass('active')) {
+                    $(this).removeClass('active')
+                    $(this).next().stop().slideUp(300)
+                } else {
+                    $(this).addClass('active')
+                    $(this).next().stop().slideDown(300)
+                }
+            })
+            
+        })
+    </script>
+</body>
+</html>

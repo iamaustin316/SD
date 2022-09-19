@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>App Report</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="wrap">
+        <!--量測資料-->
+        <div class="measure-info">
+            <div class="measure-info__date">
+                <span>量測時間</span>
+                <span>2022-08-09 11:50:16</span>
+            </div>
+            <div class="measure-info__remark">
+                <span>備註</span>
+                <span>吃了什麼東西測試30</span>
+            </div>
+            <button class="measure-info__btn-tips">Tips</button>
+        </div>
+        <!--量測資料-->
+        <!--脈相圖&經絡-->
+        <div class="block-ui pulse-phase">
+            <div class="block-ui__header">
+                <h2>脈相圖</h2>
+                <div class="block-ui__switch">
+                    <button class="block-ui__switch-btn">左</button>
+                    <button class="block-ui__switch-btn">右</button>
+                </div>
+            </div>
+            <div class="block-ui__body">
+                <div class="pulse-phase__content">
+                    <!--柱狀圖-->
+                    <div class="pulse-phase__pulse-list">
+                        <!-- <div class="pulse-phase__pulse">
+                            <p>風</p>
+                            <svg height="120" width="32" viewBox="0 0 32 120">
+                                <polyline points="16,16 16,104" stroke="var(--color-gray-75)" stroke-width="32" stroke-linecap="round" fill="none" stroke-linejoin="round"></polyline>
+                                <polyline points="16,57.8 16,60.01" stroke="var(--color-green-800)" stroke-width="32" stroke-linecap="round" fill="none" stroke-linejoin="round"></polyline>
+                                <polyline points="16,60 16,60.01" stroke="var(--color-green-500)" stroke-width="28.8" stroke-linecap="round" fill="none" stroke-linejoin="round"></polyline>
+                                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">5</text>
+                            </svg>
+                            <p>C0</p>
+                        </div> -->
+                    </div>
+                    <!--柱狀圖-->
+                    <!--經絡-->
+                    <div class="pulse-phase__detail">
+                        <h4>請按下方 C0 - C7 處說明</h4>
+                        <div class="pulse-phase__detail-list">
+                            <!-- <button class="pulse-phase__btn">
+                                <span>C0(心包經)</span>
+                                <span>15</span>
+                            </button> -->
+                        </div>
+                    </div>
+                    <!--經絡-->
+                </div>
+            </div>
+        </div>
+        <!--脈相圖&經絡-->
+        
+    </div>
+    <!--popup-->
+    <div class="popup meridian-detail" id="meridian-detail">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <button class="popup__btn-close">close</button>
+                <div class="meridian-detail__content">
+                    <h2></h2>
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--popup-->
+    <!--popup-->
+    <div class="popup tips-detail" id="tips-detail">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <button class="popup__btn-close">close</button>
+                <div class="tips-detail__content">
+                    <h2>說明</h2>
+                    <div class="tips-detail__list">
+                        <div class="tips-detail__item red">
+                            <span>紅</span>
+                            <span>需特別注意</span>
+                        </div>
+                        <div class="tips-detail__item orange">
+                            <span>橘</span>
+                            <span>需注意</span>
+                        </div>
+                        <div class="tips-detail__item yellow">
+                            <span>黃</span>
+                            <span>需稍微注意</span>
+                        </div>
+                        <div class="tips-detail__item green">
+                            <span>綠</span>
+                            <span>可/尚可</span>
+                        </div>
+                        <div class="tips-detail__item wind">
+                            <span>風</span>
+                            <span>代表您的身體狀況正在改變</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--popup-->
+    <script src="js/all.js"></script>
+    <script>
+        $(function(){
+
+            const pulsePhaseData = [
+                [
+                    {
+                        position: 'C0',
+                        meridianName: '心包經',
+                        value: 30,
+                        wind: false,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C1',
+                        meridianName: '肝經',
+                        value: 55,
+                        wind: false,
+                        description: [
+                            '男抓吉乍知足眼棵師前造女具爪西室封羊氣而，青去出，前幼種怎三假穴而斤樹哥歡長土未幾害金科，又氣吉，林友立杯頭得邊員書勿「苦書旦珠支坡戊勿」外四像支往半吧他動哪休久。',
+                            '冰雨進早再停珠夏，見好明老學貝雪光「爸比各旦」尺食裝畫燈，采道畫呢筆害央弓游兩草虎波記毛且肉，言誰支怕！三王經意西幫扒跟未室，公多免。'
+                        ]
+                    },{
+                        position: 'C2',
+                        meridianName: '腎經',
+                        value: 0,
+                        wind: true,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C3',
+                        meridianName: '脾經',
+                        value: -45,
+                        wind: false,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C4',
+                        meridianName: '肺經',
+                        value: 20,
+                        wind: true,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C5',
+                        meridianName: '胃經',
+                        value: -95,
+                        wind: false,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C6',
+                        meridianName: '膽經',
+                        value: 100,
+                        wind: false,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C7',
+                        meridianName: '膀胱經',
+                        value: -100,
+                        wind: false,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    }
+                ],
+                [
+                    {
+                        position: 'C0',
+                        meridianName: '心包經',
+                        value: 5,
+                        wind: false,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C1',
+                        meridianName: '肝經',
+                        value: 15,
+                        wind: false,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C2',
+                        meridianName: '腎經',
+                        value: 25,
+                        wind: false,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C3',
+                        meridianName: '脾經',
+                        value: 35,
+                        wind: true,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C4',
+                        meridianName: '肺經',
+                        value: -55,
+                        wind: true,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C5',
+                        meridianName: '胃經',
+                        value: 100,
+                        wind: false,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C6',
+                        meridianName: '膽經',
+                        value: -100,
+                        wind: true,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    },{
+                        position: 'C7',
+                        meridianName: '膀胱經',
+                        value: -75,
+                        wind: false,
+                        description: [
+                            '幸息風英間植巾哭立枝亮口好央支可。間斤結次種休世音追冰兔明足，唱有支知，把耳至打根那找止瓜：科故往田更旦天有女飯冬四國書，收能牙。蝶雲怎。相右多三吉浪流外消起完，神三開媽黃。',
+                            '忍回至次上好右兄員；服已住登甲吉棵兩同風車玉多六夕童夏邊；三品二綠把者說去視科請。小兆幼而出白讀爪口山連根口月寺結菜。松鳥入院丟雨長世化自王樹蝸她尺年放都封牙，午目采斥母成幼娘連鴨。',
+                            '兆躲女愛因友尺得事幫，麻過耍怕村蛋幼「己斥圓掃草」而因品斥科室且元服：種送流回細住裝魚連心誰兌神反以。几錯免字皮天聲才字中怪，往蝸做！貓太也。功屋動爬。'
+                        ]
+                    }
+                ]
+            ]
+
+            $('.block-ui__btn-more').on('click', function(){
+                $('#body-type-detail').addClass('active')
+            })
+
+            $('.measure-info__btn-tips').on('click', function(){
+                $('#tips-detail').addClass('active')
+            })
+
+            $('.popup__btn-close').on('click', function(){
+                let parent = $(this).parents()[2]
+                $(parent).removeClass('active')
+            })
+            
+            $('.block-ui__switch-btn').on('click', function(){
+                let index = $(this).index()
+                $(this).addClass('active').siblings().removeClass('active')
+                $('.pulse-phase__pulse-list').empty()
+                $('.pulse-phase__detail-list').empty()
+                meridianData(index)
+            })
+            
+            let handIndex
+
+            $('.block-ui__switch-btn').eq(0).trigger('click')
+
+            function meridianData(index) {
+                pulsePhaseData[index].forEach(meridian => {
+                    let isWind = meridian.wind
+                    let lightColor;
+                    let darkColor;
+                    handIndex = index
+                    if (meridian.value >= 0 && meridian.value <= 25 || meridian.value <= 0 && meridian.value >= -25) {
+                        lightColor = 'var(--color-green-500)'
+                        darkColor = 'var(--color-green-800)'
+                    } else if ( meridian.value >= 26 && meridian.value <= 50 || meridian.value <= -26 && meridian.value >= -50 ) {
+                        lightColor = 'var(--color-yellow-500)'
+                        darkColor = 'var(--color-yellow-800)'
+                    } else if ( meridian.value >= 51 && meridian.value <= 75 || meridian.value <= -51 && meridian.value >= -75 ) {
+                        lightColor = 'var(--color-orange-500)'
+                        darkColor = 'var(--color-orange-800)'
+                    } else if ( meridian.value >= 76 || meridian.value <= -76 ) {
+                        lightColor = 'var(--color-red-500)'
+                        darkColor = 'var(--color-red-800)'
+                    }
+                    let valuePostion = (60 - (44 / 100) * meridian.value)
+                    let meridianSVG = `
+                        <div class="pulse-phase__pulse">
+                            <p>${isWind ? '風':''}</p>
+                            <svg height="120" width="32" viewBox="0 0 32 120">
+                                <polyline points="16,16 16,104" stroke="var(--color-gray-75)" stroke-width="32" stroke-linecap="round" fill="none" stroke-linejoin="round"></polyline>
+                                <polyline points="16,60 16,${valuePostion}" stroke="${darkColor}" stroke-width="32" stroke-linecap="round" fill="none" stroke-linejoin="round"></polyline>
+                                <polyline points="16,60 16,60" stroke="${lightColor}" stroke-width="28.8" stroke-linecap="round" fill="none" stroke-linejoin="round"></polyline>
+                                <text x="50%" y="51%" dominant-baseline="middle" text-anchor="middle">${meridian.value}</text>
+                            </svg>
+                            <p>${meridian.position}</p>
+                        </div>
+                    `
+                    let meridianItem = `<button class="pulse-phase__btn">
+                                <span>${meridian.position} - ${meridian.meridianName}</span>
+                                <span>${meridian.value}</span>
+                            </button>`
+                    
+                    $('.pulse-phase__pulse-list').append(meridianSVG)
+                    $('.pulse-phase__detail-list').append(meridianItem)
+                })
+            }
+            $(document).on('click', '.pulse-phase__btn', function(){
+                $('.meridian-detail').addClass('active')
+                $('.meridian-detail__content').find('h2').html('')
+                $('.meridian-detail__content').find('ul').empty()
+                $('.meridian-detail__content').find('h2').html(pulsePhaseData[handIndex][$(this).index()].meridianName)
+                pulsePhaseData[handIndex][$(this).index()].description.forEach(text => {
+                    let textContent = `<li>${text}</li>`
+                    $('.meridian-detail__content').find('ul').append(textContent)
+                })
+            })
+        })
+    </script>
+</body>
+</html>
