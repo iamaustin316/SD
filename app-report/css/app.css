@@ -530,12 +530,13 @@ body {
 }
 .measure-info__gender span {
   font-size: var(--font-size-base);
-  font-weight: 700;
+  font-weight: 500;
 }
 .measure-info__gender span:nth-child(1) {
-  color: var(--color-gray-300);
+  color: var(--color-gray-200);
 }
 .measure-info__gender span:nth-child(2) {
+  font-weight: 700;
   color: var(--color-gray-500);
 }
 .measure-info__date {
@@ -1247,6 +1248,30 @@ body {
   right: 1.2rem;
   top: 1.2rem;
   background: transparent url("../images/icon-close.svg") no-repeat center center;
+  background-size: 2.4rem;
+  font-size: 0;
+  border: 0;
+}
+
+.alert {
+  background-color: var(--color-red-500);
+  padding: 2rem 2.4rem;
+  position: relative;
+}
+.alert > div {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: #fff;
+  padding-right: 4.8rem;
+}
+.alert > button {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  transform: translate3d(0, 0, 0);
+  background: transparent url("../images/icon-close-w.svg") no-repeat center center;
   background-size: 2.4rem;
   font-size: 0;
   border: 0;

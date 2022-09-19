@@ -153,6 +153,7 @@
     <script src="js/all.js"></script>
     <script>
         $(function(){
+
             $('.common-problem__question').on('click', function(){
                 if($(this).hasClass('active')) {
                     $(this).removeClass('active')
@@ -162,12 +163,27 @@
                     $(this).next().stop().slideDown(300)
                 }
             })
+
             $('.block-ui__btn-more').on('click', function(){
                 $('#body-type-detail').addClass('active')
             })
+
             $('.popup__btn-close').on('click', function(){
                 let parent = $(this).parents()[2]
                 $(parent).removeClass('active')
+            })
+
+            const alert = (message) => {
+                const alertTemplate = `<div class="alert" role="alert"><div>${message}</div><button type="button" class="btn-close" id="btn-close"></button></div>`
+                document.querySelector('.wrap').insertAdjacentHTML('beforebegin', alertTemplate)
+            }
+            alert('前次基本量測已超過七日，建議怎麼量')
+
+            window.addEventListener('click',(e) => {
+                if(e.target && e.target.id== 'btn-close'){
+                    let alertElement = document.querySelector('.alert')
+                    alertElement.parentNode.removeChild(alertElement)
+                }
             })
         })
     </script>
