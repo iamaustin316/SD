@@ -24,52 +24,6 @@
             <button class="measure-info__btn-share">分享</button>
         </div>
         <!--量測資料-->
-        <!--血氧飽和度-->
-        <div class="block-ui blood-oxygen">
-            <div class="block-ui__header">
-                <h2>血氧飽和度</h2>
-            </div>
-            <div class="block-ui__body">
-                <div class="blood-oxygen__content">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 160 160" xml:space="preserve" class="normal">
-                        <circle cx="80" cy="80" r="78" fill="none" stroke="#ebebeb" stroke-width="4"/>
-                        <!--(490-((490/20)*(98-80)))+0.5-->
-                        <circle class="blood-oxygen__circle" cx="80" cy="80" r="78" fill="none" stroke-width="4" style="stroke-dashoffset: 49.5"/>
-                        <text x="50%" y="22%" dominant-baseline="middle" text-anchor="middle" font-size="16" font-weight="700">SpO2%</text>
-                        <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="80">98</text>
-                    </svg>
-                </div>
-                <div class="blood-oxygen__content">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 160 160" xml:space="preserve" class="bad">
-                        <circle cx="80" cy="80" r="78" fill="none" stroke="#ebebeb" stroke-width="4"/>
-                        <!--(490-((490/20)*(95-80)))+0.5-->
-                        <circle class="blood-oxygen__circle" cx="80" cy="80" r="78" fill="none" stroke-width="4" style="stroke-dashoffset: 123"/>
-                        <text x="50%" y="22%" dominant-baseline="middle" text-anchor="middle" font-size="16" font-weight="700">SpO2%</text>
-                        <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="80">95</text>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        <!--血氧飽和度-->
-        <!--自我保護力-->
-        <div class="block-ui self-protection">
-            <div class="block-ui__header">
-                <h2>自我保護力</h2>
-                <button class="block-ui__btn-tips">Tips</button>
-            </div>
-            <div class="block-ui__body">
-                <div class="self-protection__content">
-                    <div class="self-protection__bar">
-                        <div class="self-protection__point" style="width: 50%"></div>
-                    </div>
-                    <div class="self-protection__description">
-                        <h3>狀態說明</h3>
-                        <p>萬到省一我了服和非頭止，動了出這美這的就草相喜我多節國頭喜直負等是不特物史之正生規政，們那排所今位著國就主關多收觀下上道有氣於兒!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--自我保護力-->
         <!--心率與波型-->
         <div class="block-ui rate-waveform">
             <div class="block-ui__header">
@@ -82,6 +36,10 @@
             <div class="block-ui__body">
                 <div class="rate-waveform__content">
                     <div class="rate-waveform__data">
+                        <div class="rate-waveform__rate">
+                            <h4 class="rate-waveform__title">血氧</h4>
+                            <div class="rate-waveform__spo2-value" id="spo2-value"></div>
+                        </div>
                         <div class="rate-waveform__rate">
                             <h4 class="rate-waveform__title">心率</h4>
                             <div class="rate-waveform__rate-value" id="rate-value"></div>
@@ -97,7 +55,53 @@
             </div>
         </div>
         <!--心率與波型-->
+        <!--血氧飽和度-->
+        <!-- <div class="block-ui blood-oxygen">
+            <div class="block-ui__header">
+                <h2>血氧飽和度</h2>
+            </div>
+            <div class="block-ui__body">
+                <div class="blood-oxygen__content">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 160 160" xml:space="preserve" class="normal">
+                        <circle cx="80" cy="80" r="78" fill="none" stroke="#ebebeb" stroke-width="4" />
+                        (490-((490/20)*(98-80)))+0.5
+                        <circle class="blood-oxygen__circle" cx="80" cy="80" r="78" fill="none" stroke-width="4" style="stroke-dashoffset: 49.5" />
+                        <text x="50%" y="22%" dominant-baseline="middle" text-anchor="middle" font-size="16" font-weight="700">SpO2%</text>
+                        <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="80">98</text>
+                    </svg>
+                </div>
+                <div class="blood-oxygen__content">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 160 160" xml:space="preserve" class="bad">
+                        <circle cx="80" cy="80" r="78" fill="none" stroke="#ebebeb" stroke-width="4" />
+                        (490-((490/20)*(95-80)))+0.5
+                        <circle class="blood-oxygen__circle" cx="80" cy="80" r="78" fill="none" stroke-width="4" style="stroke-dashoffset: 123" />
+                        <text x="50%" y="22%" dominant-baseline="middle" text-anchor="middle" font-size="16" font-weight="700">SpO2%</text>
+                        <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="80">95</text>
+                    </svg>
+                </div>
+            </div>
+        </div> -->
+        <!--血氧飽和度-->
         <!--自我保護力-->
+        <div class="block-ui self-protection">
+            <div class="block-ui__header">
+                <h2>自我保護力</h2>
+                <button class="block-ui__btn-tips btn-self-protection">Tips</button>
+            </div>
+            <div class="block-ui__body">
+                <div class="self-protection__content">
+                    <div class="self-protection__bar">
+                        <div class="self-protection__point" style="width: 50%"></div>
+                    </div>
+                    <div class="self-protection__description">
+                        <h3>狀態說明</h3>
+                        <p>萬到省一我了服和非頭止，動了出這美這的就草相喜我多節國頭喜直負等是不特物史之正生規政，們那排所今位著國就主關多收觀下上道有氣於兒!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--自我保護力-->
+        <!--波型品質分析-->
         <div class="block-ui wave-quality">
             <div class="block-ui__header">
                 <h2>波型品質分析</h2>
@@ -123,12 +127,12 @@
                 </div>
             </div>
         </div>
-        <!--自我保護力-->
+        <!--波型品質分析-->
         <!--體質-->
         <div class="block-ui body-type">
             <div class="block-ui__header">
                 <h2>體型</h2>
-                <button class="block-ui__btn-more">分析報告</button>
+                <button class="block-ui__btn-tips btn-body-type">Tips</button>
             </div>
             <div class="block-ui__body">
                 <div class="body-type__content">
@@ -302,21 +306,21 @@
         <!--分數-->
         <!--四大功能-->
         <div class="measure-nav">
-            <a class="measure-nav__btn" href="pulse-phase.html">
-                <img src="images/icon-chart.svg" alt="脈相圖">
+            <a class="measure-nav__btn" href="pulse-phase.html" title="脈相圖">
                 <span>脈相圖</span>
+                <img src="images/icon-chart.svg" alt="脈相圖">
             </a>
-            <a class="measure-nav__btn" href="#">
-                <img src="images/icon-cycle.svg" alt="循環圖">
+            <a class="measure-nav__btn" href="#" title="循環圖">
                 <span>循環圖</span>
+                <img src="images/icon-cycle.svg" alt="循環圖">
             </a>
-            <a class="measure-nav__btn" href="#">
-                <img src="images/icon-cube.svg" alt="3D定位">
+            <a class="measure-nav__btn" href="#" title="3D定位">
                 <span>3D定位</span>
+                <img src="images/icon-cube.svg" alt="3D定位">
             </a>
-            <a class="measure-nav__btn" href="#">
-                <img src="images/icon-target.svg" alt="傷科定位">
+            <a class="measure-nav__btn" href="#" title="傷科定位">
                 <span>傷科定位</span>
+                <img src="images/icon-target.svg" alt="傷科定位">
             </a>
         </div>
         <!--四大功能-->
@@ -441,12 +445,12 @@
     <script src="js/all.js"></script>
     <script>
         $(function () {
-            $('.block-ui__btn-more').on('click', function () {
+            $('.btn-body-type').on('click', function () {
                 $('#body-type-detail').addClass('active')
                 $('html, body').addClass('fixed')
             })
 
-            $('.block-ui__btn-tips').on('click', function () {
+            $('.btn-self-protection').on('click', function () {
                 $('#tips-detail').addClass('active')
                 $('html, body').addClass('fixed')
             })
@@ -459,10 +463,12 @@
 
             const rateWaveData = [
                 {
+                    spo2: 97,
                     rate: 67,
                     waveData: [5, 9, 7, 8, 5, 3, 5, 4, 5, 9, 7, 8, 5, 3, 5, 4, 5, 9, 7, 8, 5, 3, 5, 4]
                 },
                 {
+                    spo2: 94,
                     rate: 80,
                     waveData: [2, 2, 2, 2, 2, 3, 5, 4, 5, 9, 7, 8, 5, 3, 5, 4, 2, 2, 2, 2, 2, 2, 2, 2]
                 }
@@ -494,7 +500,13 @@
             $('.block-ui__switch-btn').on('click', function () {
                 let index = $(this).index()
                 $(this).addClass('active').siblings().removeClass('active')
+                $('#spo2-value').html(rateWaveData[index].spo2)
                 $('#rate-value').html(rateWaveData[index].rate)
+                if (rateWaveData[index].spo2 <= 94) {
+                    $('#spo2-value').addClass('danger')
+                } else {
+                    $('#spo2-value').removeClass('danger')
+                }
                 waveformsChart.data.series = []
                 waveformsChart.data.series.push(rateWaveData[index].waveData)
                 waveformsChart.update()
