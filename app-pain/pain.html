@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>有痠痛</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class="wrap three">
+        <div class="three__frame">
+            <img src="images/pain-demo.jpg" alt="">
+        </div>
+        <div class="three__control">
+            <a class="three__btn-prev disabled" href="#">上一頁</a>
+            <button class="three__btn-tips">Tips</button>
+            <a class="three__btn-next" href="#">下一頁</a>
+        </div>
+    </div>
+    <!--popup-->
+    <div class="popup tips-detail" id="tips-detail">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <button class="popup__btn-close">close</button>
+                <div class="tips-detail__content">
+                    <div class="tips-detail__section">
+                        <h2>確認痠痛處</h2>
+                        <p>如果現在疼痛的部位是標示部位等於疼痛是急性發炎導致，這樣的疼痛是身體的自然修補反應，不應過度壓制，但也不應直接按揉會讓發炎反應更加嚴重</p>
+                    </div>
+                    <div class="tips-detail__section">
+                        <h2>建議處理方式</h2>
+                        <ol>
+                            <li>讓疼痛處充分休息，勿直接按揉</li>
+                            <li>疼痛部位上下處熱敷+輕揉</li>
+                            <li>過度疼痛時可短時間冷敷，使用消炎止痛貼布減少發炎反應</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--popup-->
+    <script src="js/all.js"></script>
+    <script>
+        $(function () {
+
+            function showTips(isActive) {
+                if(isActive) {
+                    $('#tips-detail').addClass('active')
+                    $('html, body').addClass('fixed')
+                } else {
+                    $('#tips-detail').removeClass('active')
+                    $('html, body').removeClass('fixed')
+                }
+            }
+
+            $('.three__btn-tips').on('click', function(){
+                showTips(true)
+            })
+
+            $('.popup__btn-close').on('click', function () {
+                showTips(false)
+            })
+
+            setTimeout(function(){
+                showTips(true)
+            }, 5000)
+        })
+    </script>
+</body>
+
+</html>

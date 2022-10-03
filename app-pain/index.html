@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>痠痛</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <!--目前無量測紀錄，請點選下方量測按鈕進行量測-->
+    <div class="oops">
+        <div class="oops__content">
+            <div class="oops__image">
+                <img src="images/icon-oops.svg" alt="很抱歉">
+            </div>
+            <h3 class="oops__title">很抱歉</h3>
+            <p class="oops__text">目前無量測紀錄，請點選下方量測按鈕進行量測</p>
+        </div>
+    </div>
+    <!--目前無量測紀錄，請點選下方量測按鈕進行量測-->
+    <!--目前無量測紀錄，請點選下方量測按鈕進行量測-->
+    <div class="oops">
+        <div class="oops__content">
+            <div class="oops__image">
+                <img src="images/icon-oops.svg" alt="很抱歉">
+            </div>
+            <h3 class="oops__title">很抱歉</h3>
+            <p class="oops__text">您尚未開通此功能，可立即前開購買開通</p>
+            <a class="oops__btn-buy" href="#">前往購買</a>
+        </div>
+    </div>
+    <!--目前無量測紀錄，請點選下方量測按鈕進行量測-->
+    <div class="wrap">
+        <!--量測資料-->
+        <div class="measure-info">
+            <div class="measure-info__date">
+                <span>量測時間</span>
+                <span>2022-08-09 11:50:16</span>
+            </div>
+        </div>
+        <!--量測資料-->
+        <!--有痛感-->
+        <div class="block-ui pain">
+            <div class="block-ui__header">
+                <h2>有痛感</h2>
+            </div>
+            <div class="block-ui__body">
+                <div class="pain__content">
+                    <p class="pain__text">萬到省一我了服和非頭止們那排所今位著國就主關多收觀下上道有氣於兒!</p>
+                    <a class="pain__btn-fix" href="pain.html">前往調整</a>
+                </div>
+            </div>
+        </div>
+        <!--有痛感-->
+        <!--無痛感-->
+        <div class="block-ui painless">
+            <div class="block-ui__header">
+                <h2>無痛感</h2>
+            </div>
+            <div class="block-ui__body">
+                <div class="painless__content">
+                    <p class="painless__text">萬到省一我了服和非頭止們那排所今位著國就主關多收觀下上道有氣於兒!</p>
+                    <a class="painless__btn-fix" href="painless.html">前往調整</a>
+                </div>
+            </div>
+        </div>
+        <!--無痛感-->
+    </div>
+    <script src="js/all.js"></script>
+    <script>
+        $(function () {
+            const alert = (message) => {
+                const alertTemplate = `<div class="alert" role="alert"><div>${message}</div><button type="button" class="btn-close" id="btn-close"></button></div>`
+                document.querySelector('.wrap').insertAdjacentHTML('beforebegin', alertTemplate)
+            }
+            alert('您的前次量測已超過一天，建議您再次量測')
+
+            window.addEventListener('click', (e) => {
+                if (e.target && e.target.id == 'btn-close') {
+                    let alertElement = document.querySelector('.alert')
+                    alertElement.parentNode.removeChild(alertElement)
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
