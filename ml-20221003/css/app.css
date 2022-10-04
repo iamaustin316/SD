@@ -1422,12 +1422,12 @@ button.swiper-pagination-bullet {
   font-size: 0;
 }
 .section-a-1__bg {
-  width: 769px;
-  height: 974px;
+  width: 788px;
+  height: 1002px;
   top: 22px;
   position: absolute;
   left: 50%;
-  transform: translate3d(-125%, 0, 0);
+  transform: translate3d(-121.8%, 0, 0);
   background: transparent url("../images/section-a-1-bg@2x.png") no-repeat 0 0;
   background-size: 100% auto;
   z-index: 0;
@@ -1525,12 +1525,12 @@ button.swiper-pagination-bullet {
   font-size: 0;
 }
 .section-a-2__bg {
-  width: 769px;
-  height: 974px;
+  width: 788px;
+  height: 1002px;
   top: 22px;
   position: absolute;
   left: 50%;
-  transform: translate3d(-125%, 0, 0);
+  transform: translate3d(-121.8%, 0, 0);
   background: transparent url("../images/section-a-2-bg@2x.png") no-repeat 0 0;
   background-size: 100% auto;
   z-index: 0;
@@ -1698,12 +1698,12 @@ button.swiper-pagination-bullet {
   font-size: 0;
 }
 .section-a-3__bg {
-  width: 769px;
-  height: 974px;
+  width: 788px;
+  height: 1002px;
   top: 22px;
   position: absolute;
   left: 50%;
-  transform: translate3d(-125%, 0, 0);
+  transform: translate3d(-121.8%, 0, 0);
   background: transparent url("../images/section-a-3-bg@2x.png") no-repeat 0 0;
   background-size: 100% auto;
   z-index: 0;
