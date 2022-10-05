@@ -1339,7 +1339,7 @@ button.swiper-pagination-bullet {
   transition: transform 300ms ease;
 }
 .section-kv__btn-download:hover span {
-  transform: translate3d(0, -3px, 0);
+  transform: translate3d(0, -1px, 0);
 }
 .section-kv__btn-download:hover::after {
   opacity: 1;
@@ -1379,6 +1379,10 @@ button.swiper-pagination-bullet {
   text-align: center;
   cursor: pointer;
   font-family: source-han-sans-cjk-tc, sans-serif;
+  transition: background-color 300ms ease;
+}
+.section-a .cut-swiper-pagination-bullet:hover {
+  background-color: #ff9d00;
 }
 .section-a .cus-swiper-pagination-bullet-active {
   background-color: #ff9d00;
@@ -1507,7 +1511,7 @@ button.swiper-pagination-bullet {
   transition: transform 300ms ease;
 }
 .section-a-1__btn:hover span {
-  transform: translate3d(0, -3px, 0);
+  transform: translate3d(0, -1px, 0);
 }
 .section-a-1__btn:hover::after {
   opacity: 1;
