@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PET PULSE愛毛孩</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrap">
+        <!--site-header-->
+        <header class="site-header">
+            <div class="site-header__inner">
+                <div class="site-header__logo">
+                    <a href="index.html">PET PULSE</a>
+                </div>
+                <button class="site-header__btn-toggle"></button>
+                <div class="site-header__overlay"></div>
+                <div class="site-header__nav">
+                    <nav class="site-header__main-nav">
+                        <a class="site-header__btn-link" href="index.html">首頁</a>
+                        <a class="site-header__btn-link" href="dr.tammie.html">Dr. Tammie</a>
+                        <a class="site-header__btn-link" href="#">愛毛孩</a>
+                        <a class="site-header__btn-link" href="#">寵毛孩</a>
+                        <a class="site-header__btn-link" href="#">獸醫專區</a>
+                    </nav>
+                    <div class="site-header__user">
+                        <a class="site-header__btn-login" href="login.html">登入</a>
+                        <a class="site-header__btn-register" href="register.html">註冊</a>
+                    </div>
+                    <div class="site-header__search">
+                        <input class="site-header__search-input" type="text" placeholder="搜尋文章">
+                        <span class="site-header__search-icon"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--site-header-->
+        <!--site-main-->
+        <main class="site-main">
+            <div class="user-page">
+                <div class="user-page__inner">
+                    <div class="side-nav">
+                        <a class="side-nav__btn" href="user-profile.html">會員資料</a>
+                        <a class="side-nav__btn" href="user-password.html">修改密碼</a>
+                        <a class="side-nav__btn active" href="user-pets.html">我的毛孩</a>
+                        <a class="side-nav__btn" href="user-course.html">我的課程</a>
+                        <a class="side-nav__btn" href="user-article.html">收藏文章</a>
+                    </div>
+                    <div class="user-wrap">
+                        <div class="pet-profile">
+                            <h2 class="pet-profile__main-title">毛孩資料</h2>
+                            <div class="pet-profile__wrap">
+                                <div class="pet-profile__headshot">
+                                    <img id="headshot" src="images/avatar-pets.png" alt="小咪咪">
+                                    <div class="pet-profile__btn-upload">
+                                        <input type="file" id="headshot-upload" value="Choose a file" accept="image/*">
+                                    </div>
+                                </div>
+                                <div class="pet-profile__profile">
+                                    <div class="pet-profile__row">
+                                        <label for="username">毛孩姓名</label>
+                                        <input type="text" value="" name="username" id="username">
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="animal">毛孩種類</label>
+                                        <input type="animal" value="" name="animal" id="animal">
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="variety">毛孩品種</label>
+                                        <input type="variety" value="" name="variety" id="variety">
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="birthday">毛孩生日</label>
+                                        <input type="date" value="" name="birthday" id="birthday">
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="gender">毛孩生日</label>
+                                        <div class="pet-profile__select-wrap">
+                                            <select name="" id="gender">
+                                                <option value="male">公</option>
+                                                <option value="female">母</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="feed">餵養方式</label>
+                                        <input type="text" value="" name="feed" id="feed">
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="heathy">健康狀況</label>
+                                        <div class="pet-profile__select-wrap">
+                                            <select name="" id="heathy">
+                                                <option value="">請選擇</option>
+                                                <option value="">很健康</option>
+                                                <option value="">普通</option>
+                                                <option value="">不太好</option>
+                                                <option value="">很差</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="address">會員地址</label>
+                                        <input type="text" value="" name="address" id="address">
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="chronic">慢性病</label>
+                                        <div class="pet-profile__chronic-wrap">
+                                            <div class="pet-profile__checkbox">
+                                                <input type="checkbox" id="kidney" name="kidney">
+                                                <label for="kidney">腎臟病</label>
+                                            </div>
+                                            <div class="pet-profile__checkbox">
+                                                <input type="checkbox" id="heart" name="heart">
+                                                <label for="heart">腎臟病</label>
+                                            </div>
+                                            <div class="pet-profile__checkbox">
+                                                <input type="checkbox" id="gastrointestinal" name="gastrointestinal">
+                                                <label for="gastrointestinal">腸胃病</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="drug">慢性藥品</label>
+                                        <div class="pet-profile__drug-input-wrap">
+                                            <input type="text" name="drug" id="drug" placeholder="請輸入藥品名稱">
+                                            <button class="pet-profile__btn-add">新增</button>
+                                        </div>
+                                        <div class="pet-profile__drug-wrap">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="healthy-food">保健品</label>
+                                        <div class="pet-profile__drug-input-wrap">
+                                            <input type="text" name="healthy-food" id="healthy-food" placeholder="請輸入保健品名稱">
+                                            <button class="pet-profile__btn-add">新增</button>
+                                        </div>
+                                        <div class="pet-profile__drug-wrap">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <button class="pet-profile__btn-new">新增毛孩檔案</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--site-main-->
+        <!--site-footer-->
+        <footer class="site-footer">
+            <div class="site-footer__content">
+                <div class="site-footer__inner">
+                    <div class="site-footer__info">
+                        <h2>關於PETPULSE</h2>
+                        <p>嘗試從關心動物與生活環境開始，是學會與世界永續共存的第一步 —— 也是PETPULSE的使命。</p>
+                    </div>
+                    <div class="site-footer__block">
+                        <div class="site-footer__sns">
+                            <a href="#">
+                                <img src="images/icon-facebook.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="images/icon-instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="images/icon-line.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="site-footer__policy">
+                            <a href="#">使用者服務條款</a>
+                            <a href="#">隱私權政策</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__copyright">
+                <div class="site-footer__inner">
+                    <p class="site-footer__copyright-text">© 2022 PETPULSE All rights reserved.</p>
+                    <button class="site-footer__btn-gotop">top</button>
+                </div>
+            </div>
+        </footer>
+        <!--site-footer-->
+        <!--croppie-overlay-->
+        <div class="croppie-overlay">
+            <div class="croppie-overlay__inner">
+                <div class="croppie-overlay__headshot" id="croppie-headshot"></div>
+                <button class="croppie-overlay__upload-result">確定選取</button>
+            </div>
+        </div>
+        <!--croppie-overlay-->
+    </div>
+    <script src="js/all.js"></script>
+    <script>
+        $(function(){
+
+            let $uploadCrop;
+
+            function readFile(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $uploadCrop.croppie('bind', {
+                            url: e.target.result
+                        }).then(function(){
+                            console.log('jQuery bind complete');
+                        });
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
+                else {
+                    consoel.log("Sorry - you're browser doesn't support the FileReader API")
+                }
+            }
+
+            $uploadCrop = $('#croppie-headshot').croppie({
+                viewport: {
+                    width: 256,
+                    height: 256,
+                    type: 'circle'
+                },
+                enableExif: true
+            });
+
+            $('#headshot-upload').on('change', function(){
+                $('.croppie-overlay').addClass('active')
+                readFile(this)
+            })
+
+            $('.croppie-overlay__upload-result').on('click', function (ev) {
+                $uploadCrop.croppie('result', {
+                    type: 'canvas',
+                    size: 'viewport'
+                }).then(function (resp) {
+                    popupResult({
+                        src: resp
+                    });
+                });
+            });
+
+            function popupResult(result) {
+                $('.croppie-overlay').removeClass('active')
+                if (result.src) {
+                    $('#headshot').attr('src', result.src)
+                }
+            }
+        })
+    </script>
+</body>
+</html>
