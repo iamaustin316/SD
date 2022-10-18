@@ -25,8 +25,9 @@
                         <input class="login-ui__input" type="email" placeholder="請輸入電子郵件" id="email">
                     </div>
                     <div class="login-ui__row">
-                        <label class="login-ui__label" for="passoword">會員密碼</label>
-                        <input class="login-ui__input" type="passoword" placeholder="請輸入電子郵件" id="passoword">
+                        <i class="login-ui__toggle-password"></i>
+                        <label class="login-ui__label" for="password">會員密碼</label>
+                        <input class="login-ui__input" type="password" placeholder="請輸入會員密碼" id="password">
                     </div>
                     <div class="login-ui__row login-ui__row--row">
                         <div class="login-ui__checkbox">
@@ -44,6 +45,63 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+    <script src="js/all.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $(function(){
+
+            const inputEmail = $('#email')
+            const inputPassword = $('#password')
+
+            function isEmail(value) {
+                const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return regex.test(value);
+            }
+
+            function addError(element, errorMessage) {
+                element.after(`<div class="error-tips">${errorMessage}</div>`)
+            }
+
+            function removeError(element) {
+                element.next().remove()
+            }
+
+            $('.login-ui__toggle-password').on('click', function () {
+                if (!$(this).hasClass('active')) {
+                    $(this).addClass('active').nextAll().eq(1).attr('type', 'text');
+                } else {
+                    $(this).removeClass('active').nextAll().eq(1).attr('type', 'password');
+                }
+            })
+
+            inputEmail.on('input', function () {
+                removeError(inputEmail)
+            })
+
+            inputPassword.on('input', function () {
+                removeError(inputPassword)
+            })
+
+            $('.login-ui__btn-submit').on('click', function(e){
+                e.preventDefault()
+                if (inputEmail.val() === '' && !inputEmail.next().is('p')) {
+                    addError(inputEmail, '請輸入Email!')
+                    inputEmail.focus()
+                    return false
+                }
+                if (!isEmail(inputEmail.val()) && !inputEmail.next().is('p')) {
+                    addError(inputEmail, 'Email格式不正確!')
+                    inputEmail.focus()
+                    return false
+                }
+                if (inputPassword.val() === '' && !inputPassword.next().is('p')) {
+                    addError(inputPassword, '請輸入密碼!')
+                    inputPassword.focus()
+                    return false
+                }
+            })
+        });
+    </script>
 </body>
 </html>

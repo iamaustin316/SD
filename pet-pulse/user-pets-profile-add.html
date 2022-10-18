@@ -45,9 +45,9 @@
                     <div class="side-nav">
                         <a class="side-nav__btn" href="user-profile.html">會員資料</a>
                         <a class="side-nav__btn" href="user-password.html">修改密碼</a>
-                        <a class="side-nav__btn active" href="user-pets.html">我的毛孩</a>
+                        <a class="side-nav__btn active" href="user-pets.html">我家毛皇</a>
                         <a class="side-nav__btn" href="user-course.html">我的課程</a>
-                        <a class="side-nav__btn" href="user-article.html">收藏文章</a>
+                        <a class="side-nav__btn" href="user-certificate.html">我的證書</a>
                     </div>
                     <div class="user-wrap">
                         <div class="pet-profile">
@@ -61,89 +61,95 @@
                                 </div>
                                 <div class="pet-profile__profile">
                                     <div class="pet-profile__row">
-                                        <label for="username">毛孩姓名</label>
-                                        <input type="text" value="" name="username" id="username">
+                                        <label for="pet-name">毛孩名</label>
+                                        <input type="text" value="" name="pet-name" id="pet-name">
                                     </div>
                                     <div class="pet-profile__row">
-                                        <label for="animal">毛孩種類</label>
-                                        <input type="animal" value="" name="animal" id="animal">
+                                        <label for="">毛孩種類</label>
+                                        <div class="pet-profile__radio-wrap">
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="dog" name="animal">
+                                                <label for="dog">狗</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="cat" name="animal">
+                                                <label for="cat">貓</label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="pet-profile__row">
-                                        <label for="variety">毛孩品種</label>
-                                        <input type="variety" value="" name="variety" id="variety">
+                                        <label for="">是否有結紮</label>
+                                        <div class="pet-profile__radio-wrap">
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="ligation-yes" name="ligation">
+                                                <label for="ligation-yes">有</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="ligation-no" name="ligation">
+                                                <label for="ligation-no">無</label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="pet-profile__row">
                                         <label for="birthday">毛孩生日</label>
                                         <input type="date" value="" name="birthday" id="birthday">
                                     </div>
                                     <div class="pet-profile__row">
-                                        <label for="gender">毛孩生日</label>
-                                        <div class="pet-profile__select-wrap">
-                                            <select name="" id="gender">
-                                                <option value="male">公</option>
-                                                <option value="female">母</option>
-                                            </select>
-                                        </div>
+                                        <label for="variety">毛孩品種</label>
+                                        <input type="variety" value="" name="variety" id="variety">
                                     </div>
                                     <div class="pet-profile__row">
-                                        <label for="feed">餵養方式</label>
-                                        <input type="text" value="" name="feed" id="feed">
-                                    </div>
-                                    <div class="pet-profile__row">
-                                        <label for="heathy">健康狀況</label>
-                                        <div class="pet-profile__select-wrap">
-                                            <select name="" id="heathy">
-                                                <option value="">請選擇</option>
-                                                <option value="">很健康</option>
-                                                <option value="">普通</option>
-                                                <option value="">不太好</option>
-                                                <option value="">很差</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="pet-profile__row">
-                                        <label for="address">會員地址</label>
-                                        <input type="text" value="" name="address" id="address">
-                                    </div>
-                                    <div class="pet-profile__row">
-                                        <label for="chronic">慢性病</label>
-                                        <div class="pet-profile__chronic-wrap">
+                                        <label for="">飼養的毛孩種類</label>
+                                        <div class="pet-profile__checkbox-wrap">
                                             <div class="pet-profile__checkbox">
-                                                <input type="checkbox" id="kidney" name="kidney">
-                                                <label for="kidney">腎臟病</label>
+                                                <input type="checkbox" id="freeze-dried" name="freeze-dried">
+                                                <label for="freeze-dried">凍乾</label>
                                             </div>
                                             <div class="pet-profile__checkbox">
-                                                <input type="checkbox" id="heart" name="heart">
-                                                <label for="heart">腎臟病</label>
+                                                <input type="checkbox" id="raw" name="raw">
+                                                <label for="raw">生食</label>
                                             </div>
                                             <div class="pet-profile__checkbox">
-                                                <input type="checkbox" id="gastrointestinal" name="gastrointestinal">
-                                                <label for="gastrointestinal">腸胃病</label>
+                                                <input type="checkbox" id="fresh" name="fresh">
+                                                <label for="fresh">鮮食</label>
+                                            </div>
+                                            <div class="pet-profile__checkbox">
+                                                <input type="checkbox" id="feed" name="feed">
+                                                <label for="feed">飼料</label>
+                                            </div>
+                                            <div class="pet-profile__checkbox">
+                                                <input type="checkbox" id="canned" name="canned">
+                                                <label for="canned">罐頭</label>
+                                            </div>
+                                            <div class="pet-profile__checkbox">
+                                                <input type="checkbox" id="other" name="other">
+                                                <label for="other">其他</label>
+                                            </div>
+                                            <input type="text" value="" name="other-food" id="other-food">
+                                        </div>
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="feedings-per-day">每日餵食次數</label>
+                                        <input type="number" value="0" name="feed" id="feedings-per-day" max="6" min="1">
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="">現在健康狀態</label>
+                                        <div class="pet-profile__radio-wrap">
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="health-good" name="health">
+                                                <label for="health-good">健康</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="health-bad" name="health">
+                                                <label for="health-bad">生病</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pet-profile__row">
-                                        <label for="drug">慢性藥品</label>
-                                        <div class="pet-profile__drug-input-wrap">
-                                            <input type="text" name="drug" id="drug" placeholder="請輸入藥品名稱">
-                                            <button class="pet-profile__btn-add">新增</button>
-                                        </div>
-                                        <div class="pet-profile__drug-wrap">
-                                            
-                                        </div>
+                                        <button class="pet-profile__btn-download">下載毛孩報告</button>
                                     </div>
                                     <div class="pet-profile__row">
-                                        <label for="healthy-food">保健品</label>
-                                        <div class="pet-profile__drug-input-wrap">
-                                            <input type="text" name="healthy-food" id="healthy-food" placeholder="請輸入保健品名稱">
-                                            <button class="pet-profile__btn-add">新增</button>
-                                        </div>
-                                        <div class="pet-profile__drug-wrap">
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="pet-profile__row">
-                                        <button class="pet-profile__btn-new">新增毛孩檔案</button>
+                                        <button class="pet-profile__btn-new">儲存檔案</button>
                                     </div>
                                 </div>
                             </div>
