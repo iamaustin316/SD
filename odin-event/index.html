@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="description" content="ODIN">
+    <title>ODIN</title>
+    <link rel="stylesheet" href="css/app.css">
+    <meta property="og:image" content="https://tw-odin.kakaogames.com/og-image.jpg">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="loading">
+        <p>LOADING</p>
+        <span class="loader"></span>
+    </div>
+    <div class="wrap">
+        <!--浮動選單-->
+        <div class="float-nav">
+            <div class="float-nav__btn-fb" id="float-nav-btn-fb">
+                <a href="#">前往粉絲專頁</a>
+                <button class="float-nav__btn-close">關閉</button>
+            </div>
+            <div class="float-nav__btn-yt" id="float-nav-btn-yt">
+                <a href="#">訂閱YouTube</a>
+                <button class="float-nav__btn-close">關閉</button>
+            </div>
+        </div>
+        <!--浮動選單-->
+        <!--主選單-->
+        <header class="site-header">
+            <div class="site-header__inner">
+                <div class="site-header__odin"></div>
+                <button class="site-header__btn-close">close</button>
+                <button class="site-header__btn-open">
+                    <span></span>
+                </button>
+                <nav class="site-header__nav">
+                    <a class="site-header__btn" href="#kv">回主頁</a>
+                    <a class="site-header__btn" href="#reserve">事前預約</a>
+                    <a class="site-header__btn" href="#invite">好友邀請活動</a>
+                    <a class="site-header__btn" href="#role">新職業介紹</a>
+                    <a class="site-header__btn" href="#update">遊戲更新介紹</a>
+                </nav>
+                <div class="site-header__link">
+                    <a class="site-header__btn-link" href="https://tw-odin.kakaogames.com/" title="奧丁：神叛 | kakaogames" target="_blank">官方網站</a>
+                    <a class="site-header__btn-link" href="set-cookie.html">今日不再顯示</a>
+                </div>
+            </div>
+        </header>
+        <!--主選單-->
+        <main class="site-main">
+            <!--首頁-->
+            <section class="section-block section-kv" id="kv">
+                <div class="section-kv__content">
+                    <div class="section-kv__sub-title-1">
+                        <img id="kv-sub-title-1" src="images/kv-sub-title-1@2x.png" alt="主宰生死的最強女戰士">
+                    </div>
+                    <div class="section-kv__main-title">
+                        <img id="kv-main-title" src="images/kv-main-title@2x.png" alt="神盾">
+                    </div>
+                    <div class="section-kv__sub-title-2">
+                        <img id="kv-sub-title-2" src="images/kv-sub-title-2@2x.png" alt="Shield Maiden">
+                    </div>
+                    <div class="section-kv__sub-title-3">
+                        <img id="kv-sub-title-3" src="images/kv-sub-title-3@2x.png" alt="新職業更新">
+                    </div>
+                    <div class="section-kv__video" id="kv-video">
+                        <a class="section-kv__btn-role" href="#" data-id="2PdpM2vEv08">《女武神》介紹影片</a>
+                        <a class="section-kv__btn-role" href="#" data-id="9BCmoeMN77U">《斧戰士》介紹影片</a>
+                    </div>
+                    <div class="section-kv__nav">
+                        <button class="section-kv__btn-reserve" id="kv-btn-reserve" data-target="#reserve">
+                            <img src="images/kv-btn-reserve@2x.png" alt="立刻前往事前預約">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!--首頁-->
+            <!--事前預約-->
+            <section class="section-block section-reserve" id="reserve">
+                <div class="section-reserve__content">
+                    <div class="section-reserve__sub-title-1">
+                        <img class="reserve-element" id="reserve-sub-title-1" src="images/reserve-sub-title-1@2x.png" alt="新職業《神盾》更新紀念">
+                    </div>
+                    <div class="section-reserve__main-title">
+                        <img class="reserve-element" id="reserve-main-title" src="images/reserve-main-title@2x.png" alt="事前預約活動">
+                    </div>
+                    <div class="section-reserve__sub-title-2">
+                        <img class="reserve-element" id="reserve-sub-title-2" src="images/reserve-sub-title-2@2x.png" alt="活動期間：10月27日起至活動結束截止">
+                    </div>
+                    <div class="section-reserve__box reserve-element">
+                        <div class="section-reserve__item-title">
+                            <img id="reserve-item-title" src="images/reserve-item-title@2x.png" alt="立即預約領取事前預約獎勵">
+                        </div>
+                        <div class="section-reserve__form" id="reserve-form">
+                            <div class="section-reserve__row">
+                                <div class="section-reserve__select-wrap">
+                                    <select name="reserveAreaCode" id="reserveAreaCode">
+                                        <option value="0" disabled="disabled" selected="selected">選取區域</option>
+                                        <option value="886-TW">+886 台灣</option>
+                                        <option value="852-HK">+852 香港</option>
+                                        <option value="853-MO">+853 澳門</option>
+                                    </select>
+                                </div>
+                                <input class="section-reserve__input-mobile" type="tel" name="reserveMobile" id="reserveMobile" placeholder="請輸入9位電話號碼" maxlength="10">
+                            </div>
+                            <div class="section-reserve__row">
+                                <div class="section-reserve__checkbox">
+                                    <input type="checkbox" id="reserveTerms" name="reserveTerms">
+                                    <label for="reserveTerms">同意<a class="section-reserve__btn-terms" href="#">活動條款</a></label>
+                                </div>
+                            </div>
+                            <div class="section-reserve__row">
+                                <div class="section-reserve__checkbox">
+                                    <input type="checkbox" id="reservePrivacy" name="reservePrivacy">
+                                    <label for="reservePrivacy">同意<a class="section-reserve__btn-privacy">隱私權政策</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-reserve__remind-text">若欲撤回同意申請事前預約或拒絕簡訊收信，請諮詢<a href="#">客服中心</a>；<br>
+                        撤回事前預約申請後將取消配發活動獎勵。</div>
+                        <div class="section-reserve__item">
+                            <img class="reserve-element" src="images/reserve-item@2x.png" alt="事前預約獎勵">
+                        </div>
+                    </div>
+                    <div class="section-reserve__nav reserve-element">
+                        <button class="section-reserve__btn-submit">
+                            <img src="images/reserve-btn-submit@2x.png" alt="立即登錄">
+                        </button>
+                        <a class="section-reserve__btn-event" href="#" title="新職業活動">
+                            <img src="images/reserve-btn-event@2x.png" alt="新職業活動">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--事前預約-->
+            <!--好友邀請活動-->
+            <section class="section-block section-invite" id="invite">
+                <div class="section-invite__content">
+                    <div class="section-invite__sub-title-1">
+                        <img class="invite-element" src="images/invite-sub-title-1@2x.png" alt="事前預約限定紀念活動">
+                    </div>
+                    <div class="section-invite__main-title">
+                        <img class="invite-element" src="images/invite-main-title@2x.png" alt="好友邀請活動">
+                    </div>
+                    <div class="section-invite__sub-title-2">
+                        <img class="invite-element" src="images/invite-sub-title-2@2x.png" alt="活動期間：10月27日起至11月17日止">
+                    </div>
+                    <div class="section-invite__box invite-element">
+                        <div class="section-invite__intro">
+                            <h3>&lt;遊戲規則&gt;</h3>
+                            <p>玩家登錄資料獲取邀請碼，分享並邀請好友回鍋《奧丁：神叛》，
+                            即有機會抽限定大獎！</p>
+                            <ul>
+                                <li>邀請朋友統計對象條件以10/12前未登入之Player ID為主。</li>
+                                <li>您可以從遊戲內的設置清單中找到您的會員編號。</li>
+                                <li>活動相關疑問請洽客服中心。</li>
+                            </ul>
+                        </div>
+                        <div class="section-invite__form">
+                            <div class="section-invite__row">
+                                <div class="section-invite__select-wrap">
+                                    <select name="inviteAreaCode" id="inviteAreaCode">
+                                        <option value="0" disabled="disabled" selected="selected">選取區域</option>
+                                        <option value="886-TW">+886 台灣</option>
+                                        <option value="852-HK">+852 香港</option>
+                                        <option value="853-MO">+853 澳門</option>
+                                    </select>
+                                </div>
+                                <input class="section-invite__input-mobile" type="tel" name="inviteMobile" id="inviteMobile" placeholder="請輸入9位電話號碼" maxlength="9">
+                                <input class="section-invite__input-id" type="text" name="invitePlayerID" id="invitePlayerID" placeholder="請輸入12碼 Player ID" maxlength="12">
+                            </div>
+                            <div class="section-invite__row background section-invite-checkbox">
+                                <div class="section-invite__checkbox">
+                                    <input type="checkbox" id="inviteTerms" name="inviteTerms">
+                                    <label for="inviteTerms">同意<a class="section-invite__btn-terms" href="#">活動條款</a></label>
+                                </div>
+                                <div class="section-invite__checkbox">
+                                    <input type="checkbox" id="invitePrivacy" name="invitePrivacy">
+                                    <label for="invitePrivacy">同意<a class="section-invite__btn-privacy">隱私權政策</a></label>
+                                </div>
+                            </div>
+                            <div class="section-invite__row section-invite-result">
+                                <p class="section-invite__result">您的邀請函被<strong>00</strong>人次看過，<strong>00</strong>位好友已成功回歸</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-invite__nav invite-element">
+                        <button class="section-invite__btn-code">
+                            <img src="images/invite-btn-code@2x.png" alt="獲得好友邀請碼">
+                        </button>
+                        <button class="section-invite__btn-result">
+                            <img src="images/invite-btn-result@2x.png" alt="確認好友邀請結果">
+                        </button>
+                        <a class="section-invite__btn-notice" href="#" title="點我前往活動公告文章">
+                            <img src="images/invite-btn-notice@2x.png" alt="點我前往活動公告文章">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--好友邀請活動-->
+            <!--新職業介紹-->
+            <section class="section-block section-role" id="role">
+                <div class="section-role__content">
+                    <div class="section-role__sub-title-1">
+                        <img class="role-element" src="images/role-sub-title-1@2x.png" alt="在神與人的疆界之上，你會選擇哪一方?">
+                    </div>
+                    <div class="section-role__main-title">
+                        <img class="role-element" src="images/role-main-title@2x.png" alt="新職業《神盾》介紹">
+                    </div>
+                    <div class="section-role__sub-title-2">
+                        <img class="role-element" src="images/role-sub-title-2@2x.png" alt="神盾是可轉職為女武神和斧戰士的新職業 ">
+                    </div>
+                </div>
+                <div class="section-role__light-1">
+                    <img class="role-element" src="images/role-light-1@2x.png">
+                </div>
+                <div class="section-role__light-2">
+                    <img class="role-element" src="images/role-light-2@2x.png">
+                </div>
+                <div class="section-role__role-1">
+                    <img class="role-element" src="images/role-image-1@2x.png" alt="女武神">
+                </div>
+                <div class="section-role__role-2">
+                    <img class="role-element" src="images/role-image-2@2x.png" alt="斧戰士">
+                </div>
+                <div class="section-role__intro-1 section-role__btn-role" data-id="SfkEjHYPblE">
+                    <picture>
+                        <source srcset="images/role-intro-1-m@2x.png" media="(max-width: 768px)">
+                        <img class="role-element" src="images/role-intro-1@2x.png" alt="女武神">
+                    </picture>
+                </div>
+                <div class="section-role__intro-2 section-role__btn-role" data-id="UU9uqlD2qYg">
+                    <picture>
+                        <source srcset="images/role-intro-2-m@2x.png" media="(max-width: 768px)">
+                        <img class="role-element" src="images/role-intro-2@2x.png" alt="斧戰士">
+                    </picture>
+                </div>
+            </section>
+            <!--新職業介紹-->
+            <!--遊戲更新介紹-->
+            <section class="section-block section-update" id="update">
+                <div class="section-update__content">
+                    <div class="section-update__main-title">
+                        <img class="update-element" src="images/update-main-title@2x.png" alt="主要更新介紹">
+                    </div>
+                    <div class="section-update__slider">
+                        <div class="cus-swiper-pagination update-element"></div>
+                        <div class="cus-swiper-button-prev update-element"></div>
+                        <div class="cus-swiper-button-next update-element"></div>
+                        <div class="swiper update-element">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="section-update__slide-content">
+                                        <img src="images/update-slider-1@2x.png" alt="在人神領域上佇立的女戰士">
+                                        <div class="section-update__intro">
+                                            <h3>在人神領域上佇立的女戰士</h3>
+                                            <p>新職業《神盾》更新</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-update__slide-content">
+                                        <img src="images/update-slider-2@2x.png" alt="變更為新職業的機會">
+                                        <div class="section-update__intro">
+                                            <h3>變更為新職業的機會</h3>
+                                            <p>可將原先選擇的角色職業變更為《神盾》</p>
+                                            <small>
+                                                <img src="images/update-icon@2x.png" alt="">
+                                                關於職業變更詳細資訊，預計後續透過官方網站進行介紹
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-update__slide-content">
+                                        <img src="images/update-slider-3@2x.png" alt="在人神領域上佇立的女戰士">
+                                        <div class="section-update__intro">
+                                            <h3>在人神領域上佇立的女戰士</h3>
+                                            <p>新職業《神盾》更新</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-update__slide-content">
+                                        <img src="images/update-slider-4@2x.png" alt="快去煥然一新的暗影城堡內獲得成長道具吧！">
+                                        <div class="section-update__intro">
+                                            <h3>快去煥然一新的暗影城堡內獲得成長道具吧！</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--遊戲更新介紹-->
+        </main>
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+                <div class="site-footer__level">
+                    <img src="images/footer-level@2x.png" alt="輔15">
+                </div>
+                <div class="site-footer__content">
+                    <ul>
+                        <li>依中華民國遊戲軟體分級管理辦法分類為輔15級。遊戲部分內容涉及暴力、恐怖情節。</li>
+                        <li>本遊戲部分內容或服務需要另外支付其他費用。請注意遊戲時間，避免沉迷遊戲，可能影響身心健康。</li>
+                    </ul>
+                    <p>Copyright © Kakao Games Corp.Lionheart Studio.All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--影片播放-->
+    <div class="popup" id="video-player-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <button class="popup__btn-close">close</button>
+                <div class="popup__video-container">
+                    <div class="popup__frame"></div>
+                    <iframe id="yt-player" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--影片播放-->
+    <!--個人資訊處理同意通知-->
+    <div class="popup" id="privacy-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="privacy__main-title">
+                    <img src="images/privacy-main-title@2x.png" alt="個人資訊處理同意通知">
+                </div>
+                <div class="privacy__box">
+                    <button class="privacy__btn-close">close</button>
+                    <ul class="privacy__ul-list">
+                        <li>Kakao Games爲了傳送遊戲及活動信息,透過收集個人資訊,如果不同意收集資訊作爲處理活動業務的必要資訊,則無法進行活動處理業務。</li>
+                        <li>收集目的：參與活動、發放優惠、應對顧客諮詢、傳送廣告信息。</li>
+                        <li>收集的個人信息範疇：手機號碼、OS訊息（IOS、AOS）、國家訊息。</li>
+                        <li>個人資訊的擁有、使用地區/期限:在臺灣申請撤回活動參與時間或活動參與時間6個月內銷毀。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--個人資訊處理同意通知-->
+    <!--活動參與者權利指南-->
+    <div class="popup" id="terms-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="terms__main-title">
+                    <img src="images/terms-main-title@2x.png" alt="活動參與者權利指南">
+                </div>
+                <div class="terms__box">
+                    <button class="terms__btn-close">close</button>
+                    <ul class="terms__ul-list">
+                        <li>參與活動的資訊可以在申請頁面隨時確認。</li>
+                        <li>欲申請活動參與撤回之用戶或不想收到KAKAO GAMES提供的廣告訊息，可以在活動期間內透過<a herf="#">1:1客服諮詢</a>申請活動撤回。</li>
+                        <li>如果拒絕接收廣告訊息，則無法傳達Kakao Games提供的活動參與消息和優惠券，或活動商品。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--活動參與者權利指南-->
+    <!--會員編號輸入錯誤-->
+    <div class="popup" id="fail-member-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="fail__main-title">
+                    <img src="images/member-fail-main-title@2x.png" alt="登錄失敗！">
+                </div>
+                <div class="fail__box">
+                    <div class="fail__text">會員編號輸入錯誤<br>請再次確認</div>
+                    <button class="fail__btn-back" data-target="#fail-member-popup">
+                        <img src="images/member-fail-btn-back@2x.png" alt="返回">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--會員編號輸入錯誤-->
+    <!--未選地區-->
+    <div class="popup" id="fail-area-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="fail__main-title">
+                    <img src="images/member-fail-main-title@2x.png" alt="登錄失敗！">
+                </div>
+                <div class="fail__box">
+                    <div class="fail__text">請選擇地區</div>
+                    <button class="fail__btn-back" data-target="#fail-area-popup">
+                        <img src="images/member-fail-btn-back@2x.png" alt="返回">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--未選地區-->
+    <!--手機號碼輸入格式錯誤-->
+    <div class="popup" id="fail-mobile-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="fail__main-title">
+                    <img src="images/member-fail-main-title@2x.png" alt="登錄失敗！">
+                </div>
+                <div class="fail__box">
+                    <div class="fail__text">手機號碼輸入格式錯誤<br>請再次確認</div>
+                    <button class="fail__btn-back" data-target="#fail-mobile-popup">
+                        <img src="images/member-fail-btn-back@2x.png" alt="返回">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--手機號碼輸入格式錯誤-->
+    <!--未勾選同意服務條款與隱私權-->
+    <div class="popup" id="fail-check-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="fail__main-title">
+                    <img src="images/member-fail-main-title@2x.png" alt="登錄失敗！">
+                </div>
+                <div class="fail__box">
+                    <div class="fail__text">未勾選同意服務條款與隱私權<br>請再次確認</div>
+                    <button class="fail__btn-back" data-target="#fail-check-popup">
+                        <img src="images/member-fail-btn-back@2x.png" alt="返回">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--未勾選同意服務條款與隱私權-->
+    <!--事前預約活動已結束-->
+    <div class="popup active" id="end-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="fail__main-title">
+                    <img src="images/member-fail-main-title@2x.png" alt="登錄失敗！">
+                </div>
+                <div class="fail__box">
+                    <div class="fail__text">玩家資料傳輸與系統連線錯誤，請再次嘗試</div>
+                    <button class="fail__btn-back" data-target="#end-popup">
+                        <img src="images/member-fail-btn-back@2x.png" alt="返回">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--事前預約活動已結束-->
+    <!--此手機號碼已有註冊紀錄，無法再次登記-->
+    <div class="popup active" id="fail-mobile-registered-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="fail__main-title">
+                    <img src="images/member-fail-main-title@2x.png" alt="登錄失敗！">
+                </div>
+                <div class="fail__box">
+                    <div class="fail__text">此手機號碼已有註冊紀錄，無法再次登記</div>
+                    <button class="fail__btn-back" data-target="#fail-mobile-registered-popup">
+                        <img src="images/member-fail-btn-back@2x.png" alt="返回">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--此手機號碼已有註冊紀錄，無法再次登記-->
+    <!--玩家資料傳輸與系統連線錯誤，請再次嘗試-->
+    <div class="popup active" id="fail-system-error-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="fail__main-title">
+                    <img src="images/member-fail-main-title@2x.png" alt="登錄失敗！">
+                </div>
+                <div class="fail__box">
+                    <div class="fail__text">玩家資料傳輸與系統連線錯誤，請再次嘗試</div>
+                    <button class="fail__btn-back" data-target="#fail-system-error-popup">
+                        <img src="images/invite-btn-confirm@2x.png" alt="確認">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--玩家資料傳輸與系統連線錯誤，請再次嘗試-->
+    <!--登錄成功-->
+    <div class="popup" id="success-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="success__main-title">
+                    <img src="images/success-main-title@2x.png" alt="登錄成功！">
+                </div>
+                <div class="success__box">
+                    <div class="success__text">立即參加事前預約活動，豐富好禮等你來拿</div>
+                    <div class="success__nav">
+                        <button class="success__btn-invite">
+                            <img src="images/success-btn-invite@2x.png" alt="邀請好友活動">
+                        </button>
+                        <a class="success__btn-event" href="#" title="粉專新職業活動" target="_blank">
+                            <img src="images/success-btn-event@2x.png" alt="粉專新職業活動">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--登錄成功-->
+    <!--好友邀請活動-->
+    <div class="popup popup-form" id="friends-return-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="success__main-title">
+                    <img src="images/invite-main-title@2x.png" alt="好友邀請活動">
+                </div>
+                <div class="section-invite__box friends-return">
+                    <div class="section-invite__intro">
+                        <p>您已成功邀請好友回流遊玩《奧丁：神叛》，<br>
+                        請輸入資料並登入遊戲內領取回流獎勵。</p>
+                        <ul>
+                            <li>您可以從遊戲內的設置清單中找到您的會員編號。</li>
+                            <li>活動相關疑問請洽<a>客服中心</a>。</li>
+                        </ul>
+                    </div>
+                    <div class="section-invite__form">
+                        <div class="section-invite__row">
+                            <div class="section-invite__select-wrap">
+                                <select name="inviteFriendsAreaCode" id="inviteFriendsAreaCode">
+                                    <option value="0" disabled="disabled" selected="selected">選取區域</option>
+                                    <option value="886-TW">+886 台灣</option>
+                                    <option value="852-HK">+852 香港</option>
+                                    <option value="853-MO">+853 澳門</option>
+                                </select>
+                            </div>
+                            <input class="section-invite__input-mobile" type="tel" name="inviteFriendsMobile" id="inviteFriendsMobile" placeholder="請輸入9位電話號碼" maxlength="9">
+                            <input class="section-invite__input-id" type="text" name="inviteFriendsPlayerID" id="inviteFriendsPlayerID" placeholder="請輸入12碼 Player ID" maxlength="12">
+                        </div>
+                    </div>
+                </div>
+                <div class="section-invite__nav center">
+                    <button class="section-invite__btn-submit">
+                        <img src="images/invite-btn-submit@2x.png" alt="送出">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--好友邀請活動-->
+    <!--好友邀請活動-已被註冊-->
+    <div class="popup active" id="friends-registered-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="success__main-title">
+                    <img src="images/invite-main-title@2x.png" alt="好友邀請活動">
+                </div>
+                <div class="section-invite__box friends-return">
+                    <div class="section-invite__intro">
+                        <p>此會員編號已被註冊，本次註冊將不計算。</p>
+                    </div>
+                </div>
+                <div class="section-invite__nav center">
+                    <button class="section-invite__btn-confirm" data-target="#friends-registered-popup">
+                        <img src="images/invite-btn-confirm@2x.png" alt="確定">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--好友邀請活動-已被註冊-->
+    <!--好友邀請活動-好友邀請成功-->
+    <div class="popup" id="friends-success-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="success__main-title">
+                    <img src="images/invite-main-title-success@2x.png" alt="好友邀請成功">
+                </div>
+                <div class="section-invite__box friends-return">
+                    <div class="section-invite__intro">
+                        <p>請複製以下邀請碼，並傳送給曾經玩過《奧丁：神叛》的朋友<br>
+                        成功邀請越多回流回家，就有越多機會可以參加抽獎！</p>
+                    </div>
+                    <div class="section-invite__invite-code">
+                        <p id="invite-code">資料顯示欄</p>
+                        <button class="section-invite__btn-copy"></button>
+                    </div>
+                </div>
+                <div class="section-invite__nav center">
+                    <button class="section-invite__btn-confirm" data-target="#friends-success-popup">
+                        <img src="images/invite-btn-back@2x.png" alt="確定">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--好友邀請活動-好友邀請成功-->
+
+    <script src="js/all.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $(function(){
+            const privacyPopup = $("#privacy-popup");
+
+            $(".section-reserve__btn-privacy,.section-invite__btn-privacy").on("click", function (e) {
+                e.preventDefault();
+                privacyPopup.addClass("active");
+                $("html, body").addClass("fixed");
+            });
+
+            $(".privacy__btn-close").on("click", function (e) {
+                e.preventDefault();
+                privacyPopup.removeClass("active");
+                $("html, body").removeClass("fixed");
+            });
+
+            const termsPopup = $("#terms-popup");
+
+            $(".section-reserve__btn-terms,.section-invite__btn-terms").on("click", function (e) {
+                e.preventDefault();
+                termsPopup.addClass("active");
+                $("html, body").addClass("fixed");
+            });
+
+            $(".terms__btn-close").on("click", function (e) {
+                e.preventDefault();
+                termsPopup.removeClass("active");
+                $("html, body").removeClass("fixed");
+            });
+
+            $(".fail__btn-back").on("click", function (e) {
+                e.preventDefault();
+                let target = $(this).data('target');
+                $(target).removeClass("active");
+                $("html, body").removeClass("fixed");
+            });
+
+            function checkMobileTW(value) {
+                const regex = /^[9]\d{8}$/
+                return regex.test(value);
+            }
+
+            function checkMobileHK(value) {
+                const regex = /^([6|9])\d{7}$/
+                return regex.test(value);
+            }
+
+            function checkMobileMO(value) {
+                const regex = /^[6]([8|6])\d{5}$/
+                return regex.test(value);
+            }
+
+            // 事前預約活動按鈕送出
+            $('.section-reserve__btn-submit').on('click', function(e){
+                e.preventDefault()
+                if( $('#reserveAreaCode option:selected').val() === '0') {
+                    $('#fail-area-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if ($('#reserveMobile').val() === '') {
+                    $('#fail-mobile-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if ($('#reserveAreaCode option:selected').val() === '886-TW') {
+                    console.log('tw')
+                    if(!checkMobileTW($('#reserveMobile').val())) {
+                        $('#fail-mobile-popup').addClass('active')
+                        $("html, body").addClass("fixed")
+                        return
+                    }
+                }
+                if ($('#reserveAreaCode option:selected').val() === '852-HK') {
+                    console.log('hk')
+                    if (!checkMobileHK($('#reserveMobile').val())) {
+                        $('#fail-mobile-popup').addClass('active')
+                        $("html, body").addClass("fixed")
+                        return
+                    }
+                }
+                if ($('#reserveAreaCode option:selected').val() === '853-MO') {
+                    console.log('mo')
+                    if (!checkMobileMO($('#reserveMobile').val())) {
+                        $('#fail-mobile-popup').addClass('active')
+                        $("html, body").addClass("fixed")
+                        return
+                    }
+                }
+                if (!$('#reserveTerms').is(':checked')) {
+                    $('#fail-check-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if (!$('#reservePrivacy').is(':checked')) {
+                    $('#fail-check-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                $('#success-popup').addClass('active')
+                $("html, body").addClass("fixed")
+            })
+
+            $('.success__btn-invite').on('click', function () {
+                $('#success-popup').removeClass('active')
+                $("html, body").removeClass("fixed")
+                setTimeout(() => {
+                    gsap.to(window, { duration: 1, scrollTo: '#invite', ease: "power4.inOut" });
+                }, 1000)
+            })
+
+            // 好友邀請活動
+            $('.section-invite__btn-code').on('click', function (e) {
+                e.preventDefault()
+                if ($('#inviteAreaCode option:selected').val() === '0') {
+                    $('#fail-area-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if ($('#inviteMobile').val() === '') {
+                    $('#fail-mobile-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if ($('#inviteAreaCode option:selected').val() === '886-TW') {
+                    if (!checkMobileTW($('#inviteMobile').val())) {
+                        $('#fail-mobile-popup').addClass('active')
+                        $("html, body").addClass("fixed")
+                        return
+                    }
+                }
+                if ($('#inviteAreaCode option:selected').val() === '852-HK') {
+                    if (!checkMobileHK($('#inviteMobile').val())) {
+                        $('#fail-mobile-popup').addClass('active')
+                        $("html, body").addClass("fixed")
+                        return
+                    }
+                }
+                if ($('#inviteAreaCode option:selected').val() === '853-MO') {
+                    if (!checkMobileMO($('#inviteMobile').val())) {
+                        $('#fail-mobile-popup').addClass('active')
+                        $("html, body").addClass("fixed")
+                        return
+                    }
+                }
+                if ($('#invitePlayerID').val() === '') {
+                    $('#fail-member-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if (!$('#inviteTerms').is(':checked')) {
+                    $('#fail-check-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if (!$('#invitePrivacy').is(':checked')) {
+                    $('#fail-check-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                $('#friends-success-popup').addClass('active')
+                $("html, body").addClass("fixed")
+            })
+
+            $('.section-invite__btn-confirm').on('click', function(){
+                let target = $(this).data('target')
+                $(target).removeClass('active')
+                $("html, body").removeClass("fixed")
+            })
+
+            // 確認好友邀請結果
+            $('.section-invite__btn-result').on('click', function (e) {
+                e.preventDefault()
+                if ($('#inviteAreaCode option:selected').val() === '0') {
+                    $('#fail-area-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if ($('#inviteMobile').val() === '') {
+                    $('#fail-mobile-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if ($('#inviteAreaCode option:selected').val() === '886-TW') {
+                    if (!checkMobileTW($('#inviteMobile').val())) {
+                        $('#fail-mobile-popup').addClass('active')
+                        $("html, body").addClass("fixed")
+                        return
+                    }
+                }
+                if ($('#inviteAreaCode option:selected').val() === '852-HK') {
+                    if (!checkMobileHK($('#inviteMobile').val())) {
+                        $('#fail-mobile-popup').addClass('active')
+                        $("html, body").addClass("fixed")
+                        return
+                    }
+                }
+                if ($('#inviteAreaCode option:selected').val() === '853-MO') {
+                    if (!checkMobileMO($('#inviteMobile').val())) {
+                        $('#fail-mobile-popup').addClass('active')
+                        $("html, body").addClass("fixed")
+                        return
+                    }
+                }
+                if ($('#invitePlayerID').val() === '') {
+                    $('#fail-member-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if (!$('#inviteTerms').is(':checked')) {
+                    $('#fail-check-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if (!$('#invitePrivacy').is(':checked')) {
+                    $('#fail-check-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                $('.section-invite-checkbox').css('display', 'none')
+                $('.section-invite-result').css('display', 'flex')
+            })
+
+            // 用戶回流註冊
+            $('.section-invite__btn-submit').on('click', function (e) {
+                e.preventDefault()
+                if ($('#inviteFriendsAreaCode option:selected').val() === '0') {
+                    $('#fail-area-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if ($('#inviteFriendsMobile').val() === '') {
+                    $('#fail-mobile-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if ($('#inviteFriendsAreaCode option:selected').val() === '886-TW') {
+                    if (!checkMobileTW($('#inviteFriendsMobile').val())) {
+                        $('#fail-mobile-popup').addClass('active')
+                        $("html, body").addClass("fixed")
+                        return
+                    }
+                }
+                if ($('#inviteFriendsAreaCode option:selected').val() === '852-HK') {
+                    if (!checkMobileHK($('#inviteFriendsMobile').val())) {
+                        $('#fail-mobile-popup').addClass('active')
+                        $("html, body").addClass("fixed")
+                        return
+                    }
+                }
+                if ($('#inviteFriendsAreaCode option:selected').val() === '853-MO') {
+                    if (!checkMobileMO($('#inviteFriendsMobile').val())) {
+                        $('#fail-mobile-popup').addClass('active')
+                        $("html, body").addClass("fixed")
+                        return
+                    }
+                }
+                if ($('#inviteFriendsPlayerID').val() === '') {
+                    $('#fail-member-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                if ($('#inviteFriendsPlayerID').val() === '111111111111') {
+                    $('#friends-registered-popup').addClass('active')
+                    $("html, body").addClass("fixed")
+                    return
+                }
+                $("#friends-return-popup").removeClass('active')
+                $("html, body").removeClass("fixed")
+            })
+
+        })
+
+    </script>
+</body>
+</html>
