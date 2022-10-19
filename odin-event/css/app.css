@@ -434,7 +434,7 @@ select::-ms-expand {
   z-index: 10;
   content: "";
   position: absolute;
-  right: 1.25vw;
+  right: 0.8333333333vw;
   top: 50%;
   width: 0;
   height: 0;
@@ -2256,6 +2256,31 @@ button.swiper-pagination-bullet {
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__form {
     width: 80vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 959px) {
+  .section-invite__form {
+    width: 100%;
+  }
+}
+@media (min-width: 959px) and (max-width: 960px) {
+  .section-invite__form {
+    width: 100%;
+  }
+}
+@media (min-width: 960px) and (max-width: 1200px) {
+  .section-invite__form {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .section-invite__form {
+    width: 100%;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .section-invite__form {
+    width: 100%;
   }
 }
 .section-invite__row {
