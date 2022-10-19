@@ -2321,15 +2321,11 @@ button.swiper-pagination-bullet {
 }
 .section-invite__select-wrap {
   width: 13.0208333333vw;
+  box-shadow: 0 0 0.8rem red;
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__select-wrap {
     width: 30vw;
-  }
-}
-@media (min-width: 960px) and (max-width: 1200px) {
-  .section-invite__select-wrap {
-    width: 13.0208333333vw;
   }
 }
 .section-invite__input-mobile, .section-invite__input-id {
