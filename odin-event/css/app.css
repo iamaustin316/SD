@@ -2296,7 +2296,7 @@ button.swiper-pagination-bullet {
   padding: 0 1.5625vw;
 }
 .section-invite__select-wrap {
-  width: 10.4166666667vw;
+  flex: 1;
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__select-wrap {
