@@ -322,7 +322,7 @@ select::-ms-expand {
   box-sizing: border-box;
 }
 
-.fail__btn-back img, .fail__main-title img, .success__btn-invite img, .success__btn-event img, .success__main-title img, .terms__main-title img, .privacy__main-title img, .section-update__slide-content img, .section-update__main-title img, .section-role__light-2 img, .section-role__light-1 img, .section-role__intro-2 img, .section-role__intro-1 img, .section-role__role-2 img, .section-role__role-1 img, .section-role__sub-title-2 img, .section-role__main-title img, .section-role__sub-title-1 img, .section-invite__main-title img, .section-invite__sub-title-2 img, .section-invite__sub-title-1 img, .section-reserve__item-title img, .section-reserve__item img, .section-reserve__role img, .section-reserve__sub-title-2 img, .section-reserve__main-title img, .section-reserve__sub-title-1 img, .section-kv__sub-title-3 img, .section-kv__sub-title-2 img, .section-kv__main-title img, .section-kv__sub-title-1 img, .site-footer__level img, .section-invite__btn-notice img, .section-invite__btn-result img, .section-invite__btn-submit img, .section-invite__btn-confirm img, .section-invite__btn-code img, .section-reserve__btn-submit img, .section-reserve__btn-event img, .section-kv__btn-reserve img {
+.fail__btn-back img, .fail__main-title img, .success__btn-invite img, .success__btn-event img, .success__main-title img, .terms__main-title img, .privacy__main-title img, .section-update__slide-content img, .section-update__main-title img, .section-role__light-2 img, .section-role__light-1 img, .section-role__intro-2 img, .section-role__intro-1 img, .section-role__role-2 img, .section-role__role-1 img, .section-role__sub-title-2 img, .section-role__main-title img, .section-role__sub-title-1 img, .section-invite__main-title img, .section-invite__sub-title-2 img, .section-invite__sub-title-1 img, .section-reserve__item-title img, .section-reserve__item img, .section-reserve__role img, .section-reserve__sub-title-2 img, .section-reserve__main-title img, .section-reserve__sub-title-1 img, .section-kv__sub-title-3 img, .section-kv__sub-title-2 img, .section-kv__main-title img, .section-kv__sub-title-1 img, .site-footer__level img, .section-invite__btn-notice img, .section-invite__btn-result img, .section-invite__btn-submit img, .section-invite__btn-confirm img, .section-invite__btn-new-players img, .section-invite__btn-code img, .section-reserve__btn-submit img, .section-reserve__btn-event img, .section-kv__btn-reserve img {
   max-width: 100%;
   display: block;
   margin: 0;
@@ -481,7 +481,7 @@ select::-ms-expand {
   }
 }
 
-.section-invite__btn-notice, .section-invite__btn-result, .section-invite__btn-submit, .section-invite__btn-confirm, .section-invite__btn-code, .section-reserve__btn-submit, .section-reserve__btn-event, .section-kv__btn-reserve {
+.section-invite__btn-notice, .section-invite__btn-result, .section-invite__btn-submit, .section-invite__btn-confirm, .section-invite__btn-new-players, .section-invite__btn-code, .section-reserve__btn-submit, .section-reserve__btn-event, .section-kv__btn-reserve {
   border: 0;
   background-color: transparent;
   display: block;
@@ -489,11 +489,11 @@ select::-ms-expand {
   margin: 0;
   transition: transform 300ms ease;
 }
-.section-invite__btn-notice:hover, .section-invite__btn-result:hover, .section-invite__btn-submit:hover, .section-invite__btn-confirm:hover, .section-invite__btn-code:hover, .section-reserve__btn-submit:hover, .section-reserve__btn-event:hover, .section-kv__btn-reserve:hover {
+.section-invite__btn-notice:hover, .section-invite__btn-result:hover, .section-invite__btn-submit:hover, .section-invite__btn-confirm:hover, .section-invite__btn-new-players:hover, .section-invite__btn-code:hover, .section-reserve__btn-submit:hover, .section-reserve__btn-event:hover, .section-kv__btn-reserve:hover {
   transform: translate3d(0, -0.4rem, 0);
 }
 @media (min-width: 0) and (max-width: 768px) {
-  .section-invite__btn-notice:hover, .section-invite__btn-result:hover, .section-invite__btn-submit:hover, .section-invite__btn-confirm:hover, .section-invite__btn-code:hover, .section-reserve__btn-submit:hover, .section-reserve__btn-event:hover, .section-kv__btn-reserve:hover {
+  .section-invite__btn-notice:hover, .section-invite__btn-result:hover, .section-invite__btn-submit:hover, .section-invite__btn-confirm:hover, .section-invite__btn-new-players:hover, .section-invite__btn-code:hover, .section-reserve__btn-submit:hover, .section-reserve__btn-event:hover, .section-kv__btn-reserve:hover {
     transform: translate3d(0, 0, 0);
   }
 }
@@ -1725,7 +1725,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate3d(-50%, -15%, 0);
+  transform: translate3d(-50%, -20%, 0);
   z-index: 10;
 }
 .section-kv__sub-title-1 {
@@ -2146,9 +2146,9 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__box.friends-return {
-    background-image: url("../images/invite-box-bg@2x.png");
+    background-image: url("../images/invite-box-bg-m-2@2x.png");
     width: 93.2173913043vw;
-    height: 47.1884057971vw;
+    height: 57.7391304348vw;
     padding-top: 4vw;
     margin-bottom: 4vw;
     padding-top: 0;
@@ -2419,12 +2419,20 @@ button.swiper-pagination-bullet {
     width: 44vw;
   }
 }
+.section-invite__btn-new-players {
+  width: 23.3333333333vw;
+}
+@media (min-width: 0) and (max-width: 768px) {
+  .section-invite__btn-new-players {
+    width: 50vw;
+  }
+}
 .section-invite__btn-submit, .section-invite__btn-confirm {
   width: 18.6458333333vw;
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__btn-submit, .section-invite__btn-confirm {
-    width: 45vw;
+    width: 40vw;
   }
 }
 .section-invite__btn-result {

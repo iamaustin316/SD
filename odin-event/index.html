@@ -231,7 +231,7 @@
                                 </div>
                             </div>
                             <div class="section-invite__row section-invite-result">
-                                <p class="section-invite__result">您的邀請函被<strong>00</strong>人次看過，<strong>00</strong>位好友已成功回歸</p>
+                                <p class="section-invite__result"><strong>00</strong>位好友已成功透過邀請連結參與回歸活動</p>
                             </div>
                         </div>
                     </div>
@@ -572,6 +572,7 @@
                 </div>
                 <div class="section-invite__box friends-return">
                     <div class="section-invite__intro">
+                        <p>限定已持有《奧丁：神叛》帳號，並符合活動規則之玩家參與</p>
                         <p>您已成功邀請好友回流遊玩《奧丁：神叛》，<br>
                         請輸入資料並登入遊戲內領取回流獎勵。</p>
                         <ul>
@@ -597,6 +598,9 @@
                 <div class="section-invite__nav center">
                     <button class="section-invite__btn-submit">
                         <img src="images/invite-btn-submit@2x.png" alt="送出">
+                    </button>
+                    <button class="section-invite__btn-new-players">
+                        <img src="images/btn-new-players@2x.png" alt="新玩家前往事前登錄">
                     </button>
                 </div>
             </div>
@@ -680,6 +684,15 @@
                 setTimeout(function(){
                     selfElement.prev().html('')
                 }, 500)
+            });
+
+            $('.section-invite__btn-new-players').on("click", function (e) {
+                e.preventDefault();
+                $('#friends-return-popup').removeClass('active');
+                rootElement.removeClass("fixed");
+                setTimeout(() => {
+                    gsap.to(window, { duration: 1, scrollTo: '#reserve', ease: "power4.inOut" });
+                }, 1000)
             });
 
             function checkMobileTW(value) {
