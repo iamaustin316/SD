@@ -500,32 +500,6 @@ select::-ms-expand {
 
 :root {
   font-size: 10px;
-  --color-main-900: #5C5C75;
-  --color-main-800: #75748F;
-  --color-main-700: #8F8CA9;
-  --color-main-600: #AAA6C1;
-  --color-main-500: #C5C0D9;
-  --color-main-400: #D0CEE2;
-  --color-main-300: #DCDBEA;
-  --color-main-200: #E9E9F2;
-  --color-main-150: #f1f1f8;
-  --color-main-100: #F7F8FB;
-  --color-grey-900: #040404;
-  --color-grey-800: #242425;
-  --color-grey-700: #464446;
-  --color-grey-600: #676465;
-  --color-grey-500: #878584;
-  --color-grey-400: #A29F9F;
-  --color-grey-300: #BCBABB;
-  --color-grey-200: #D6D5D6;
-  --color-grey-100: #F1F0F1;
-  --color-danger-500: #DB585F;
-  --color-danger-700: #bc4248;
-  --color-vip-0: #4BAC5E;
-  --color-vip-1: #8E583D;
-  --color-vip-2: #717171;
-  --color-vip-3: #E5B63A;
-  --font-size-7xl: 9.6rem;
   --font-size-6xl: 6.4rem;
   --font-size-5xl: 4.8rem;
   --font-size-4xl: 3.6rem;
@@ -536,11 +510,6 @@ select::-ms-expand {
   --font-size-base: 1.6rem;
   --font-size-sm: 1.4rem;
   --font-size-xs: 1.2rem;
-}
-
-*::selection {
-  background-color: var(--color-main-700);
-  color: #fff;
 }
 
 html {
