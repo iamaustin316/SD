@@ -339,7 +339,10 @@ select::-ms-expand {
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__checkbox, .section-reserve__checkbox {
-    height: 9vw;
+    height: 8vw;
+  }
+  .full-width.section-invite__checkbox, .full-width.section-reserve__checkbox {
+    width: 100%;
   }
 }
 .section-invite__checkbox input[type=checkbox], .section-reserve__checkbox input[type=checkbox] {
@@ -371,7 +374,7 @@ select::-ms-expand {
   .section-invite__checkbox input[type=checkbox]:not(:checked) + label, .section-reserve__checkbox input[type=checkbox]:not(:checked) + label,
 .section-invite__checkbox input[type=checkbox]:checked + label,
 .section-reserve__checkbox input[type=checkbox]:checked + label {
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding-left: 5vw;
   }
 }
@@ -452,7 +455,7 @@ select::-ms-expand {
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__select-wrap, .section-reserve__select-wrap {
-    height: 9vw;
+    height: 8vw;
   }
 }
 .section-invite__select-wrap select, .section-reserve__select-wrap select {
@@ -474,8 +477,8 @@ select::-ms-expand {
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__select-wrap select, .section-reserve__select-wrap select {
-    height: 9vw;
-    font-size: 4vw;
+    height: 8vw;
+    font-size: 3.5vw;
     padding-left: 3vw;
     padding-right: 3vw;
   }
@@ -1928,23 +1931,19 @@ button.swiper-pagination-bullet {
 .section-reserve__form {
   width: 26.0416666667vw;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.78125vw;
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-reserve__form {
     width: 80vw;
+    gap: 2vw;
   }
 }
 .section-reserve__row {
   display: flex;
   gap: 0.78125vw;
-}
-.section-reserve__row:not(:last-child) {
-  margin-bottom: 0.78125vw;
-}
-@media (min-width: 0) and (max-width: 768px) {
-  .section-reserve__row:not(:last-child) {
-    margin-bottom: 2vw;
-  }
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-reserve__row {
@@ -1973,7 +1972,8 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-reserve__input-mobile {
-    font-size: 4vw;
+    font-size: 3.5vw;
+    height: 8vw;
     width: 50vw;
   }
 }
@@ -2081,7 +2081,7 @@ button.swiper-pagination-bullet {
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__sub-title-2 {
     width: 75vw;
-    margin-bottom: 50vw;
+    margin-bottom: 48vw;
   }
 }
 .section-invite__main-title {
@@ -2138,7 +2138,7 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__intro {
-    width: 90vw;
+    width: 85vw;
   }
 }
 .section-invite__intro h3 {
@@ -2229,10 +2229,14 @@ button.swiper-pagination-bullet {
 .section-invite__form {
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.78125vw;
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__form {
     width: 80vw;
+    gap: 2vw;
   }
 }
 .section-invite__row {
@@ -2240,12 +2244,8 @@ button.swiper-pagination-bullet {
   display: grid;
   gap: 0.78125vw;
 }
-.section-invite__row:not(:last-child) {
-  margin-bottom: 0.78125vw;
-}
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__row:not(:last-child) {
-    margin-bottom: 1.5vw;
     gap: 1.5vw;
   }
 }
@@ -2271,7 +2271,7 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__row.background {
-    background-color: #352c25;
+    gap: 1.5vw;
   }
 }
 .section-invite__row.section-invite-result {
@@ -2298,9 +2298,9 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 0) and (max-width: 768px) {
   .section-invite__input-mobile, .section-invite__input-id {
-    font-size: 4vw;
+    font-size: 3.5vw;
     border-radius: 0;
-    height: 9vw;
+    height: 8vw;
   }
 }
 @media (min-width: 0) and (max-width: 768px) {
@@ -2857,7 +2857,7 @@ button.swiper-pagination-bullet {
   .section-update .cut-swiper-pagination-bullet::after {
     width: 43.8405797101vw;
     height: 42.0289855072vw;
-    transform: translate3d(-50%, 27%, 0);
+    transform: translate3d(-50%, 26%, 0);
   }
 }
 @media (min-width: 768px) and (max-width: 959px) {
@@ -2961,7 +2961,7 @@ button.swiper-pagination-bullet {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: opacity 2000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
 }
 .loading.loaded {
   opacity: 0;
@@ -2979,8 +2979,8 @@ button.swiper-pagination-bullet {
 
 .loader {
   position: relative;
-  width: 12rem;
-  height: 12rem;
+  width: 9.6rem;
+  height: 9.6rem;
   z-index: 0;
 }
 
@@ -2990,7 +2990,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   inset: 0;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
-  filter: blur(4px) contrast(4);
+  filter: blur(2px) contrast(2);
 }
 
 .loader:after {
