@@ -14,21 +14,25 @@
         <header class="site-header">
             <div class="site-header__inner">
                 <div class="site-header__logo">
-                    <a href="index.html">PET PULSE</a>
+                    <a href="index.html">Pet PULSE</a>
                 </div>
                 <button class="site-header__btn-toggle"></button>
                 <div class="site-header__overlay"></div>
                 <div class="site-header__nav">
                     <nav class="site-header__main-nav">
                         <a class="site-header__btn-link" href="index.html">首頁</a>
-                        <a class="site-header__btn-link" href="dr.tammie.html">Dr. Tammie</a>
-                        <a class="site-header__btn-link" href="#">愛毛孩</a>
-                        <a class="site-header__btn-link" href="#">寵毛孩</a>
-                        <a class="site-header__btn-link" href="#">獸醫專區</a>
+                        <a class="site-header__btn-link" href="pet-pulse.html">Pet PULSE</a>
+                        <a class="site-header__btn-link" href="pet-article-nutrition.html">愛毛孩</a>
+                        <a class="site-header__btn-link" href="course-list.html">寵毛孩</a>
                     </nav>
+                    <div class="site-header__user-login">
+                        <div class="site-header__user-level level-2"></div>
+                        <div class="site-header__user-name">
+                            <a href="user-profile.html">Austin</a>
+                        </div>
+                    </div>
                     <div class="site-header__user">
-                        <a class="site-header__btn-login" href="login.html">登入</a>
-                        <a class="site-header__btn-register" href="register.html">註冊</a>
+                        <a class="site-header__btn-sign-out" href="#">登出</a>
                     </div>
                     <div class="site-header__search">
                         <input class="site-header__search-input" type="text" placeholder="搜尋文章">
@@ -81,7 +85,7 @@
                                         <label for="">是否有結紮</label>
                                         <div class="pet-profile__radio-wrap">
                                             <div class="pet-profile__radio">
-                                                <input type="radio" id="ligation-yes" name="ligation" checked="checked" checked="checked">
+                                                <input type="radio" id="ligation-yes" name="ligation" checked="checked" disabled="disabled">
                                                 <label for="ligation-yes">有</label>
                                             </div>
                                             <div class="pet-profile__radio">
@@ -114,7 +118,7 @@
                                                 <label for="fresh">鮮食</label>
                                             </div>
                                             <div class="pet-profile__checkbox">
-                                                <input type="checkbox" id="feed" name="feed" checked="checked" checked="checked">
+                                                <input type="checkbox" id="feed" name="feed" checked="checked" disabled="disabled">
                                                 <label for="feed">飼料</label>
                                             </div>
                                             <div class="pet-profile__checkbox">
@@ -146,10 +150,166 @@
                                         </div>
                                     </div>
                                     <div class="pet-profile__row">
-                                        <button class="pet-profile__btn-download">下載毛孩報告</button>
+                                        <label for="">大小便狀態<sup>*</sup></label>
+                                        <div class="pet-profile__radio-wrap flex-column">
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="urination-1" name="urination" checked="checked" disabled="disabled">
+                                                <label for="urination-1">最近10天內大便曾經乾硬，呈現顆粒狀或者是容易散開</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="urination-2" name="urination" disabled="disabled">
+                                                <label for="urination-2">最近10天內大便曾經偏軟 或者是拉肚子，衛生紙放在大便上有沾黏</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="urination-3" name="urination" disabled="disabled">
+                                                <label for="urination-3">(非藥物服用或者是疾病狀態)尿液顏色比以前淺或者是尿尿比以前多</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="urination-4" name="urination" disabled="disabled">
+                                                <label for="urination-4">都沒有以上症狀</label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="pet-profile__row">
-                                        <button class="pet-profile__btn-new">儲存檔案</button>
+                                        <label for="">腸胃狀態<sup>*</sup></label>
+                                        <div class="pet-profile__radio-wrap flex-column">
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="digestive-1" name="digestive" checked="checked" disabled="disabled">
+                                                <label for="digestive-1">最近10天內曾經吐過2次以上未消化完的食物</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="digestive-2" name="digestive" disabled="disabled">
+                                                <label for="digestive-2">最近10天內曾經吐過2次以上不含食物的黃色液體</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="digestive-3" name="digestive" disabled="disabled">
+                                                <label for="digestive-3">毛孩經常正餐吃不完+體型偏瘦</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="digestive-4" name="digestive" disabled="disabled">
+                                                <label for="digestive-4">毛孩經常正餐吃不完+體型正常或偏胖</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="digestive-5" name="digestive" disabled="disabled">
+                                                <label for="digestive-5">一個月內毛孩"每一次"正餐都能在10分鐘之內吃完</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="digestive-6" name="digestive" disabled="disabled">
+                                                <label for="digestive-6">都沒有以上症狀</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="">呼吸道<sup>*</sup></label>
+                                        <div class="pet-profile__radio-wrap flex-column">
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="respiratory-1" name="respiratory" disabled="disabled">
+                                                <label for="respiratory-1">一個禮拜之內曾經聽到毛孩明顯且連續的咳嗽聲</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="respiratory-2" name="respiratory" disabled="disabled">
+                                                <label for="respiratory-2">一個禮拜之內曾經聽到或看到毛孩打噴嚏或流鼻水</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="respiratory-3" name="respiratory" checked="checked" disabled="disabled">
+                                                <label for="respiratory-3">會打呼，或者有明顯呼吸聲</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="respiratory-4" name="respiratory" disabled="disabled">
+                                                <label for="respiratory-4">都沒有以上症狀</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="">身體狀態<sup>*</sup></label>
+                                        <div class="pet-profile__radio-wrap flex-column">
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="condition-1" name="condition" disabled="disabled">
+                                                <label for="condition-1">後腳細小，肌肉偏少或者是後腳站姿呈現內八或外八</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="condition-2" name="condition" disabled="disabled">
+                                                <label for="condition-2">前肢站姿呈現內八/外八</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="condition-3" name="condition" checked="checked" disabled="disabled">
+                                                <label for="condition-3">不明原因的毛髮稀疏(非疾病狀態)</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="condition-4" name="condition" disabled="disabled">
+                                                <label for="condition-4">非疾病導致的老年斑(黑斑)</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="condition-5" name="condition" disabled="disabled">
+                                                <label for="condition-5">肥胖</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="condition-6" name="condition" disabled="disabled">
+                                                <label for="condition-6">體型正常</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="condition-7" name="condition" disabled="disabled">
+                                                <label for="condition-7">瘦弱</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <label for="">確診疾病(疑心未確診者請勿勾選)</label>
+                                        <div class="pet-profile__radio-wrap flex-column">
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="disease-1" name="disease" disabled="disabled">
+                                                <label for="disease-1">腎臟病</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="disease-2" name="disease" disabled="disabled">
+                                                <label for="disease-2">心臟病</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="disease-3" name="disease" checked="checked" disabled="disabled">
+                                                <label for="disease-3">肝指數過高</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="disease-4" name="disease" disabled="disabled">
+                                                <label for="disease-4">膽囊淤積 or 膽結石</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="disease-5" name="disease" disabled="disabled">
+                                                <label for="disease-5">氣管塌陷</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="disease-6" name="disease" disabled="disabled">
+                                                <label for="disease-6">慢性呼吸道感染</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="disease-7" name="disease" disabled="disabled">
+                                                <label for="disease-7">慢性胰臟炎 (曾經是胰臟炎病患)</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="disease-8" name="disease" disabled="disabled">
+                                                <label for="disease-8">白內障</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="disease-9" name="disease" disabled="disabled">
+                                                <label for="disease-9">關節炎</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="disease-10" name="disease" disabled="disabled">
+                                                <label for="disease-10">(皮膚)過敏</label>
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="disease-11" name="disease" disabled="disabled">
+                                                <label for="disease-11">食物過敏</label>
+                                                <input class="sm full-width" type="text" value="" name="" id="" placeholder="食物測試過有問題的食材" disabled="disabled">
+                                            </div>
+                                            <div class="pet-profile__radio">
+                                                <input type="radio" id="disease-12" name="disease" disabled="disabled">
+                                                <label for="disease-12">其他</label>
+                                                <input class="sm full-width" type="text" value="" name="" id="" placeholder="其他疾病" disabled="disabled">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pet-profile__row">
+                                        <button class="pet-profile__btn-download">下載毛孩報告</button>
                                     </div>
                                 </div>
                             </div>
@@ -164,24 +324,26 @@
             <div class="site-footer__content">
                 <div class="site-footer__inner">
                     <div class="site-footer__info">
-                        <h2>關於PETPULSE</h2>
+                        <h2>關於Pet PULSE</h2>
                         <p>嘗試從關心動物與生活環境開始，是學會與世界永續共存的第一步 —— 也是PETPULSE的使命。</p>
                     </div>
                     <div class="site-footer__block">
                         <div class="site-footer__sns">
                             <a href="#">
-                                <img src="images/icon-facebook.svg" alt="">
+                                <img src="images/icon-facebook.svg" alt="https://www.facebook.com/DrTammieNutrition">
                             </a>
                             <a href="#">
-                                <img src="images/icon-instagram.svg" alt="">
+                                <img src="images/icon-instagram.svg" alt="https://www.instagram.com/jimhealth/">
                             </a>
                             <a href="#">
-                                <img src="images/icon-line.svg" alt="">
+                                <img src="images/icon-youtube.svg" alt="">
                             </a>
                         </div>
                         <div class="site-footer__policy">
-                            <a href="#">使用者服務條款</a>
-                            <a href="#">隱私權政策</a>
+                            <a href="membership.html">會員等級</a>
+                            <a href="contact.html">聯絡我們</a>
+                            <a href="policies.html">使用者服務條款</a>
+                            <a href="privacy.html">隱私權政策</a>
                         </div>
                     </div>
                 </div>

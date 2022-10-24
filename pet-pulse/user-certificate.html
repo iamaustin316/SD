@@ -46,36 +46,64 @@
                 <div class="user-page__inner">
                     <div class="side-nav">
                         <a class="side-nav__btn" href="user-profile.html">會員資料</a>
-                        <a class="side-nav__btn active" href="user-password.html">修改密碼</a>
+                        <a class="side-nav__btn" href="user-password.html">修改密碼</a>
                         <a class="side-nav__btn" href="user-pets.html">我家毛皇</a>
                         <a class="side-nav__btn" href="user-course.html">我的課程</a>
-                        <a class="side-nav__btn" href="user-certificate.html">我的證書</a>
+                        <a class="side-nav__btn active" href="user-certificate.html">我的證書</a>
                     </div>
                     <div class="user-wrap">
                         <div class="user-profile">
-                            <h2 class="user-profile__main-title">修改密碼</h2>
-                            <div class="user-profile__wrap password">
-                                <div class="user-profile__profile">
-                                    <div class="user-profile__row">
-                                        <i class="login-ui__toggle-password"></i>
-                                        <label for="password-old">目前密碼</label>
-                                        <input type="password" value="" name="password-old" id="password-old" placeholder="">
+                            <h2 class="user-profile__main-title">我的證書</h2>
+                            <div class="user-profile__wrap certificate">
+                                <div class="certificate__list">
+                                    <div class="certificate__item">
+                                        <h3 class="certificate__title">營養學基礎與計算</h3>
+                                        <div class="certificate__info">
+                                            <span>日期<strong>2023/2/11</strong></span>
+                                            <span>類型<strong>初階1</strong></span>
+                                        </div>
+                                        <a class="certificate__btn-download" href="user-certificate-detail.html">下載證書</a>
                                     </div>
-                                    <div class="user-profile__row">
-                                        <i class="login-ui__toggle-password"></i>
-                                        <label for="password">新密碼</label>
-                                        <input type="password" value="" name="password" id="password" placeholder="">
+                                    <div class="certificate__item">
+                                        <h3 class="certificate__title">碳水化合物、脂肪與相關疾病的預防</h3>
+                                        <div class="certificate__info">
+                                            <span>日期<strong>2023/2/25</strong></span>
+                                            <span>類型<strong>初階2</strong></span>
+                                        </div>
+                                        <a class="certificate__btn-download" href="user-certificate-detail.html">下載證書</a>
                                     </div>
-                                    <div class="user-profile__row">
-                                        <i class="login-ui__toggle-password"></i>
-                                        <label for="password-repeat">確認密碼</label>
-                                        <input type="password" value="" name="password-repeat" id="password-repeat" placeholder="">
+                                    <div class="certificate__item">
+                                        <h3 class="certificate__title">蛋白質與相關疾病的預防</h3>
+                                        <div class="certificate__info">
+                                            <span>日期<strong>2023/3/11</strong></span>
+                                            <span>類型<strong>初階3</strong></span>
+                                        </div>
+                                        <a class="certificate__btn-download" href="user-certificate-detail.html">下載證書</a>
                                     </div>
-                                    <div class="user-profile__row">
-                                        <button class="user-profile__btn-update">確認修改</button>
+                                    <div class="certificate__item">
+                                        <h3 class="certificate__title">維生素、礦物質與相關疾病的預防</h3>
+                                        <div class="certificate__info">
+                                            <span>日期<strong>2023/3/25</strong></span>
+                                            <span>類型<strong>初階4</strong></span>
+                                        </div>
+                                        <a class="certificate__btn-download" href="user-certificate-detail.html">下載證書</a>
                                     </div>
                                 </div>
                             </div>
+                            <!--site-pagination-->
+                            <div class="site-pagination">
+                                <div class="site-pagination__page">
+                                    <a class="site-pagination__btn-page active" href="#">1</a>
+                                    <a class="site-pagination__btn-page" href="#">2</a>
+                                    <a class="site-pagination__btn-page" href="#">3</a>
+                                    <a class="site-pagination__btn-page" href="#">4</a>
+                                    <a class="site-pagination__btn-page" href="#">5</a>
+                                    <a class="site-pagination__btn-page" href="#">下一頁</a>
+                                    <a class="site-pagination__btn-page" href="#">最後</a>
+                                </div>
+                                <div class="site-pagination__status">第1頁，共10頁</div>
+                            </div>
+                            <!--site-pagination-->
                         </div>
                     </div>
                 </div>
