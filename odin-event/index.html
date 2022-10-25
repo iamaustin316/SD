@@ -1347,12 +1347,7 @@
                     return false
                 }
                 $(this).removeClass('active').next().addClass('active')
-            })
-
-            // 認證完成
-            $('.cancel__btn-complete').on('click', function (e) {
-                e.preventDefault()
-                $('#cancel-reserve-success-popup').addClass('active');
+                $('#cancel-reserve-success-popup').addClass('active')
             })
 
         })
