@@ -745,8 +745,8 @@
                             <input class="cancel__input" id="cancelVerificationCode" type="text" placeholder="請輸入六位數驗證碼" maxlength="6">
                         </div>
                         <div class="cancel__row">
-                            <button class="cancel__btn-verify active">
-                                <img src="images/cancel-btn-verify@2x.png" alt="進行驗證">
+                            <button class="cancel__btn-confirm active">
+                                <img src="images/cancel-btn-confirm@2x.png" alt="確認取消">
                             </button>
                             <button class="cancel__btn-complete">
                                 <img src="images/cancel-btn-complete@2x.png" alt="認證完成">
@@ -1324,15 +1324,26 @@
                     cancelFailText.append(`此號碼未參與事前預約，請重新確認`)
                     return false
                 }
+                alert('送出手機號碼取得驗證碼123456')
                 // 送出手機取得認證碼
             })
 
             // 送出驗證碼
-            $('.cancel__btn-verify').on('click', function (e) {
+            $('.cancel__btn-confirm').on('click', function (e) {
                 e.preventDefault()
                 if ($('#cancelVerificationCode').val() === '') {
                     cancelFailpopup.addClass('active')
                     cancelFailText.append(`驗證碼錯誤，請重新輸入`)
+                    return false
+                }
+                if ($('#cancelVerificationCode').val() !== '123456') {
+                    cancelFailpopup.addClass('active')
+                    cancelFailText.append(`驗證碼錯誤，請重新輸入`)
+                    return false
+                }
+                if (!$('#cancelTerms').is(':checked')) {
+                    cancelFailpopup.addClass('active')
+                    cancelFailText.html(`未勾選同意收集個人信息`)
                     return false
                 }
                 $(this).removeClass('active').next().addClass('active')
@@ -1341,12 +1352,6 @@
             // 認證完成
             $('.cancel__btn-complete').on('click', function (e) {
                 e.preventDefault()
-                if (!$('#cancelTerms').is(':checked')) {
-                    cancelFailpopup.addClass('active')
-                    cancelFailText.html(`未勾選同意收集個人信息`)
-                    return false
-                }
-                $('#cancel-reserve-popup').removeClass('active');
                 $('#cancel-reserve-success-popup').addClass('active');
             })
 

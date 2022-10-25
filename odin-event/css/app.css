@@ -322,7 +322,7 @@ select::-ms-expand {
   box-sizing: border-box;
 }
 
-.cancel__btn-verification-code img, .cancel__btn-complete img, .cancel__btn-verify img, .cancel__title img, .cancel__main-title img, .fail__btn-back img, .fail__main-title img, .success__title img, .success__btn-invite img, .success__btn-event img, .success__btn-back img, .success__btn-confirm img, .success__main-title img, .terms__main-title img, .privacy__main-title img, .section-update__slide-content img, .section-update__main-title img, .section-role__light-2 img, .section-role__light-1 img, .section-role__intro-2 img, .section-role__intro-1 img, .section-role__role-2 img, .section-role__role-1 img, .section-role__sub-title-2 img, .section-role__main-title img, .section-role__sub-title-1 img, .section-invite__main-title img, .section-invite__sub-title-2 img, .section-invite__sub-title-1 img, .section-reserve__item-title img, .section-reserve__item img, .section-reserve__role img, .section-reserve__sub-title-2 img, .section-reserve__main-title img, .section-reserve__sub-title-1 img, .section-kv__sub-title-3 img, .section-kv__sub-title-2 img, .section-kv__main-title img, .section-kv__sub-title-1 img, .site-footer__level img, .section-invite__btn-notice img, .section-invite__btn-result img, .section-invite__btn-submit img, .section-invite__btn-confirm img, .section-invite__btn-new-players img, .section-invite__btn-code img, .section-reserve__btn-submit img, .section-reserve__btn-event img, .section-kv__btn-reserve img {
+.cancel__btn-verification-code img, .cancel__btn-complete img, .cancel__btn-confirm img, .cancel__title img, .cancel__main-title img, .fail__btn-back img, .fail__main-title img, .success__title img, .success__btn-invite img, .success__btn-event img, .success__btn-back img, .success__btn-confirm img, .success__main-title img, .terms__main-title img, .privacy__main-title img, .section-update__slide-content img, .section-update__main-title img, .section-role__light-2 img, .section-role__light-1 img, .section-role__intro-2 img, .section-role__intro-1 img, .section-role__role-2 img, .section-role__role-1 img, .section-role__sub-title-2 img, .section-role__main-title img, .section-role__sub-title-1 img, .section-invite__main-title img, .section-invite__sub-title-2 img, .section-invite__sub-title-1 img, .section-reserve__item-title img, .section-reserve__item img, .section-reserve__role img, .section-reserve__sub-title-2 img, .section-reserve__main-title img, .section-reserve__sub-title-1 img, .section-kv__sub-title-3 img, .section-kv__sub-title-2 img, .section-kv__main-title img, .section-kv__sub-title-1 img, .site-footer__level img, .section-invite__btn-notice img, .section-invite__btn-result img, .section-invite__btn-submit img, .section-invite__btn-confirm img, .section-invite__btn-new-players img, .section-invite__btn-code img, .section-reserve__btn-submit img, .section-reserve__btn-event img, .section-kv__btn-reserve img {
   max-width: 100%;
   display: block;
   margin: 0;
@@ -3499,20 +3499,21 @@ button.swiper-pagination-bullet {
     padding: 1.5vw;
   }
 }
-.cancel__btn-verification-code, .cancel__btn-complete, .cancel__btn-verify {
+.cancel__btn-verification-code, .cancel__btn-complete, .cancel__btn-confirm {
   width: 100%;
   background-color: transparent;
   padding: 0;
   border: 0;
 }
-.cancel__btn-verify {
+.cancel__btn-confirm {
   display: none;
 }
-.cancel__btn-verify.active {
+.cancel__btn-confirm.active {
   display: block;
 }
 .cancel__btn-complete {
   display: none;
+  pointer-events: none;
 }
 .cancel__btn-complete.active {
   display: block;
