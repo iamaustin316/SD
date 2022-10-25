@@ -67,11 +67,11 @@
         <!--浮動選單-->
         <div class="float-nav">
             <div class="float-nav__btn-fb" id="float-nav-btn-fb">
-                <a href="#">前往粉絲專頁</a>
+                <a href="https://www.facebook.com/OdinTC/" title="前往粉絲專頁" target="_blank">前往粉絲專頁</a>
                 <button class="float-nav__btn-close">關閉</button>
             </div>
             <div class="float-nav__btn-yt" id="float-nav-btn-yt">
-                <a href="#">訂閱YouTube</a>
+                <a href="https://www.youtube.com/channel/UCXelBqmb9mvGre1EzRwAQdg" title="訂閱YouTube" target="_blank">訂閱YouTube</a>
                 <button class="float-nav__btn-close">關閉</button>
             </div>
         </div>
@@ -167,8 +167,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section-reserve__remind-text">若欲撤回同意申請事前預約或拒絕簡訊收信，請諮詢<a href="https://odintw.zendesk.com/hc/zh-tw/requests/new" title="客服中心" target="_blank">客服中心</a>；<br>
-                        撤回事前預約申請後將取消配發活動獎勵。</div>
+                        <div class="section-reserve__remind-text">若欲撤回同意申請事前預約或拒絕簡訊收信，請先填寫<a class="section-reserve__btn-cancel" href="#">撤回申請</a>，<br>並諮詢<a href="https://odintw.zendesk.com/hc/zh-tw/requests/new" title="客服中心" target="_blank">1：1客服中心</a>；
+                        撤回事前預約申請後將取消配發活動獎勵。
+                        </div>
                         <div class="section-reserve__item">
                             <img class="reserve-element" src="images/reserve-item@2x.png" alt="事前預約獎勵">
                         </div>
@@ -199,10 +200,10 @@
                     <div class="section-invite__box invite-element">
                         <div class="section-invite__intro">
                             <h3>&lt;遊戲規則&gt;</h3>
-                            <p>玩家登錄資料獲取邀請碼，分享並邀請好友回鍋《奧丁：神叛》，
+                            <p>玩家登錄資料獲取邀請碼，分享並邀請好友回鍋《奧丁：神叛》，<br>
                             即有機會抽限定大獎！</p>
                             <ul>
-                                <li>邀請朋友統計對象條件以活動前兩週未登入之會員編號為主。</li>
+                                <li>邀請朋友統計對象條件以10/20 ~ 11/1間未登入之會員編號為主。</li>
                                 <li>您可以從遊戲內的設置清單中找到您的會員編號。</li>
                                 <li>活動相關疑問請洽<a href="https://odintw.zendesk.com/hc/zh-tw/requests/new" title="客服中心" target="_blank">客服中心</a>。</li>
                             </ul>
@@ -374,6 +375,70 @@
         </div>
     </div>
     <!--影片播放-->
+    <!--同意接收廣告詳情-->
+    <div class="popup" id="privacy-reserve-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="privacy__main-title">
+                    <img src="images/privacy-reserve-main-title@2x.png" alt="同意接收廣告詳情">
+                </div>
+                <div class="privacy__box rows">
+                    <button class="popup__btn-close-terms" data-target="#privacy-reserve-popup">close</button>
+                    <ul class="privacy__ul-list">
+                        <li>將透過Kakao Games推播系統（SMS、App推播通知）推播<strong>Kakao Games所營運之 PC、手機遊戲、與第三方合作之產品服務，提供您各種消息、優惠及活動資訊</strong>。</li>
+                        <li>如欲取消申請活動或不想再接收到Kakao Games所提供的廣告訊息時，可於活動期間內隨時至首頁下方取消申請或透過<a href="https://odintw.zendesk.com/hc/zh-tw/requests/new" target="_blank">1:1客服</a>取消申請，也可於廣告訊息下方點選「不願再收到此訊息」等相關選項取消申請。</li>
+                        <li>若拒絕接收廣告訊息，則無法接收到由Kakao Games所提供的活動消息、優惠券或活動商品。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--同意接收廣告詳情-->
+    <!--同意處理個人資訊詳情-->
+    <div class="popup" id="terms-reserve-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="terms__main-title">
+                    <img src="images/terms-reserve-main-title@2x.png" alt="同意處理個人資訊詳情">
+                </div>
+                <div class="terms__box reserve">
+                    <button class="popup__btn-close-terms" data-target="#terms-reserve-popup">close</button>
+                    <p class="terms__text">Kakao Games為傳遞遊戲及活動資訊，本公司將收集並使用您的個人資訊以便告知您活動詳情，若您不同意，則無法參與本次活動。</p>
+                    <ul class="terms__ul-list">
+                        <li>收集目的：參與活動、領取優惠、客戶服務及傳送廣告訊息</li>
+                        <li>所收集之個人資訊包含：國家資訊、手機號碼</li>
+                        <li>個人資訊之保留及使用地區：臺灣</li>
+                        <li>個人資訊使用期限：
+                            <ul class="terms__ul-list-inner">
+                                <li>[活動] <strong>申請取消參與活動時為止、參與活動起六個月內為止</strong></li>
+                                <li>[接收廣告] <strong>申請取消參與活動時為止、申請取消接收廣告訊息時為止</strong></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--同意處理個人資訊詳情-->
+    <!--活動參與者權利指南-->
+    <div class="popup" id="terms-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="terms__main-title">
+                    <img src="images/terms-main-title@2x.png" alt="活動參與者權利指南">
+                </div>
+                <div class="terms__box">
+                    <button class="popup__btn-close-terms" data-target="#terms-popup">close</button>
+                    <ul class="terms__ul-list">
+                        <li>參與活動的資訊可以在申請頁面隨時確認。</li>
+                        <li>欲申請活動參與撤回之用戶或不想收到KAKAO GAMES提供的廣告訊息，可以在活動期間內透過<a href="https://odintw.zendesk.com/hc/zh-tw/requests/new" title="1:1客服諮詢" target="_blank">1:1客服諮詢</a>申請活動撤回。</li>
+                        <li>如果拒絕接收廣告訊息，則無法傳達Kakao Games提供的活動參與消息和優惠券，或活動商品。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--活動參與者權利指南-->
     <!--活動等相關廣告宣傳事項-->
     <div class="popup" id="privacy-popup">
         <div class="popup__overlay">
@@ -381,8 +446,8 @@
                 <div class="privacy__main-title">
                     <img src="images/privacy-main-title@2x.png" alt="活動等相關廣告宣傳事項">
                 </div>
-                <div class="privacy__box">
-                    <button class="privacy__btn-close">close</button>
+                <div class="privacy__box reserve">
+                    <button class="popup__btn-close-terms" data-target="#privacy-popup">close</button>
                     <ul class="privacy__ul-list">
                         <li>Kakao Games爲了傳送遊戲及活動信息,透過收集個人資訊,如果不同意收集資訊作爲處理活動業務的必要資訊,則無法進行活動處理業務。</li>
                         <li>收集目的：參與活動、發放優惠、應對顧客諮詢、傳送廣告信息。</li>
@@ -402,7 +467,7 @@
                     <img src="images/terms-main-title@2x.png" alt="活動參與者權利指南">
                 </div>
                 <div class="terms__box">
-                    <button class="terms__btn-close">close</button>
+                    <button class="popup__btn-close-terms" data-target="#terms-popup">close</button>
                     <ul class="terms__ul-list">
                         <li>參與活動的資訊可以在申請頁面隨時確認。</li>
                         <li>欲申請活動參與撤回之用戶或不想收到KAKAO GAMES提供的廣告訊息，可以在活動期間內透過<a href="https://odintw.zendesk.com/hc/zh-tw/requests/new" title="1:1客服諮詢" target="_blank">1:1客服諮詢</a>申請活動撤回。</li>
@@ -574,7 +639,7 @@
                     <div class="section-invite__intro">
                         <p class="remind">限定已持有《奧丁：神叛》帳號，並符合活動規則之玩家參與</p>
                         <p>您已成功邀請好友回流遊玩《奧丁：神叛》，<br>
-                        請輸入資料並登入遊戲內領取回流獎勵。</p>
+                        請輸入資料並登入遊戲內參加簽到活動領取獎勵。</p>
                         <ul>
                             <li>您可以從遊戲內的設置清單中找到您的會員編號。</li>
                             <li>活動相關疑問請洽<a href="https://odintw.zendesk.com/hc/zh-tw/requests/new" title="客服中心" target="_blank">客服中心</a>。</li>
@@ -607,6 +672,27 @@
         </div>
     </div>
     <!--好友邀請活動-->
+    <!--好友邀請活動-登錄成功-->
+    <div class="popup" id="friends-return-success-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="success__main-title">
+                    <img src="images/invite-main-title@2x.png" alt="好友邀請成功！">
+                </div>
+                <div class="success__box">
+                    <div class="success__title">
+                        <img src="images/success-title@2x.png" alt="登錄成功！">
+                    </div>
+                    <div class="success__nav">
+                        <button class="success__btn-back">
+                            <img src="images/member-fail-btn-back@2x.png" alt="邀請好友活動">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--好友邀請活動-登錄成功-->
     <!--好友邀請活動-已被註冊-->
     <div class="popup" id="friends-registered-popup">
         <div class="popup__overlay">
@@ -628,6 +714,113 @@
         </div>
     </div>
     <!--好友邀請活動-已被註冊-->
+    <!--為取消預約活動，請同意處理個人資訊-->
+    <div class="popup" id="cancel-reserve-popup">
+        <div class="popup__overlay scroll">
+            <div class="popup__content">
+                <div class="cancel__main-title">
+                    <picture>
+                        <source srcset="images/cancel-main-title-1-m@2x.png" media="(max-width: 768px)">
+                        <img class="role-element" src="images/cancel-main-title-1-m@2x.png" alt="為取消預約活動，請同意處理個人資訊">
+                    </picture>
+                </div>
+                <div class="cancel__box">
+                    <button class="popup__btn-close-terms" data-target="#cancel-reserve-popup">close</button>
+                    <div class="cancel__title">
+                        <img src="images/cancel-title@2x.png" alt="取消《奧丁：神叛》事前預約">
+                    </div>
+                    <p class="cancel__text">請輸入欲取消事前預約之手機號碼</p>
+                    <div class="cancel__get-verification-code">
+                        <div class="cancel__row">
+                            <input class="cancel__input" id="cancelMobile" type="tel" placeholder="無需輸入「-」，請輸入包含國碼之11-12位數字" maxlength="12">
+                        </div>
+                        <div class="cancel__row">
+                            <button class="cancel__btn-verification-code">
+                                <img src="images/cancel-btn-verification-code@2x.png" alt="取得驗證碼">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cancel__type-verification-code">
+                        <div class="cancel__row">
+                            <input class="cancel__input" id="cancelVerificationCode" type="text" placeholder="請輸入六位數驗證碼" maxlength="6">
+                        </div>
+                        <div class="cancel__row">
+                            <button class="cancel__btn-verify active">
+                                <img src="images/cancel-btn-verify@2x.png" alt="進行驗證">
+                            </button>
+                            <button class="cancel__btn-complete">
+                                <img src="images/cancel-btn-complete@2x.png" alt="認證完成">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cancel__agreement">
+                        <div class="cancel__checkbox">
+                            <input type="checkbox" id="cancelTerms" name="cancelTerms">
+                            <label for="cancelTerms">為取消事前預約需同意使用手機號碼（必填）</label>
+                        </div>
+                    </div>
+                    <div class="cancel__terms">
+                        <div class="cancel__terms-block">
+                            <h3>[手機號碼收集及使用同意]</h3>
+                            <ul>
+                                <li>同意收集及使用手機號碼相關內容。</li>
+                                <li>請求取消Kakao Games事前預約時，需收集下列資訊。</li>
+                            </ul>
+                        </div>
+                        <div class="cancel__terms-block">
+                            <h3>[處理取消事前預約需同意處理個人資訊]</h3>
+                            <ul>
+                                <li>為進行Kakao Games事前預約取消流程，本公司將收集及使用您的個人資訊，x如您不同意，則無法取消。</li>
+                                <li>收集及使用個人資訊之目的：處理取消事前預約、管理事前預約活動<br>
+                                及提供相關客戶服務時<br>
+                                所收集之個人資訊包含：國家資訊、手機號碼<br>
+                                個人資訊之保留及使用地區：臺灣<br>
+                                個人資訊之保留及使用期限：處理取消申請事前預約後即刻銷毀</li>
+                                <li>※ 如有相關法規條款論及相關規定時，則根據法規處理</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="cancel__remind-text">取消申請事前預約時，透過事前預約所收集之個人資訊將即刻銷毀，<br>且無法發放或領取活動優惠券（或獎勵）。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--為取消預約活動，請同意處理個人資訊-->
+    <!--取消事前預約-->
+    <div class="popup" id="cancel-reserve-success-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="success__main-title">
+                    <img src="images/cancel-main-title-2@2x.png" alt="取消事前預約">
+                </div>
+                <div class="success__box">
+                    <p class="success__text">已成功撤回事前預約申請。</p>
+                    <p class="success__text">取消接收由Kakao Games推播系統所發送之遊戲消息、優惠券及個人化廣告訊息。<br>yyyy-mm-dd</p>
+                    <button class="success__btn-confirm" data-target="#cancel-reserve-success-popup">
+                        <img src="images/invite-btn-confirm@2x.png" alt="確認">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--取消事前預約-->
+    <!--撤回失敗訊息-->
+    <div class="popup" id="cancel-fail-popup">
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="fail__main-title">
+                    <img src="images/cancel-fail-main-title@2x.png" alt="撤回失敗">
+                </div>
+                <div class="fail__box">
+                    <div class="fail__text" id="cancel-fail-text"></div>
+                    <button class="fail__btn-back" data-target="#cancel-fail-popup">
+                        <img src="images/member-fail-btn-back@2x.png" alt="返回">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--撤回失敗訊息-->
 
     <script src="js/all.js"></script>
     <script src="js/app.js"></script>
@@ -647,44 +840,65 @@
                 return false;
             }
 
-            // 活動等相關廣告宣傳事項popup區塊
+            // 同意接收廣告詳情
+            const privacyReservePopup = $('#privacy-reserve-popup')
+
+            // 同意處理個人資訊詳情
+            const termsReservePopup = $('#terms-reserve-popup')
+
+            // 活動等相關廣告宣傳事項
             const privacyPopup = $("#privacy-popup");
-        
+            
+            // 活動參與者權利指南
+            const termsPopup = $("#terms-popup");
+            
+            // html, bdoy element
             const rootElement = $("html, body")
 
-            // 活動等相關廣告宣傳事項popup區塊
-            $(".section-reserve__btn-privacy,.section-invite__btn-privacy").on("click", function (e) {
+            // 接收活動等相關廣告宣傳-按鈕點選
+            $(".section-reserve__btn-terms").on("click", function (e) {
                 e.preventDefault();
-                privacyPopup.addClass("active");
+                privacyReservePopup.addClass("active");
                 rootElement.addClass("fixed");
             });
 
-            $(".privacy__btn-close").on("click", function (e) {
+            // 隱私權政策-按鈕點選-按鈕點選
+            $('.section-reserve__btn-privacy').on("click", function (e) {
                 e.preventDefault();
-                privacyPopup.removeClass("active");
-                rootElement.removeClass("fixed");
+                termsReservePopup.addClass("active");
+                rootElement.addClass("fixed");
             });
-
-            const termsPopup = $("#terms-popup");
-
-            $(".section-reserve__btn-terms,.section-invite__btn-terms").on("click", function (e) {
+            
+            // 活動等相關廣告宣傳事項-按鈕點選
+            $(".section-invite__btn-terms").on("click", function (e) {
                 e.preventDefault();
                 termsPopup.addClass("active");
                 rootElement.addClass("fixed");
             });
 
-            $(".terms__btn-close").on("click", function (e) {
+            // 活動等相關廣告宣傳事項-按鈕點選
+            $(".section-invite__btn-privacy").on("click", function (e) {
                 e.preventDefault();
-                termsPopup.removeClass("active");
-                rootElement.removeClass("fixed");
+                privacyPopup.addClass("active");
+                rootElement.addClass("fixed");
             });
 
-            $(".fail__btn-back").on("click", function (e) {
+            // 所有條款popup的按鈕點選關閉
+            $(".popup__btn-close-terms").on("click", function (e) {
+                e.preventDefault();
+                const target = $(this).data('target')
+                console.log(target)
+                $(target).removeClass("active");
+                rootElement.removeClass('fixed');
+            });
+
+            // 所有提醒popup的按鈕點選關閉
+            $(".fail__btn-back, .success__btn-confirm").on("click", function (e) {
                 e.preventDefault();
                 let target = $(this).data('target');
                 let selfElement = $(this)
                 $(target).removeClass("active");
-                rootElement.removeClass("fixed");
+                rootElement.removeClass('fixed');
                 setTimeout(function(){
                     selfElement.prev().html('')
                 }, 500)
@@ -693,7 +907,7 @@
             $('.section-invite__btn-new-players').on("click", function (e) {
                 e.preventDefault();
                 $('#friends-return-popup').removeClass('active');
-                rootElement.removeClass("fixed");
+                rootElement.removeClass('fixed');
                 setTimeout(() => {
                     gsap.to(window, { duration: 1, scrollTo: '#reserve', ease: "power4.inOut" });
                 }, 1000)
@@ -714,6 +928,7 @@
                 return regex.test(value);
             }
 
+            // 預約選擇地區下拉選單 切換 placeholder 與 maxlenght
             $('#reserveAreaCode').on('change', function(){
                 if($(this).val() !== '886-TW') {
                     $('#reserveMobile').attr('placeholder', '請輸入8位電話號碼')
@@ -724,6 +939,7 @@
                 }
             })
 
+            // 邀請好友選擇地區下拉選單 切換 placeholder 與 maxlenght
             $('#inviteAreaCode').on('change', function () {
                 if ($(this).val() !== '886-TW') {
                     $('#inviteMobile').attr('placeholder', '請輸入8位電話號碼')
@@ -734,6 +950,7 @@
                 }
             })
 
+            // 回覆好友選擇地區下拉選單 切換 placeholder 與 maxlenght
             $('#inviteFriendsAreaCode').on('change', function () {
                 if ($(this).val() !== '886-TW') {
                     $('#inviteFriendsMobile').attr('placeholder', '請輸入8位電話號碼')
@@ -744,6 +961,7 @@
                 }
             })
 
+            // 定義預約popup物件與文字切換欄位
             const reserveFailpopup = $('#reserve-fail-popup')
             const reserveFailText = $('#reserve-fail-text')
 
@@ -757,7 +975,7 @@
             // reserveFailText.append(`此手機號碼已有註冊紀錄，無法再次登記`)
             // rootElement.addClass("fixed")
 
-            // 事前預約活動按鈕送出
+            // 預約活動按鈕送出
             $('.section-reserve__btn-submit').on('click', function(e){
                 e.preventDefault()
                 if( $('#reserveAreaCode option:selected').val() === '0') {
@@ -809,14 +1027,15 @@
                     return false
                 }
                 // 送出成功呼叫tracking code => 221117_Prereg_RegBtn
-                // gtag_report_conversion()
-                // gtag('event', 'conversion', { 'send_to': 'AW-10804827268/C1clCKfpzuYDEISpkqAo' });
+                gtag_report_conversion()
+                gtag('event', 'conversion', { 'send_to': 'AW-10804827268/C1clCKfpzuYDEISpkqAo' });
                 fbq('track', '221117_Prereg_RegBtn')
                 fbq('track', '221117_Prereg_RegDone')
                 $('#success-popup').addClass('active')
                 rootElement.addClass("fixed")
             })
 
+            // 預約成功後按鈕動作
             $('.success__btn-invite').on('click', function () {
                 $('#success-popup').removeClass('active')
                 rootElement.removeClass("fixed")
@@ -825,10 +1044,11 @@
                 }, 1000)
             })
 
+            // 定義邀請好友popup物件與文字切換欄位
             const inviteFailpopup = $('#invite-fail-popup')
             const inviteFailText = $('#invite-fail-text')
 
-            // 好友邀請活動
+            // 好友邀請活動按鈕送出
             $('.section-invite__btn-code').on('click', function (e) {
                 e.preventDefault()
                 $('.section-invite-checkbox').css('display', 'flex')
@@ -887,10 +1107,13 @@
                     rootElement.addClass("fixed")
                     return false
                 }
+                
+                // 顯示好友邀請連結
                 $('#friends-success-popup').addClass('active')
                 rootElement.addClass("fixed")
             })
 
+            // 顯示邀請連結的確定按鈕按下後
             $('.btn-friends-success').on('click', function(){
                 let target = $(this).data('target')
                 $(target).removeClass('active')
@@ -898,6 +1121,7 @@
                 resetInviteInput()
             })
 
+            // 清除好友邀請欄位
             function resetInviteInput() {
                 $('#inviteAreaCode').val("0");
                 $('#inviteMobile').val("");
@@ -906,11 +1130,11 @@
                 $('#invitePrivacy').prop('checked', false)
             }
 
+            // 定義確認好友邀請結果popup物件與文字切換欄位
             const resultFailpopup = $('#result-fail-popup')
             const resultFailText = $('#result-fail-text')
 
-            // 確認好友邀請結果
-
+            // 確認好友邀請結果按鈕送出
             $('.section-invite__btn-result').on('click', function (e) {
                 e.preventDefault()
                 if ($('#inviteAreaCode option:selected').val() === '0') {
@@ -1017,15 +1241,22 @@
                     rootElement.addClass("fixed")
                     return false
                 }
+
+                // 如果會員編號已經被註冊
                 if ($('#inviteFriendsPlayerID').val() === '111111111111') {
                     $('#friends-registered-popup').addClass('active')
                     rootElement.addClass("fixed")
                     return false
                 }
-                $("#friends-return-popup").removeClass('active')
-                rootElement.removeClass("fixed")
+
+                // 關閉用戶回流popup
+                $('#friends-return-popup').removeClass('active')
+
+                // 顯示登錄成功popup
+                $('#friends-return-success-popup').addClass('active');
             })
 
+            // 已經被註冊按鈕關閉
             $('.btn-friends-registered').on('click', function (e) {
                 e.preventDefault()
                 let target = $(this).data('target')
@@ -1035,28 +1266,89 @@
                 return false
             })
 
+            // 新職業按鈕alert
             $('.success__btn-event,.section-reserve__btn-event').on('click', function(e){
                 e.preventDefault()
                 alert('Coming Soon')
                 return false
             })
 
+            // 複製邀請碼動作
             async function copyCode() {
-                const copyText = document.getElementById("invite-code");
+                const copyText = document.getElementById('invite-code');
                 let text = copyText.innerHTML;
                 await navigator.clipboard.writeText(text);
-                alert("邀請碼複製成功");
+                alert('邀請碼複製成功');
             }
 
-            $(".section-invite__btn-copy").on('click', function () {
+            // 複製邀請按鈕
+            $('.section-invite__btn-copy').on('click', function () {
                 copyCode();
             })
 
-            $("#kv-btn-reserve").on("click", function (e) {
+            // 預約區塊按鈕點選前往好友區塊
+            $('#kv-btn-reserve').on('click', function (e) {
                 e.preventDefault()
                 let target = $(this).data('target')
                 gsap.to(window, { duration: 1, scrollTo: target, ease: "power4.inOut" });
             });
+
+            // 登錄成功返回關閉
+            $('.success__btn-back').on('click', function(e){
+                e.preventDefault()
+                $('#friends-return-success-popup').removeClass('active');
+                rootElement.removeClass('fixed');
+            })
+
+            // 撤回申請
+            $('.section-reserve__btn-cancel').on('click', function (e) {
+                e.preventDefault()
+                $('#cancel-reserve-popup').addClass('active');
+                rootElement.addClass('fixed');
+            })
+
+            // 定義撤回申請popup物件與文字切換欄位
+            const cancelFailpopup = $('#cancel-fail-popup')
+            const cancelFailText = $('#cancel-fail-text')
+
+            // 取得驗證碼
+            $('.cancel__btn-verification-code').on('click', function (e) {
+                e.preventDefault()
+                if ($('#cancelMobile').val() === '') {
+                    cancelFailpopup.addClass('active')
+                    cancelFailText.append(`手機格式錯誤，請重新輸入`)
+                    return false
+                }
+                if ($('#cancelMobile').val() === '0911222333') {
+                    cancelFailpopup.addClass('active')
+                    cancelFailText.append(`此號碼未參與事前預約，請重新確認`)
+                    return false
+                }
+                // 送出手機取得認證碼
+            })
+
+            // 送出驗證碼
+            $('.cancel__btn-verify').on('click', function (e) {
+                e.preventDefault()
+                if ($('#cancelVerificationCode').val() === '') {
+                    cancelFailpopup.addClass('active')
+                    cancelFailText.append(`驗證碼錯誤，請重新輸入`)
+                    return false
+                }
+                $(this).removeClass('active').next().addClass('active')
+            })
+
+            // 認證完成
+            $('.cancel__btn-complete').on('click', function (e) {
+                e.preventDefault()
+                if (!$('#cancelTerms').is(':checked')) {
+                    cancelFailpopup.addClass('active')
+                    cancelFailText.html(`未勾選同意收集個人信息`)
+                    return false
+                }
+                $('#cancel-reserve-popup').removeClass('active');
+                $('#cancel-reserve-success-popup').addClass('active');
+            })
 
         })
 
