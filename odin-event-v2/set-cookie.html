@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ODIN</title>
+    <script type="text/javascript">
+        var d = new Date(), day = "";
+        var expires = 1;
+
+        if (expires) {
+            d.setHours(0, 0, 0, 0);
+            d.setDate(d.getDate() + expires);
+            day = "expires=" + d.toGMTString() + ";";
+        }
+        document.cookie = "ODIN_DISABLED_INDEX_EVENT" + "=" + escape(1) + "; path=/; domain=tw-odin.kakaogames.com/;" + day;
+        window.top.location.href = "//tw-odin.kakaogames.com/";
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
