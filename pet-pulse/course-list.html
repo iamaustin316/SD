@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>PET PULSE課程總覽</title>
+    <title>Pet PULSE課程總覽</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
 </head>
@@ -24,10 +24,10 @@
                     <nav class="site-header__main-nav">
                         <a class="site-header__btn-link active" href="index.html">首頁</a>
                         <a class="site-header__btn-link" href="pet-pulse.html">Pet PULSE</a>
-                        <a class="site-header__btn-link" href="pet-article-nutrition.html">愛毛孩</a>
+                        <a class="site-header__btn-link" href="pet-article.html">愛毛孩</a>
                         <a class="site-header__btn-link" href="course-list.html">寵毛孩</a>
                     </nav>
-                    <div class="site-header__user-login">
+                    <div class="site-header__user-login level-1">
                         <div class="site-header__user-level level-1"></div>
                         <div class="site-header__user-name">
                             <a href="user-profile.html">訪客</a>
@@ -39,7 +39,7 @@
                     </div>
                     <div class="site-header__search">
                         <input class="site-header__search-input" type="text" placeholder="搜尋文章">
-                        <span class="site-header__search-icon"></span>
+                        <button class="site-header__btn-search">搜尋</button>
                     </div>
                 </div>
             </div>
@@ -50,284 +50,270 @@
             <div class="course-list">
                 <div class="course-list__inner">
                     <h2 class="course-list__main-title">課程專區</h2>
-                    <h2 class="course-list__date">2023</h2>
-                    <div class="course-list__wrap">
-                        <!--latest-courses__post-->
-                        <div class="course-list__post">
-                            <div class="course-list__post-img">
-                                <a href="course-detail.html">
-                                    <img class="lazy" data-src="https://picsum.photos/id/1001/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
-                                </a>
-                            </div>
-                            <div class="course-list__post-detail">
-                                <div class="course-list__post-content">
-                                    <div class="course-list__label">寵物進階</div>
-                                    <h3 class="course-list__main-post-title">
-                                        <a href="course-detail.html">不便勢樣、大復講為實為了學呢西知有東利失林</a>
+                    <div class="course-list__course-all">
+                        <div class="course-list__block">
+                            <h3>即將開課</h3>
+                            <div class="course-list__wrap">
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">營養學基礎與計算</a>
                                     </h3>
+                                    <div class="course-list__label">初階1</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/2/11</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
                                 </div>
-                                <div class="course-list__info">
-                                    <span>開課時間<strong>2022/02/14 14:00~1700</strong></span>
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">碳水化合物、脂肪與相關疾病的預防</a>
+                                    </h3>
+                                    <div class="course-list__label">初階2</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/2/25</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="course-list__teacher-image">
-                                <img class="lazy" data-src="https://i.pravatar.cc/256?img=47" alt="Tammie">
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">蛋白質與相關疾病的預防</a>
+                                    </h3>
+                                    <div class="course-list__label">初階3</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/3/11</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
+                                </div>
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">維生素、礦物質與相關疾病的預防</a>
+                                    </h3>
+                                    <div class="course-list__label">初階4</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/3/25</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
+                                </div>
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">直播主題名稱</a>
+                                    </h3>
+                                    <div class="course-list__label">A級會員直播</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/4/12</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
+                                </div>
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">毛孩皮膚問題(皮膚感染、過敏、食物過敏)的飲食管理</a>
+                                    </h3>
+                                    <div class="course-list__label">毛孩保健</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/5/20</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
+                                </div>
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">如何挑選毛孩主食 (帶你讀懂食品包裝)</a>
+                                    </h3>
+                                    <div class="course-list__label">會員直播</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/6/14</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
+                                </div>
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">直播主題名稱</a>
+                                    </h3>
+                                    <div class="course-list__label">A級會員直播</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/7/12</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
+                                </div>
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">毛孩腸胃疾病的預防與居家管理</a>
+                                    </h3>
+                                    <div class="course-list__label">毛孩保健</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/8/19</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
+                                </div>
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">毛孩癌症預防與癌症病患的飲食管理</a>
+                                    </h3>
+                                    <div class="course-list__label">進階課程</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/9/16</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
+                                </div>
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">關節健康的居家管理</a>
+                                    </h3>
+                                    <div class="course-list__label">毛孩保健</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/10/21</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
+                                </div>
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">預防毛孩心臟病與心臟病管理居家照護</a>
+                                    </h3>
+                                    <div class="course-list__label">進階課程</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/11/18</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
+                                </div>
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">如何選擇保健食品(不被廣告欺騙)</a>
+                                    </h3>
+                                    <div class="course-list__label">會員直播 (1.5小時)</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/12/13</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                        <button class="course-list__btn-apply" data-price="600">報名課程</button>
+                                    </div>
+                                </div>
+                                <!--latest-courses__course-->
                             </div>
                         </div>
-                        <!--latest-courses__post-->
-                        <!--latest-courses__post-->
-                        <div class="course-list__post">
-                            <div class="course-list__post-img">
-                                <a href="#">
-                                    <img class="lazy" data-src="https://picsum.photos/id/1002/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
-                                </a>
-                            </div>
-                            <div class="course-list__post-detail">
-                                <div class="course-list__post-content">
-                                    <div class="course-list__label">寵物進階</div>
-                                    <h3 class="course-list__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林</a>
+                        <div class="course-list__block">
+                            <h3>已開課</h3>
+                            <div class="course-list__wrap">
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">營養學基礎與計算</a>
                                     </h3>
+                                    <div class="course-list__label">初階1</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/2/11</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                    </div>
                                 </div>
-                                <div class="course-list__info">
-                                    <span>開課時間<strong>2022/02/14 14:00~1700</strong></span>
+                                <!--latest-courses__course-->
+                                <!--latest-courses__course-->
+                                <div class="course-list__course">
+                                    <div class="course-list__teacher-image">
+                                        <img class="lazy" data-src="images/avatar.jpeg" alt="Tammie">
+                                    </div>
+                                    <h3 class="course-list__course-title">
+                                        <a href="course-detail.html">碳水化合物、脂肪與相關疾病的預防</a>
+                                    </h3>
+                                    <div class="course-list__label">初階2</div>
+                                    <div class="course-list__date">開課時間:<strong>2023/2/25</strong></div>
+                                    <div class="course-list__course-price">課程費用:<strong><small>$</small>600</strong></div>
+                                    <div class="course-list__control">
+                                        <a class="course-list__btn-intro" href="course-detail.html">課程介紹</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="course-list__teacher-image">
-                                <img class="lazy" data-src="https://i.pravatar.cc/256?img=47" alt="Tammie">
+                                <!--latest-courses__course-->
                             </div>
                         </div>
-                        <!--latest-courses__post-->
-                        <!--latest-courses__post-->
-                        <div class="course-list__post">
-                            <div class="course-list__post-img">
-                                <a href="#">
-                                    <img class="lazy" data-src="https://picsum.photos/id/1003/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
-                                </a>
-                            </div>
-                            <div class="course-list__post-detail">
-                                <div class="course-list__post-content">
-                                    <div class="course-list__label">寵物進階</div>
-                                    <h3 class="course-list__main-post-title">                                 
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林</a>
-                                    </h3>
-                                </div>
-                                <div class="course-list__info">
-                                    <span>開課時間<strong>2022/02/14 14:00~1700</strong></span>
-                                </div>
-                            </div>
-                            <div class="course-list__teacher-image">
-                                <img class="lazy" data-src="https://i.pravatar.cc/256?img=47" alt="Tammie">
-                            </div>
-                        </div>
-                        <!--latest-courses__post-->
-                        <!--latest-courses__post-->
-                        <div class="course-list__post">
-                            <div class="course-list__post-img">
-                                <a href="#">
-                                    <img class="lazy" data-src="https://picsum.photos/id/1004/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
-                                </a>
-                            </div>
-                            <div class="course-list__post-detail">
-                                <div class="course-list__post-content">
-                                    <div class="course-list__label">寵物進階</div>
-                                    <h3 class="course-list__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林</a>
-                                    </h3>
-                                </div>
-                                <div class="course-list__info">
-                                    <span>開課時間<strong>2022/02/14 14:00~1700</strong></span>
-                                </div>
-                            </div>
-                            <div class="course-list__teacher-image">
-                                <img class="lazy" data-src="https://i.pravatar.cc/256?img=47" alt="Tammie">
-                            </div>
-                        </div>
-                        <!--latest-courses__post-->
-                        <!--latest-courses__post-->
-                        <div class="course-list__post">
-                            <div class="course-list__post-img">
-                                <a href="#">
-                                    <img class="lazy" data-src="https://picsum.photos/id/1005/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
-                                </a>
-                            </div>
-                            <div class="course-list__post-detail">
-                                <div class="course-list__post-content">
-                                    <div class="course-list__label">寵物進階</div>
-                                    <h3 class="course-list__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林</a>
-                                    </h3>
-                                </div>
-                                <div class="course-list__info">
-                                    <span>開課時間<strong>2022/02/14 14:00~1700</strong></span>
-                                </div>
-                            </div>
-                            <div class="course-list__teacher-image">
-                                <img class="lazy" data-src="https://i.pravatar.cc/256?img=47" alt="Tammie">
-                            </div>
-                        </div>
-                        <!--latest-courses__post-->
-                        <!--latest-courses__post-->
-                        <div class="course-list__post">
-                            <div class="course-list__post-img">
-                                <a href="#">
-                                    <img class="lazy" data-src="https://picsum.photos/id/1006/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
-                                </a>
-                            </div>
-                            <div class="course-list__post-detail">
-                                <div class="course-list__post-content">
-                                    <div class="course-list__label">寵物進階</div>
-                                    <h3 class="course-list__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林</a>
-                                    </h3>
-                                </div>
-                                <div class="course-list__info">
-                                    <span>開課時間<strong>2022/02/14 14:00~1700</strong></span>
-                                </div>
-                            </div>
-                            <div class="course-list__teacher-image">
-                                <img class="lazy" data-src="https://i.pravatar.cc/256?img=47" alt="Tammie">
-                            </div>
-                        </div>
-                        <!--latest-courses__post-->
-                        <!--latest-courses__post-->
-                        <div class="course-list__post">
-                            <div class="course-list__post-img">
-                                <a href="#">
-                                    <img class="lazy" data-src="https://picsum.photos/id/1008/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
-                                </a>
-                            </div>
-                            <div class="course-list__post-detail">
-                                <div class="course-list__post-content">
-                                    <div class="course-list__label">寵物進階</div>
-                                    <h3 class="course-list__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林</a>
-                                    </h3>
-                                </div>
-                                <div class="course-list__info">
-                                    <span>開課時間<strong>2022/02/14 14:00~1700</strong></span>
-                                </div>
-                            </div>
-                            <div class="course-list__teacher-image">
-                                <img class="lazy" data-src="https://i.pravatar.cc/256?img=47" alt="Tammie">
-                            </div>
-                        </div>
-                        <!--latest-courses__post-->
-                        <!--latest-courses__post-->
-                        <div class="course-list__post">
-                            <div class="course-list__post-img">
-                                <a href="#">
-                                    <img class="lazy" data-src="https://picsum.photos/id/1009/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
-                                </a>
-                            </div>
-                            <div class="course-list__post-detail">
-                                <div class="course-list__post-content">
-                                    <div class="course-list__label">寵物進階</div>
-                                    <h3 class="course-list__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林</a>
-                                    </h3>
-                                </div>
-                                <div class="course-list__info">
-                                    <span>開課時間<strong>2022/02/14 14:00~1700</strong></span>
-                                </div>
-                            </div>
-                            <div class="course-list__teacher-image">
-                                <img class="lazy" data-src="https://i.pravatar.cc/256?img=47" alt="Tammie">
-                            </div>
-                        </div>
-                        <!--latest-courses__post-->
-                        <!--latest-courses__post-->
-                        <div class="course-list__post expired">
-                            <div class="course-list__post-img">
-                                <a href="#">
-                                    <img class="lazy" data-src="https://picsum.photos/id/1010/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
-                                </a>
-                            </div>
-                            <div class="course-list__post-detail">
-                                <div class="course-list__post-content">
-                                    <div class="course-list__label">寵物進階</div>
-                                    <h3 class="course-list__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林</a>
-                                    </h3>
-                                </div>
-                                <div class="course-list__info">
-                                    <span>開課時間<strong>2022/02/14 14:00~1700</strong></span>
-                                </div>
-                            </div>
-                            <div class="course-list__teacher-image">
-                                <img class="lazy" data-src="https://i.pravatar.cc/256?img=47" alt="Tammie">
-                            </div>
-                        </div>
-                        <!--latest-courses__post-->
-                        <!--latest-courses__post-->
-                        <div class="course-list__post expired">
-                            <div class="course-list__post-img">
-                                <a href="#">
-                                    <img class="lazy" data-src="https://picsum.photos/id/1011/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
-                                </a>
-                            </div>
-                            <div class="course-list__post-detail">
-                                <div class="course-list__post-content">
-                                    <div class="course-list__label">寵物進階</div>
-                                    <h3 class="course-list__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林</a>
-                                    </h3>
-                                </div>
-                                <div class="course-list__info">
-                                    <span>開課時間<strong>2022/02/14 14:00~1700</strong></span>
-                                </div>
-                            </div>
-                            <div class="course-list__teacher-image">
-                                <img class="lazy" data-src="https://i.pravatar.cc/256?img=47" alt="Tammie">
-                            </div>
-                        </div>
-                        <!--latest-courses__post-->
-                        <!--latest-courses__post-->
-                        <div class="course-list__post expired">
-                            <div class="course-list__post-img">
-                                <a href="#">
-                                    <img class="lazy" data-src="https://picsum.photos/id/1012/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
-                                </a>
-                            </div>
-                            <div class="course-list__post-detail">
-                                <div class="course-list__post-content">
-                                    <div class="course-list__label">寵物進階</div>
-                                    <h3 class="course-list__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林</a>
-                                    </h3>
-                                </div>
-                                <div class="course-list__info">
-                                    <span>開課時間<strong>2022/02/14 14:00~1700</strong></span>
-                                </div>
-                            </div>
-                            <div class="course-list__teacher-image">
-                                <img class="lazy" data-src="https://i.pravatar.cc/256?img=47" alt="Tammie">
-                            </div>
-                        </div>
-                        <!--latest-courses__post-->
-                        <!--latest-courses__post-->
-                        <div class="course-list__post expired">
-                            <div class="course-list__post-img">
-                                <a href="#">
-                                    <img class="lazy" data-src="https://picsum.photos/id/1013/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
-                                </a>
-                            </div>
-                            <div class="course-list__post-detail">
-                                <div class="course-list__post-content">
-                                    <div class="course-list__label">寵物進階</div>
-                                    <h3 class="course-list__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林</a>
-                                    </h3>
-                                </div>
-                                <div class="course-list__info">
-                                    <span>開課時間<strong>2022/02/14 14:00~1700</strong></span>
-                                </div>
-                            </div>
-                            <div class="course-list__teacher-image">
-                                <img class="lazy" data-src="https://i.pravatar.cc/256?img=47" alt="Tammie">
-                            </div>
-                        </div>
-                        <!--latest-courses__post-->
                     </div>
                 </div>
             </div>
@@ -371,11 +357,48 @@
         </footer>
         <!--site-footer-->
     </div>
+    <!--my-course-->
+    <div class="my-course">
+        <div class="my-course__pending">已選擇:<strong id="course-count">0</strong>課程</div>
+        <div class="my-course__price">費用:<strong id="price-count">0</strong></div>
+        <a class="my-course__btn-purchasing" href="user-course.html">確認清單</a>
+        <button class="my-course__btn-hide">hide</button>
+    </div>
+    <!--my-course-->
     <script src="js/all.js"></script>
     <script src="js/app.js"></script>
     <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            var ll = new LazyLoad()
+        $(function(){
+            const ll = new LazyLoad()
+            let showCourse = false;
+            let cuorseCount = 0;
+            let priceCount = 0;
+            $('.course-list__btn-apply').on('click', function(e){
+                e.preventDefault()
+                if(!showCourse) {
+                    $('.my-course').addClass('active')
+                    showCourse = true
+                }
+                if($(this).hasClass('active')) {
+                    $(this).removeClass('active').text('報名課程')
+                    priceCount -= $(this).data('price')
+                    cuorseCount --;
+                } else {
+                    $(this).addClass('active').text('取消課程')
+                    priceCount += $(this).data('price')
+                    cuorseCount ++;
+                }
+                $('#course-count').text(cuorseCount)
+                $('#price-count').html(`<small>$</small>${ priceCount }`)
+            })
+
+            $('.my-course__btn-hide').on('click', function (e) {
+                e.preventDefault()
+                if (showCourse) {
+                    $('.my-course').removeClass('active')
+                    showCourse = false
+                }
+            })
         })
     </script>
 </body>

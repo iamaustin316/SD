@@ -78,9 +78,11 @@
                                     </div>
                                 </div>
                                 <div class="course-detail__item">
-                                    <h4>課程費用</h4>
+                                    <h4>上課地點</h4>
                                     <div class="course-detail__item-wrap">
-                                        <p class="course-detail__item-text-price"><small>$</small>12,000</p>
+                                        <a class="course-detail__btn-link" href="#">實體課程</a>
+                                        <a class="course-detail__btn-link" href="#">線上直播</a>
+                                        <a class="course-detail__btn-link" href="#">錄影課程</a>
                                     </div>
                                 </div>
                             </div>
@@ -134,9 +136,8 @@
                                 </div>
                             </div>
                             <div class="course-detail__nav">
-                                <a class="course-detail__btn-back" href="course-list.html">返回課程列表</a>
+                                <a class="course-detail__btn-back" href="course-list.html">返回列表</a>
                                 <a class="course-detail__btn-order" href="#">報名課程</a>
-                                <a class="course-detail__btn-cancel" href="#">取消課程</a>
                             </div>
                         </div>
                     </div>
@@ -181,20 +182,12 @@
             </div>
         </footer>
         <!--site-footer-->
-        <!--my-course-->
-        <div class="my-course active">
-            <div class="my-course__pending">已選擇:<strong id="course-count">1</strong>課程</div>
-            <div class="my-course__price">費用:<strong id="price-count"><small>$</small>12,000</strong></div>
-            <a class="my-course__btn-purchasing" href="user-course.html">確認清單</a>
-            <button class="my-course__btn-hide">hide</button>
-        </div>
-        <!--my-course-->
     </div>
     <script src="js/all.js"></script>
     <script src="js/app.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', () => {
-            const ll = new LazyLoad()
+            var ll = new LazyLoad()
         })
     </script>
 </body>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>PET PULSE愛毛孩</title>
+    <title>Pet PULSE愛毛孩</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
 </head>
@@ -13,22 +13,31 @@
         <!--site-header-->
         <header class="site-header">
             <div class="site-header__inner">
-                <div class="site-header__logo">Pet Pulse</div>
+                <div class="site-header__logo">
+                    <a href="index.html">Pet PULSE</a>
+                </div>
+                <button class="site-header__btn-toggle"></button>
+                <div class="site-header__overlay"></div>
                 <div class="site-header__nav">
                     <nav class="site-header__main-nav">
                         <a class="site-header__btn-link" href="index.html">首頁</a>
-                        <a class="site-header__btn-link" href="dr.tammie.html">Dr. Tammie</a>
-                        <a class="site-header__btn-link active" href="#">愛毛孩</a>
-                        <a class="site-header__btn-link" href="#">寵毛孩</a>
-                        <a class="site-header__btn-link" href="#">獸醫專區</a>
+                        <a class="site-header__btn-link" href="pet-pulse.html">Pet PULSE</a>
+                        <a class="site-header__btn-link active" href="pet-article-nutrition.html">愛毛孩</a>
+                        <a class="site-header__btn-link" href="course-list.html">寵毛孩</a>
                     </nav>
+                    <div class="site-header__user-login level-1">
+                        <div class="site-header__user-level level-1"></div>
+                        <div class="site-header__user-name">
+                            <a href="user-profile.html">訪客</a>
+                        </div>
+                    </div>
                     <div class="site-header__user">
                         <a class="site-header__btn-login" href="login.html">登入</a>
                         <a class="site-header__btn-register" href="register.html">註冊</a>
                     </div>
                     <div class="site-header__search">
                         <input class="site-header__search-input" type="text" placeholder="搜尋文章">
-                        <span class="site-header__search-icon"></span>
+                        <button class="site-header__btn-search">搜尋</button>
                     </div>
                 </div>
             </div>
@@ -40,21 +49,25 @@
                 <div class="pet-article-list__inner">
                     <h2 class="pet-article-list__main-title">愛毛孩</h2>
                     <div class="page-tab">
-                        <a class="page-tab__btn-tab active" href="pet-article-nutrition.html">營養</a>
-                        <a class="page-tab__btn-tab" href="pet-article-care.html">照護</a>
+                        <a class="page-tab__btn-tab active" href="pet-article.html">全部文章</a>
+                        <a class="page-tab__btn-tab" href="pet-article-1.html">活動消息</a>
+                        <a class="page-tab__btn-tab" href="pet-article-2.html">日常營養</a>
+                        <a class="page-tab__btn-tab" href="pet-article-3.html">疾病預防</a>
+                        <a class="page-tab__btn-tab" href="pet-article-4.html">毛孩樂生活</a>
+                        <a class="page-tab__btn-tab" href="pet-article-5.html">獸醫真心話</a>
                     </div>
                     <div class="pet-article-list__wrap">
                         <!--article-item-->
-                        <div class="article-item">
+                        <div class="article-item type-1">
                             <div class="article-item__post-img">
-                                <a href="#">
+                                <a href="pet-article-post.html">
                                     <img class="lazy" data-src="https://picsum.photos/id/1001/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
                                 </a>
                             </div>
                             <div class="article-item__post-detail">
                                 <div class="article-item__post-content">
                                     <h3 class="article-item__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來</a>
+                                        <a href="pet-article-post.html">不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來</a>
                                     </h3>
                                 </div>
                                 <div class="article-item__tag-list">
@@ -64,22 +77,21 @@
                                 </div>
                                 <div class="article-item__info">
                                     <span>日期<strong>2022/02/14</strong></span>
-                                    <span>瀏覽<strong>6.9K</strong></span>
                                 </div>
                             </div>
                         </div>
                         <!--article-item-->
                         <!--article-item-->
-                        <div class="article-item">
+                        <div class="article-item type-2">
                             <div class="article-item__post-img">
-                                <a href="#">
+                                <a href="pet-article-post-lock.html">
                                     <img class="lazy" data-src="https://picsum.photos/id/1002/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
                                 </a>
                             </div>
                             <div class="article-item__post-detail">
                                 <div class="article-item__post-content">
                                     <h3 class="article-item__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了利來</a>
+                                        <a href="pet-article-post-lock.html">不便勢樣、大復講為實為了利來</a>
                                     </h3>
                                 </div>
                                 <div class="article-item__tag-list">
@@ -89,22 +101,21 @@
                                 </div>
                                 <div class="article-item__info">
                                     <span>日期<strong>2022/02/14</strong></span>
-                                    <span>瀏覽<strong>6.9K</strong></span>
                                 </div>
                             </div>
                         </div>
                         <!--article-item-->
                         <!--article-item-->
-                        <div class="article-item">
+                        <div class="article-item type-1">
                             <div class="article-item__post-img">
-                                <a href="#">
+                                <a href="pet-article-video.html" title="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
                                     <img class="lazy" data-src="https://picsum.photos/id/1003/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
                                 </a>
                             </div>
                             <div class="article-item__post-detail">
                                 <div class="article-item__post-content">
                                     <h3 class="article-item__main-post-title">
-                                        <a href="#">不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來</a>
+                                        <a href="pet-article-video.html" title="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來</a>
                                     </h3>
                                 </div>
                                 <div class="article-item__tag-list">
@@ -114,13 +125,12 @@
                                 </div>
                                 <div class="article-item__info">
                                     <span>日期<strong>2022/02/14</strong></span>
-                                    <span>瀏覽<strong>6.9K</strong></span>
                                 </div>
                             </div>
                         </div>
                         <!--article-item-->
                         <!--article-item-->
-                        <div class="article-item">
+                        <div class="article-item type-4">
                             <div class="article-item__post-img">
                                 <a href="#">
                                     <img class="lazy" data-src="https://picsum.photos/id/1004/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
@@ -139,13 +149,12 @@
                                 </div>
                                 <div class="article-item__info">
                                     <span>日期<strong>2022/02/14</strong></span>
-                                    <span>瀏覽<strong>6.9K</strong></span>
                                 </div>
                             </div>
                         </div>
                         <!--article-item-->
                         <!--article-item-->
-                        <div class="article-item">
+                        <div class="article-item type-4">
                             <div class="article-item__post-img">
                                 <a href="#">
                                     <img class="lazy" data-src="https://picsum.photos/id/1005/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
@@ -164,13 +173,12 @@
                                 </div>
                                 <div class="article-item__info">
                                     <span>日期<strong>2022/02/14</strong></span>
-                                    <span>瀏覽<strong>6.9K</strong></span>
                                 </div>
                             </div>
                         </div>
                         <!--article-item-->
                         <!--article-item-->
-                        <div class="article-item">
+                        <div class="article-item type-5">
                             <div class="article-item__post-img">
                                 <a href="#">
                                     <img class="lazy" data-src="https://picsum.photos/id/1006/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
@@ -189,13 +197,12 @@
                                 </div>
                                 <div class="article-item__info">
                                     <span>日期<strong>2022/02/14</strong></span>
-                                    <span>瀏覽<strong>6.9K</strong></span>
                                 </div>
                             </div>
                         </div>
                         <!--article-item-->
                         <!--article-item-->
-                        <div class="article-item">
+                        <div class="article-item type-2">
                             <div class="article-item__post-img">
                                 <a href="#">
                                     <img class="lazy" data-src="https://picsum.photos/id/1011/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
@@ -214,13 +221,12 @@
                                 </div>
                                 <div class="article-item__info">
                                     <span>日期<strong>2022/02/14</strong></span>
-                                    <span>瀏覽<strong>6.9K</strong></span>
                                 </div>
                             </div>
                         </div>
                         <!--article-item-->
                         <!--article-item-->
-                        <div class="article-item">
+                        <div class="article-item type-1">
                             <div class="article-item__post-img">
                                 <a href="#">
                                     <img class="lazy" data-src="https://picsum.photos/id/1008/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
@@ -239,13 +245,12 @@
                                 </div>
                                 <div class="article-item__info">
                                     <span>日期<strong>2022/02/14</strong></span>
-                                    <span>瀏覽<strong>6.9K</strong></span>
                                 </div>
                             </div>
                         </div>
                         <!--article-item-->
                         <!--article-item-->
-                        <div class="article-item">
+                        <div class="article-item type-1">
                             <div class="article-item__post-img">
                                 <a href="#">
                                     <img class="lazy" data-src="https://picsum.photos/id/1009/1680/1120" alt="不便勢樣、大復講為實為了學呢西知有東利失林工長十表利來">
@@ -264,7 +269,6 @@
                                 </div>
                                 <div class="article-item__info">
                                     <span>日期<strong>2022/02/14</strong></span>
-                                    <span>瀏覽<strong>6.9K</strong></span>
                                 </div>
                             </div>
                         </div>
@@ -293,24 +297,26 @@
             <div class="site-footer__content">
                 <div class="site-footer__inner">
                     <div class="site-footer__info">
-                        <h2>關於PETPULSE</h2>
+                        <h2>關於Pet PULSE</h2>
                         <p>嘗試從關心動物與生活環境開始，是學會與世界永續共存的第一步 —— 也是PETPULSE的使命。</p>
                     </div>
                     <div class="site-footer__block">
                         <div class="site-footer__sns">
                             <a href="#">
-                                <img src="images/icon-facebook.svg" alt="">
+                                <img src="images/icon-facebook.svg" alt="https://www.facebook.com/DrTammieNutrition">
                             </a>
                             <a href="#">
-                                <img src="images/icon-instagram.svg" alt="">
+                                <img src="images/icon-instagram.svg" alt="https://www.instagram.com/jimhealth/">
                             </a>
                             <a href="#">
-                                <img src="images/icon-line.svg" alt="">
+                                <img src="images/icon-youtube.svg" alt="">
                             </a>
                         </div>
                         <div class="site-footer__policy">
-                            <a href="#">使用者服務條款</a>
-                            <a href="#">隱私權政策</a>
+                            <a href="membership.html">會員等級</a>
+                            <a href="contact.html">聯絡我們</a>
+                            <a href="policies.html">使用者服務條款</a>
+                            <a href="privacy.html">隱私權政策</a>
                         </div>
                     </div>
                 </div>
@@ -325,9 +331,10 @@
         <!--site-footer-->
     </div>
     <script src="js/all.js"></script>
+    <script src="js/app.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', ()=>{
-            var ll = new LazyLoad()
+            const ll = new LazyLoad()
         })
     </script>
 </body>

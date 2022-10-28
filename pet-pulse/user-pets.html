@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>PET PULSE愛毛孩</title>
+    <title>Pet PULSE愛毛孩</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
 </head>
@@ -22,11 +22,11 @@
                     <nav class="site-header__main-nav">
                         <a class="site-header__btn-link" href="index.html">首頁</a>
                         <a class="site-header__btn-link" href="pet-pulse.html">Pet PULSE</a>
-                        <a class="site-header__btn-link" href="pet-article-nutrition.html">愛毛孩</a>
+                        <a class="site-header__btn-link" href="pet-article.html">愛毛孩</a>
                         <a class="site-header__btn-link" href="course-list.html">寵毛孩</a>
                     </nav>
-                    <div class="site-header__user-login">
-                        <div class="site-header__user-level level-2"></div>
+                    <div class="site-header__user-login level-3">
+                        <div class="site-header__user-level level-3"></div>
                         <div class="site-header__user-name">
                             <a href="user-profile.html">Austin</a>
                         </div>
@@ -36,7 +36,7 @@
                     </div>
                     <div class="site-header__search">
                         <input class="site-header__search-input" type="text" placeholder="搜尋文章">
-                        <span class="site-header__search-icon"></span>
+                        <button class="site-header__btn-search">搜尋</button>
                     </div>
                 </div>
             </div>
@@ -62,12 +62,13 @@
                                     <div class="pets-item">
                                         <div class="pets-item__img">
                                             <a href="user-pets-profile.html">
-                                                <img src="https://picsum.photos/id/1074/512/512" alt="">
+                                                <img class="lazy" data-src="https://picsum.photos/id/1074/512/512" alt="">
                                             </a>
                                         </div>
-                                        <h3 class="pets-item__name">小咪咪</h3>
+                                        <h3 class="pets-item__name">
+                                            <a href="user-pets-profile.html">小咪咪</a>
+                                        </h3>
                                         <div class="pets-item__info">
-                                            <div class="pets-item__gender female"></div>
                                             <div class="pets-item__animal">貓</div>
                                             <div class="pets-item__age">10歲</div>
                                         </div>
@@ -78,12 +79,13 @@
                                     <div class="pets-item">
                                         <div class="pets-item__img">
                                             <a href="#">
-                                                <img src="images/avatar-pets.png" alt="">
+                                                <img class="lazy" data-src="images/avatar-pets.png" alt="">
                                             </a>
                                         </div>
-                                        <h3 class="pets-item__name">大狗狗</h3>
+                                        <h3 class="pets-item__name">
+                                            <a href="user-pets-profile.html">大狗狗</a>
+                                        </h3>
                                         <div class="pets-item__info">
-                                            <div class="pets-item__gender male"></div>
                                             <div class="pets-item__animal">狗</div>
                                             <div class="pets-item__age">10歲</div>
                                         </div>
@@ -94,12 +96,13 @@
                                     <div class="pets-item">
                                         <div class="pets-item__img">
                                             <a href="#">
-                                                <img src="images/avatar-pets.png" alt="">
+                                                <img class="lazy" data-src="images/avatar-pets.png" alt="">
                                             </a>
                                         </div>
-                                        <h3 class="pets-item__name">咪咪</h3>
+                                        <h3 class="pets-item__name">
+                                            <a href="user-pets-profile.html">咪咪</a>
+                                        </h3>
                                         <div class="pets-item__info">
-                                            <div class="pets-item__gender male die"></div>
                                             <div class="pets-item__animal">貓</div>
                                             <div class="pets-item__age">10歲</div>
                                         </div>
@@ -169,57 +172,7 @@
     <script src="js/app.js"></script>
     <script>
         $(function(){
-
-            let $uploadCrop;
-
-            function readFile(input) {
-                if (input.files && input.files[0]) {
-                    var reader = new FileReader();
-                    reader.onload = function (e) {
-                        $uploadCrop.croppie('bind', {
-                            url: e.target.result
-                        }).then(function(){
-                            console.log('jQuery bind complete');
-                        });
-                    }
-                    reader.readAsDataURL(input.files[0]);
-                }
-                else {
-                    consoel.log("Sorry - you're browser doesn't support the FileReader API")
-                }
-            }
-
-            $uploadCrop = $('#croppie-headshot').croppie({
-                viewport: {
-                    width: 256,
-                    height: 256,
-                    type: 'circle'
-                },
-                enableExif: true
-            });
-
-            $('#headshot-upload').on('change', function(){
-                $('.croppie-overlay').addClass('active')
-                readFile(this)
-            })
-
-            $('.croppie-overlay__upload-result').on('click', function (ev) {
-                $uploadCrop.croppie('result', {
-                    type: 'canvas',
-                    size: 'viewport'
-                }).then(function (resp) {
-                    popupResult({
-                        src: resp
-                    });
-                });
-            });
-
-            function popupResult(result) {
-                $('.croppie-overlay').removeClass('active')
-                if (result.src) {
-                    $('#headshot').attr('src', result.src)
-                }
-            }
+            const ll = new LazyLoad()
         })
     </script>
 </body>
