@@ -36,13 +36,13 @@
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=291610966327528&ev=PageView&noscript=1"></noscript>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127554126-8"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-218235867-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'UA-127554126-8');
+        gtag('config', 'UA-218235867-1');
     </script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -628,7 +628,7 @@
         </div>
     </div>
     <!--登錄成功-->
-    <!--好友邀請活動-->
+    <!--好友邀請回流活動-->
     <div class="popup popup-form" id="friends-return-popup">
         <div class="popup__overlay">
             <div class="popup__content">
@@ -1027,11 +1027,11 @@
                     return false
                 }
                 // 送出成功呼叫tracking code => 221117_Prereg_RegBtn
-                gtag_report_conversion()
-                gtag('event', 'conversion', { 'send_to': 'AW-10804827268/C1clCKfpzuYDEISpkqAo' });
+                gtag('event', 'conversion', {'send_to': 'AW-10804827268/5jpFCKTpzuYDEISpkqAo'});
                 fbq('track', '221117_Prereg_RegBtn')
-                fbq('track', '221117_Prereg_RegDone')
                 $('#success-popup').addClass('active')
+                gtag('event', 'conversion', { 'send_to': 'AW-10804827268/C1clCKfpzuYDEISpkqAo' });
+                fbq('track', '221117_Prereg_RegDone')
                 rootElement.addClass("fixed")
             })
 
