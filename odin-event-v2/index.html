@@ -36,13 +36,13 @@
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=291610966327528&ev=PageView&noscript=1"></noscript>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127554126-8"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-218235867-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'UA-127554126-8');
+        gtag('config', 'UA-218235867-1');
     </script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -99,30 +99,8 @@
         </header>
         <!--主選單-->
         <main class="site-main">
-            <!--首頁-正式-->
-            <section class="section-block section-kv-v2" id="kv-v2">
-                <div class="section-kv-v2__content">
-                    <div class="section-kv-v2__sub-title-1">
-                        <picture>
-                            <source srcset="images/kv-v2-sub-title-m@2x.png" media="(max-width: 768px)">
-                            <img id="kv-v2-sub-title" src="images/kv-v2-sub-title@2x.png" alt="交錯人神領域的神盾女戰士">
-                        </picture>
-                    </div>
-                    <div class="section-kv-v2__main-title">
-                        <picture>
-                            <source srcset="images/kv-v2-main-title-m@2x.png" media="(max-width: 768px)">
-                            <img id="kv-v2-main-title" src="images/kv-v2-main-title@2x.png" alt="新職業神盾 強勢更新">
-                        </picture>
-                    </div>
-                    <button class="section-kv-v2__btn-play">
-                        <img id="kv-v2-btn-play" src="images/kv-v2-btn-play@2x.png" alt="">
-                    </button>
-                    <button id="kv-v2-btn-explore" class="section-kv-v2__btn-explore">立即探索</button>
-                </div>
-            </section>
-            <!--首頁-正式-->
             <!--首頁-->
-            <section class="section-block section-kv" id="kv" style="display: none;">
+            <section class="section-block section-kv" id="kv">
                 <div class="section-kv__content">
                     <div class="section-kv__sub-title-1">
                         <img id="kv-sub-title-1" src="images/kv-sub-title-1@2x.png" alt="主宰生死的最強女戰士">
@@ -149,7 +127,7 @@
             </section>
             <!--首頁-->
             <!--事前預約-->
-            <section class="section-block section-reserve" id="reserve" style="display: none">
+            <section class="section-block section-reserve" id="reserve">
                 <div class="section-reserve__content">
                     <div class="section-reserve__sub-title-1 reserve-element">
                         <img src="images/reserve-sub-title-1@2x.png" alt="新職業《神盾》更新紀念">
@@ -208,7 +186,7 @@
             </section>
             <!--事前預約-->
             <!--好友邀請活動-->
-            <section class="section-block section-invite v2" id="invite">
+            <section class="section-block section-invite" id="invite">
                 <div class="section-invite__content">
                     <div class="section-invite__sub-title-1 invite-element">
                         <img src="images/invite-sub-title-1@2x.png" alt="事前預約限定紀念活動">
@@ -272,40 +250,6 @@
                 </div>
             </section>
             <!--好友邀請活動-->
-            <!--活動-正式-->
-            <section class="section-block section-event" id="event">
-                <div class="section-event__content">
-                    <div class="section-event__slider event-element">
-                        <div class="cus-event-swiper-button-prev"></div>
-                        <div class="cus-event-swiper-button-next"></div>
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="section-event__slide-content">
-                                        <div class="section-event__image">
-                                            <img src="images/event-box-1@2x.png" alt="全新職業《神盾》更新紀念-立即登入參加簽到活動即送好禮-">
-                                        </div>
-                                        <a class="section-event__btn" href="#" title="查看活動詳情" target="_blank">
-                                            <img src="images/event-btn-detail@2x.png" alt="查看活動詳情">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="section-event__slide-content">
-                                        <div class="section-event__image">
-                                            <img src="images/event-box-2@2x.png" alt="慶祝更新《神盾》抽獎活動-按讚分享留言，即有機會抽超值好禮-">
-                                        </div>
-                                        <a class="section-event__btn" href="#" title="立即前往活動" target="_blank">
-                                            <img src="images/event-btn-goto@2x.png" alt="立即前往活動">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--活動-正式-->
             <!--新職業介紹-->
             <section class="section-block section-role" id="role">
                 <div class="section-role__content">
@@ -684,7 +628,7 @@
         </div>
     </div>
     <!--登錄成功-->
-    <!--好友邀請活動-->
+    <!--好友邀請回流活動-->
     <div class="popup popup-form" id="friends-return-popup">
         <div class="popup__overlay">
             <div class="popup__content">
@@ -1083,11 +1027,11 @@
                     return false
                 }
                 // 送出成功呼叫tracking code => 221117_Prereg_RegBtn
-                gtag_report_conversion()
-                gtag('event', 'conversion', { 'send_to': 'AW-10804827268/C1clCKfpzuYDEISpkqAo' });
+                gtag('event', 'conversion', {'send_to': 'AW-10804827268/5jpFCKTpzuYDEISpkqAo'});
                 fbq('track', '221117_Prereg_RegBtn')
-                fbq('track', '221117_Prereg_RegDone')
                 $('#success-popup').addClass('active')
+                gtag('event', 'conversion', { 'send_to': 'AW-10804827268/C1clCKfpzuYDEISpkqAo' });
+                fbq('track', '221117_Prereg_RegDone')
                 rootElement.addClass("fixed")
             })
 
@@ -1380,6 +1324,7 @@
                     cancelFailText.append(`此號碼未參與事前預約，請重新確認`)
                     return false
                 }
+                alert('送出手機號碼取得驗證碼123456')
                 // 送出手機取得認證碼
             })
 
