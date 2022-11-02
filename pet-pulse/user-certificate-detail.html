@@ -57,7 +57,7 @@
                         <div class="user-profile">
                             <h2 class="user-profile__main-title">我的證書</h2>
                             <div class="user-profile__wrap certificate">
-                                <div class="certificate-detail">
+                                <div class="certificate-detail" id="boundary">
                                     <div class="certificate-detail__pet-pulse">
                                         <img src="images/logo-petpulse-vertical@3x.png" alt="Pet PULSE">
                                     </div>
@@ -143,80 +143,30 @@
         </footer>
         <!--site-footer-->
         <!--croppie-overlay-->
-        <div class="croppie-overlay">
-            <div class="croppie-overlay__inner">
-                <div class="croppie-overlay__headshot" id="croppie-headshot"></div>
-                <button class="croppie-overlay__upload-result">確定選取</button>
-            </div>
-        </div>
-        <!--croppie-overlay-->
     </div>
     <script src="js/all.js"></script>
     <script src="js/app.js"></script>
     <script>
         $(function () {
-
-            const inputPasswordOld = $('#password-old')
-            const inputPassword = $('#password')
-            const inputPasswordRepeat = $('#password-repeat')
-
-            function isStrongPassword(value) {
-                const regex = /^(?=.*\d)(?=.*[a-zA-Z]).{6,}$/;
-                return regex.test(value)
-            }
-
-            function addError(element, errorMessage) {
-                element.after(`<div class="error-tips">${errorMessage}</div>`)
-            }
-
-            function removeError(element) {
-                element.next().remove()
-            }
-
-            $('.login-ui__toggle-password').on('click', function () {
-                if (!$(this).hasClass('active')) {
-                    $(this).addClass('active').nextAll().eq(1).attr('type', 'text');
-                } else {
-                    $(this).removeClass('active').nextAll().eq(1).attr('type', 'password');
-                }
-            })
-
-            inputPassword.on('input', function () {
-                removeError(inputPassword)
-                if (!isStrongPassword(inputPassword.val())) {
-                    addError(inputPassword, '密碼強度太弱!')
-                } else {
-                    removeError(inputPassword)
-                }
-            })
-
-            inputPasswordRepeat.on('input', function () {
-                removeError(inputPasswordRepeat)
-                if (inputPassword.val() !== inputPasswordRepeat.val()) {
-                    addError(inputPasswordRepeat, '密碼輸入不一樣!')
-                } else {
-                    removeError(inputPasswordRepeat)
-                }
-            })
-
-            $('.user-profile__btn-update').on('click', function (e) {
+            $('.certificate-nav__btn-download').on('click', function(e){
                 e.preventDefault()
-                if (inputPasswordOld.val() === '' && !inputPasswordOld.next().is('p')) {
-                    addError(inputPasswordOld, '請輸入目前密碼!')
-                    inputPasswordOld.focus()
-                    return false
+                html2canvas(document.querySelector('#boundary'),{
+                    windowWidth: '1280px'
+                }).then(function (canvas) {
+                    saveAs(canvas.toDataURL(), 'certificate-detail.png');
+                });
+                function saveAs(uri, filename) {
+                    var link = document.createElement('a');
+                    if (typeof link.download === 'string') {
+                        link.href = uri;
+                        link.download = filename;
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                    } else {
+                        window.open(uri);
+                    }
                 }
-                if (inputPassword.val() === '' && !inputPassword.next().is('p')) {
-                    addError(inputPassword, '請輸入新密碼!')
-                    inputPassword.focus()
-                    return false
-                }
-                if (inputPasswordRepeat.val() === '' && !inputPasswordRepeat.next().is('p')) {
-                    addError(inputPasswordRepeat, '請輸入新密碼!')
-                    inputPasswordRepeat.focus()
-                    return false
-                }
-                alert('修改成功!')
             })
         });
     </script>
