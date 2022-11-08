@@ -378,7 +378,7 @@ select::-ms-expand {
   border-color: var(--color-main-900);
 }
 
-.my-course__btn-purchasing, .search__btn-submit, .certificate-nav__btn-back, .certificate-nav__btn-download, .certificate__btn-download, .membership__btn, .pet-journal-post__btn-edit, .pet-journal-post__btn-delete, .pet-profile__btn-add-journal, .user-profile__upgrade, .croppie-overlay__upload-result, .course-list__btn-purchasing, .course-list__btn-intro, .course-list__btn-apply, .pet-article-post__btn-collect, .pet-article-post__purchasing a, .article-item__btn-delete, .site-header__btn-search, .site-header__btn-sign-out, .site-header__btn-register, .site-header__btn-login {
+.my-course__btn-purchasing, .search__btn-submit, .certificate-nav__btn-back, .certificate-nav__btn-download, .certificate__btn-download, .membership__btn, .pet-journal-post__btn-edit, .pet-journal-post__btn-delete, .pet-profile__btn-add-journal, .user-profile__upgrade, .croppie-overlay__upload-result, .course-detail__btn-cancel, .course-detail__btn-order, .course-detail__btn-back, .course-detail__btn-link, .course-list__btn-purchasing, .course-list__btn-intro, .course-list__btn-apply, .pet-article-post__btn-collect, .pet-article-post__purchasing a, .article-item__btn-delete, .site-header__btn-search, .site-header__btn-sign-out, .site-header__btn-register, .site-header__btn-login {
   white-space: nowrap;
   box-sizing: border-box;
   background-color: var(--color-main-800);
@@ -392,14 +392,19 @@ select::-ms-expand {
   line-height: 1.5;
   text-align: center;
 }
-.my-course__btn-purchasing:hover, .search__btn-submit:hover, .certificate-nav__btn-back:hover, .certificate-nav__btn-download:hover, .certificate__btn-download:hover, .membership__btn:hover, .pet-journal-post__btn-edit:hover, .pet-journal-post__btn-delete:hover, .pet-profile__btn-add-journal:hover, .user-profile__upgrade:hover, .croppie-overlay__upload-result:hover, .course-list__btn-purchasing:hover, .course-list__btn-intro:hover, .course-list__btn-apply:hover, .pet-article-post__btn-collect:hover, .pet-article-post__purchasing a:hover, .article-item__btn-delete:hover, .site-header__btn-search:hover, .site-header__btn-sign-out:hover, .site-header__btn-register:hover, .site-header__btn-login:hover {
+.my-course__btn-purchasing:hover, .search__btn-submit:hover, .certificate-nav__btn-back:hover, .certificate-nav__btn-download:hover, .certificate__btn-download:hover, .membership__btn:hover, .pet-journal-post__btn-edit:hover, .pet-journal-post__btn-delete:hover, .pet-profile__btn-add-journal:hover, .user-profile__upgrade:hover, .croppie-overlay__upload-result:hover, .course-detail__btn-cancel:hover, .course-detail__btn-order:hover, .course-detail__btn-back:hover, .course-detail__btn-link:hover, .course-list__btn-purchasing:hover, .course-list__btn-intro:hover, .course-list__btn-apply:hover, .pet-article-post__btn-collect:hover, .pet-article-post__purchasing a:hover, .article-item__btn-delete:hover, .site-header__btn-search:hover, .site-header__btn-sign-out:hover, .site-header__btn-register:hover, .site-header__btn-login:hover {
   background-color: var(--color-main-900);
   border-color: var(--color-main-900);
 }
+@media (min-width: 0) and (max-width: 480px) {
+  .my-course__btn-purchasing, .search__btn-submit, .certificate-nav__btn-back, .certificate-nav__btn-download, .certificate__btn-download, .membership__btn, .pet-journal-post__btn-edit, .pet-journal-post__btn-delete, .pet-profile__btn-add-journal, .user-profile__upgrade, .croppie-overlay__upload-result, .course-detail__btn-cancel, .course-detail__btn-order, .course-detail__btn-back, .course-detail__btn-link, .course-list__btn-purchasing, .course-list__btn-intro, .course-list__btn-apply, .pet-article-post__btn-collect, .pet-article-post__purchasing a, .article-item__btn-delete, .site-header__btn-search, .site-header__btn-sign-out, .site-header__btn-register, .site-header__btn-login {
+    font-size: var(--font-size-sm);
+  }
+}
 
-.forget-password__btn-submit, .contact__btn-submit, .pet-profile__btn-download, .pet-profile__btn-new, .pet-profile__btn-add, .pet-profile__btn-update, .user-profile__btn-update, .course-detail__btn-cancel, .course-detail__btn-order, .course-detail__btn-back, .course-detail__btn-link, .course-list__btn-more, .login-ui__btn-google, .login-ui__btn-facebook, .login-ui__btn-submit, .latest-video__btn-more, .latest-courses__btn-more {
+.forget-password__btn-submit, .contact__btn-submit, .pet-profile__btn-download, .pet-profile__btn-new, .pet-profile__btn-add, .pet-profile__btn-update, .user-profile__btn-update, .course-list__btn-more, .login-ui__btn-google, .login-ui__btn-facebook, .login-ui__btn-submit, .latest-video__btn-more, .latest-courses__btn-more {
   box-sizing: border-box;
-  background-color: var(--color-main-700);
+  background-color: var(--color-main-800);
   border-radius: 0.8rem;
   padding: 1.2rem 2.4rem;
   font-size: var(--font-size-lg);
@@ -409,7 +414,7 @@ select::-ms-expand {
   font-weight: 700;
   line-height: 1.5;
 }
-.forget-password__btn-submit:hover, .contact__btn-submit:hover, .pet-profile__btn-download:hover, .pet-profile__btn-new:hover, .pet-profile__btn-add:hover, .pet-profile__btn-update:hover, .user-profile__btn-update:hover, .course-detail__btn-cancel:hover, .course-detail__btn-order:hover, .course-detail__btn-back:hover, .course-detail__btn-link:hover, .course-list__btn-more:hover, .login-ui__btn-google:hover, .login-ui__btn-facebook:hover, .login-ui__btn-submit:hover, .latest-video__btn-more:hover, .latest-courses__btn-more:hover {
+.forget-password__btn-submit:hover, .contact__btn-submit:hover, .pet-profile__btn-download:hover, .pet-profile__btn-new:hover, .pet-profile__btn-add:hover, .pet-profile__btn-update:hover, .user-profile__btn-update:hover, .course-list__btn-more:hover, .login-ui__btn-google:hover, .login-ui__btn-facebook:hover, .login-ui__btn-submit:hover, .latest-video__btn-more:hover, .latest-courses__btn-more:hover {
   background-color: var(--color-main-900);
 }
 
@@ -474,7 +479,7 @@ select::-ms-expand {
 }
 
 .certificate__label, .membership__row small, .course-detail__item-method, .course-detail__type, .course-detail__label, .course-list__label {
-  background-color: var(--color-main-100);
+  background-color: var(--color-main-150);
   color: var(--color-main-800);
   font-size: var(--font-size-sm);
   display: flex;
@@ -492,6 +497,7 @@ select::-ms-expand {
 }
 
 .certificate__course-title a, .course-list__course-title a, .latest-video__main-post-title a, .latest-courses__main-post-title a, .latest-articles__main-post-title a, .article-item__main-post-title a {
+  font-weight: 900;
   font-size: var(--font-size-xl);
   line-height: 1.4;
   color: var(--color-main-800);
@@ -508,9 +514,14 @@ select::-ms-expand {
 
 .pet-journal-post__content p, .latest-articles__main-post-text, .article-item__main-post-text {
   line-height: 1.6;
-  font-size: clamp(var(--font-size-sm), -0.875rem + 8.333vw, var(--font-size-base));
+  font-size: var(--font-size-base);
   color: var(--color-main-800);
   letter-spacing: 0.2rem;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  .pet-journal-post__content p, .latest-articles__main-post-text, .article-item__main-post-text {
+    font-size: var(--font-size-sm);
+  }
 }
 
 .latest-video__post, .latest-courses__post, .latest-articles__post, .article-item {
@@ -523,6 +534,7 @@ select::-ms-expand {
 .latest-video__post-detail, .latest-courses__post-detail, .latest-articles__post-detail, .article-item__post-detail {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3.2rem 2rem;
   gap: 1.2rem;
 }
 
@@ -629,6 +641,12 @@ select::-ms-expand {
   color: var(--color-main-800);
   font-size: var(--font-size-base);
 }
+@media (min-width: 0) and (max-width: 480px) {
+  .pet-profile__radio input[type=radio]:not(:checked) + label,
+.pet-profile__radio input[type=radio]:checked + label {
+    font-size: var(--font-size-sm);
+  }
+}
 .pet-profile__radio input[type=radio]:not(:checked) + label:before,
 .pet-profile__radio input[type=radio]:checked + label:before {
   content: "";
@@ -637,7 +655,7 @@ select::-ms-expand {
   border-radius: 50%;
   width: 2.2rem;
   height: 2.2rem;
-  background-color: var(--color-main-800);
+  border: solid 0.2rem var(--color-main-800);
   top: 0;
   box-sizing: border-box;
 }
@@ -649,20 +667,20 @@ select::-ms-expand {
 }
 .pet-profile__radio input[type=radio] + label:after {
   content: "";
-  width: 1.2rem;
-  height: 1.2rem;
-  background-color: var(--color-main-200);
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-main-800);
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate3d(0.5rem, -0.6rem, 0);
+  transform: translate3d(0.6rem, -0.5rem, 0);
   transition: all 300ms ease;
   opacity: 0;
 }
 @media (min-width: 0) and (max-width: 480px) {
   .pet-profile__radio input[type=radio] + label:after {
-    transform: translate3d(0.5rem, -0.7rem, 0);
+    transform: translate3d(0.6rem, -0.6rem, 0);
   }
 }
 .pet-profile__radio input[type=radio]:checked + label:after {
@@ -670,27 +688,39 @@ select::-ms-expand {
 }
 
 .pet-profile__row, .user-profile__row {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+  gap: 0.8rem;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .forget-password__label, .pet-profile__row label, .user-profile__row label, .login-ui__label {
   font-size: var(--font-size-base);
   color: var(--color-main-700);
   line-height: 1.5;
+  font-weight: 900;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  .forget-password__label, .pet-profile__row label, .user-profile__row label, .login-ui__label {
+    font-size: var(--font-size-sm);
+  }
 }
 
 .search__input, .forget-password__input, .contact__textarea, .contact__input, .pet-profile__row input, .user-profile__row input, .login-ui__input, .site-header__search-input {
   box-sizing: border-box;
   background-color: var(--color-main-200);
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem 1.2rem;
   font-size: var(--font-size-base);
   border-radius: 0.8rem;
   color: var(--color-main-800);
   transition: background-color 300ms ease;
   line-height: 1.5;
   border: solid 0.1rem var(--color-main-300);
+  font-weight: 900;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  .search__input, .forget-password__input, .contact__textarea, .contact__input, .pet-profile__row input, .user-profile__row input, .login-ui__input, .site-header__search-input {
+    font-size: var(--font-size-sm);
+  }
 }
 .search__input::placeholder, .forget-password__input::placeholder, .contact__textarea::placeholder, .contact__input::placeholder, .pet-profile__row input::placeholder, .user-profile__row input::placeholder, .login-ui__input::placeholder, .site-header__search-input::placeholder {
   color: var(--color-main-600);
@@ -700,7 +730,7 @@ select::-ms-expand {
   border-color: var(--color-main-300);
 }
 .sm.search__input, .sm.forget-password__input, .sm.contact__textarea, .sm.contact__input, .pet-profile__row input.sm, .user-profile__row input.sm, .sm.login-ui__input, .sm.site-header__search-input {
-  padding: 1.2rem;
+  padding: 0.8rem 1.2rem;
   font-size: var(--font-size-base);
   margin-left: 1.2rem;
 }
@@ -739,9 +769,14 @@ select::-ms-expand {
 }
 
 .pet-profile__profile, .user-profile__profile {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.2rem;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  .pet-profile__profile, .user-profile__profile {
+    gap: 2.4rem;
+  }
 }
 
 .pet-profile__btn-upload, .user-profile__btn-upload {
@@ -809,6 +844,11 @@ select::-ms-expand {
   color: var(--color-main-800);
   letter-spacing: 0.2rem;
 }
+@media (min-width: 0) and (max-width: 480px) {
+  .forget-password__text, .course-detail__teacher-intro, .tammie-book__book-description {
+    font-size: var(--font-size-sm);
+  }
+}
 .forget-password__text a, .course-detail__teacher-intro a, .tammie-book__book-description a {
   color: var(--color-main-800);
   transition: color 300ms ease;
@@ -858,6 +898,11 @@ select::-ms-expand {
 .pet-profile__select-wrap select option {
   color: var(--color-grey-500);
 }
+@media (min-width: 0) and (max-width: 480px) {
+  .pet-profile__select-wrap select {
+    font-size: var(--font-size-sm);
+  }
+}
 
 .pet-profile__checkbox, .user-profile__checkbox, .login-ui__checkbox {
   width: 100%;
@@ -881,6 +926,14 @@ select::-ms-expand {
   color: var(--color-main-700);
   font-size: var(--font-size-base);
 }
+@media (min-width: 0) and (max-width: 480px) {
+  .pet-profile__checkbox input[type=checkbox]:not(:checked) + label, .user-profile__checkbox input[type=checkbox]:not(:checked) + label, .login-ui__checkbox input[type=checkbox]:not(:checked) + label,
+.pet-profile__checkbox input[type=checkbox]:checked + label,
+.user-profile__checkbox input[type=checkbox]:checked + label,
+.login-ui__checkbox input[type=checkbox]:checked + label {
+    font-size: var(--font-size-sm);
+  }
+}
 .pet-profile__checkbox input[type=checkbox]:not(:checked) + label:before, .user-profile__checkbox input[type=checkbox]:not(:checked) + label:before, .login-ui__checkbox input[type=checkbox]:not(:checked) + label:before,
 .pet-profile__checkbox input[type=checkbox]:checked + label:before,
 .user-profile__checkbox input[type=checkbox]:checked + label:before,
@@ -891,22 +944,21 @@ select::-ms-expand {
   border-radius: 0.6rem;
   width: 2.2rem;
   height: 2.2rem;
-  background-color: var(--color-main-700);
+  border: solid 0.2rem var(--color-main-800);
   border-radius: 0.6rem;
   top: 0;
   box-sizing: border-box;
 }
 .pet-profile__checkbox input[type=checkbox] + label:after, .user-profile__checkbox input[type=checkbox] + label:after, .login-ui__checkbox input[type=checkbox] + label:after {
   content: "";
-  width: 1rem;
+  width: 0.8rem;
   height: 0.6rem;
-  background: transparent url(../images/icon-check.svg) no-repeat center center;
-  background-size: 1rem 0.6rem;
+  border-top: solid 0.2rem var(--color-main-800);
+  border-right: solid 0.2rem var(--color-main-800);
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate3d(0.6rem, -60%, 0);
-  border: solid 0 transparent;
+  transform: translate3d(0.6rem, -0.6rem, 0) rotate(135deg);
   transition: all 300ms ease;
   opacity: 0;
 }
@@ -955,6 +1007,7 @@ select::-ms-expand {
 .course-list__course-price strong {
   color: var(--color-danger-500);
   padding-left: 0.4rem;
+  font-size: var(--font-size-lg);
 }
 
 .course-list__teacher-image {
@@ -1168,7 +1221,7 @@ body.fixed {
   }
 }
 .site-footer__info p {
-  font-size: clamp(var(--font-size-sm), -0.875rem + 8.333vw, var(--font-size-sm));
+  font-size: var(--font-size-sm);
   color: var(--color-main-100);
   line-height: 1.6;
 }
@@ -1492,7 +1545,6 @@ body.fixed {
   display: grid;
   grid-template-columns: 1fr min-content;
   gap: 0.8rem;
-  height: 4rem;
   align-items: center;
 }
 .site-header__search-icon {
@@ -1979,6 +2031,14 @@ body.fixed {
 .latest-articles__post:nth-child(1) .latest-articles__post-detail {
   height: 100%;
 }
+@media (min-width: 0) and (max-width: 480px) {
+  .latest-articles__post:nth-child(1) {
+    grid-template-columns: 1fr;
+  }
+  .latest-articles__post:nth-child(1) .latest-articles__main-post-text {
+    display: none;
+  }
+}
 @media (min-width: 960px) and (max-width: 1200px) {
   .latest-articles__post:nth-child(1) {
     grid-column: 1/4;
@@ -1998,12 +2058,12 @@ body.fixed {
 }
 @media (min-width: 0) and (max-width: 480px) {
   .latest-articles__post:nth-child(2), .latest-articles__post:nth-child(3), .latest-articles__post:nth-child(4) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 480px) and (max-width: 720px) {
   .latest-articles__post:nth-child(2), .latest-articles__post:nth-child(3), .latest-articles__post:nth-child(4) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 960px) and (max-width: 1200px) {
@@ -3059,7 +3119,8 @@ body.fixed {
 }
 @media (min-width: 0) and (max-width: 480px) {
   .pet-article-post__nav {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 .pet-article-post__btn-article {
@@ -3068,8 +3129,8 @@ body.fixed {
   display: flex;
   flex-direction: column;
   padding: 2.4rem 8.8rem;
-  border: solid 0.2rem var(--color-main-200);
-  border-radius: 1.6rem;
+  border: solid 0.1rem var(--color-main-200);
+  border-radius: 1.2rem;
   position: relative;
   line-height: 1.4;
   background-color: var(--color-main-100);
@@ -3409,13 +3470,18 @@ body.fixed {
 @media (min-width: 0) and (max-width: 480px) {
   .course-list__block.purchasing {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .course-list__block > h3 {
   font-size: var(--font-size-xl);
   color: var(--color-main-700);
   margin-bottom: 2rem;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  .course-list__block > h3 {
+    font-size: var(--font-size-lg);
+  }
 }
 .course-list__btn-apply.active {
   background-color: var(--color-danger-500);
@@ -3428,6 +3494,7 @@ body.fixed {
 @media (min-width: 0) and (max-width: 480px) {
   .course-list__pending, .course-list__price {
     text-align: right;
+    font-size: var(--font-size-sm);
   }
 }
 .course-list__pending strong, .course-list__price strong {
@@ -3435,12 +3502,20 @@ body.fixed {
   color: var(--color-danger-500);
   font-size: var(--font-size-2xl);
 }
+@media (min-width: 0) and (max-width: 480px) {
+  .course-list__pending strong, .course-list__price strong {
+    text-align: right;
+    font-size: var(--font-size-xl);
+  }
+}
 .course-list__btn-purchasing {
   width: min-content;
   display: block;
 }
 @media (min-width: 0) and (max-width: 480px) {
   .course-list__btn-purchasing {
+    grid-column: 1/3;
+    grid-row: 2/3;
     margin-right: 0;
     margin-left: auto;
   }
@@ -3499,9 +3574,15 @@ body.fixed {
   gap: 1.6rem;
 }
 .course-detail__intro h3 {
-  font-size: clamp(var(--font-size-lg), 4vw, var(--font-size-3xl));
+  font-size: var(--font-size-3xl);
   color: var(--color-main-800);
   line-height: 1.6;
+  font-weight: 900;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  .course-detail__intro h3 {
+    font-size: var(--font-size-xl);
+  }
 }
 .course-detail__content {
   display: grid;
@@ -3525,6 +3606,11 @@ body.fixed {
   letter-spacing: 0.2rem;
   margin-bottom: 2.4rem;
 }
+@media (min-width: 0) and (max-width: 480px) {
+  .course-detail__content-inner p {
+    font-size: var(--font-size-sm);
+  }
+}
 .course-detail__content-inner h5 {
   font-size: var(--font-size-base);
   color: var(--color-main-800);
@@ -3544,6 +3630,11 @@ body.fixed {
   color: var(--color-main-700);
   letter-spacing: 0.2rem;
 }
+@media (min-width: 0) and (max-width: 480px) {
+  .course-detail__content-inner ul li {
+    font-size: var(--font-size-sm);
+  }
+}
 .course-detail__content-inner ul li:not(:last-child) {
   margin-bottom: 0.8rem;
 }
@@ -3551,6 +3642,11 @@ body.fixed {
   display: flex;
   gap: 1.6rem;
   width: 100%;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  .course-detail__nav {
+    justify-content: center;
+  }
 }
 .course-detail__btn-cancel {
   background-color: var(--color-danger-500);
@@ -3786,9 +3882,8 @@ body.fixed {
 }
 
 .pets-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1.2rem;
 }
 .pets-item__img {
@@ -3806,7 +3901,8 @@ body.fixed {
   font-size: var(--font-size-xl);
 }
 .pets-item__name a {
-  color: var(--color-main-700);
+  color: var(--color-main-800);
+  font-weight: 900;
 }
 .pets-item__info {
   display: flex;
@@ -3833,7 +3929,7 @@ body.fixed {
 }
 .pets-item__animal, .pets-item__age {
   font-size: var(--font-size-base);
-  color: var(--color-main-700);
+  color: var(--color-main-800);
 }
 .pets-item__btn-add {
   width: 100%;
@@ -3850,6 +3946,7 @@ body.fixed {
   background-color: var(--color-danger-500);
   border-color: var(--color-danger-500);
   width: max-content;
+  margin: 0 auto;
 }
 .pets-item__btn-delete:hover {
   background-color: var(--color-danger-700);
